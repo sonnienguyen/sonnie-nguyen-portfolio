@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<article class="author-post">
+  <h2>{{ page.title }}</h2>
+
+  <small class="small post-meta-date">
+    {% include post-author.html %}
+  </small>
+
+  <div class="author-entry">
+    {{ content }}
+  </div>
+
+  {% include disqus.html %}
+</article>

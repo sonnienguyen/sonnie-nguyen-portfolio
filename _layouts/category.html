@@ -1,0 +1,11 @@
+---
+layout: test
+---
+
+{% for post in site.posts %}
+    {% for c in post.categories %}
+    {% if page.tag == c %}
+        {% include post-excerpt.html %}
+     {% endif %}
+    {% endfor %}
+{% endfor %}

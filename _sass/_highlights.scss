@@ -1,0 +1,29 @@
+
+.highlight {
+  font-size: .6875em;
+  overflow: auto;
+  padding: 1em 0;
+}
+
+// pre,
+// code {
+//   font-family: $code-font-family;
+// }
+
+code {
+  background: $code-background-color;
+  border-radius: .4em;
+  color: $code-color;
+}
+
+// Inline highlighting
+
+.highlighter-rouge {
+  background: $code-background-color;
+  font-family: $code-font-family;
+  // border-radius: 0;
+  color: $code-color;
+  font-size: 90%;
+  padding: 0 .4em;
+  // vertical-align: middle;
+}
