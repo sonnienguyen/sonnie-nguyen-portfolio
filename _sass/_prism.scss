@@ -7,7 +7,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-    color: $black;
+    color: $code-color;
     background: none;
     text-shadow: 0 1px white;
     font-family: $code-font-family; // $code-font-family;
@@ -57,7 +57,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    background: $lighter-gray;
+    background: $code-background-color;
 }
 
 /* Inline code */

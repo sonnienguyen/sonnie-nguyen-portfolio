@@ -2,7 +2,7 @@
 title: Draft
 layout: post
 permalink: /sandbox/
-categories: draft
+categories: Draft
 ---
 > How to blog like a hacker
 

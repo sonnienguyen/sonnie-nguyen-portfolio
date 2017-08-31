@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Sonnie Nguyen is a photographer from Melbourne, Australia.
+Learn to read, write and code. Sonnie Nguyen is a web devloper and photographer from Melbourne, Australia.
 
 ### Contact me
 
