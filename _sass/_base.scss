@@ -19,7 +19,12 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $darker-gray;
   font-family: $header-font-family;
   font-weight: bold;
@@ -34,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
-    a {
+  a {
     color: inherit;
   }
 }
@@ -63,12 +68,12 @@ p {
   margin: 15px 0;
 }
 
-a { 
+a {
   // color: $link-color;
   color: $darker-gray;
   font-weight: 700;
   // text-decoration: none;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 a:hover {
@@ -76,7 +81,8 @@ a:hover {
   text-decoration: none;
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -89,19 +95,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -133,12 +145,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: ' ';
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -247,8 +259,7 @@ nav {
 }
 
 .current {
-  border-bottom: 2px 
-  solid $masthead-link-color-active; 
+  border-bottom: 2px solid $masthead-link-color-active;
   padding-bottom: 3px;
 }
 
@@ -291,17 +302,17 @@ nav {
 
 .site-archives {
   ul {
-  list-style-type: none;
+    list-style-type: none;
   }
 }
 
 .author-post {
   blockquote {
-    margin: 1em 0;;
-    border-left: .2em solid $light-gray;
+    margin: 1em 0;
+    border-left: 0.2em solid $light-gray;
     padding: 0 0 0 1.2em;
     color: $gray;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   .comments {
@@ -316,11 +327,11 @@ nav {
 }
 
 .author-thumb {
-    width: 26px;
-    height: 26px;
-    float: left;
-    margin-right: 9px;
-    border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-right: 9px;
+  border-radius: 100%;
 }
 
 .post-meta-date {
@@ -345,7 +356,7 @@ nav {
 //   }
 // }
 
-// Footer 
+// Footer
 
 .wrapper-footer {
   margin-top: 50px;
@@ -375,8 +386,9 @@ footer {
     a {
       font-size: 18px;
       color: $light-gray;
-      
-      &:hover, &:active {
+
+      &:hover,
+      &:active {
         color: $gray;
       }
     }
@@ -395,7 +407,7 @@ footer {
 // TESTING
 //
 
-// --> sonnienguyen.com/categories links text-decoration no underline 
+// --> sonnienguyen.com/categories links text-decoration no underline
 
 .archives {
   a {
@@ -441,9 +453,9 @@ footer {
   /* Fuck dude, I don't know. Prefixes, right? */
   -webkit-filter: blur(10px);
   filter: blur(10px); /* This is the important bit */
-  transition: -webkit-filter .3s ease-out;
-  transition: filter .3s ease-out; /* And this */
-  transition: filter .3s ease-out, -webkit-filter .3s ease-out;
+  transition: -webkit-filter 0.3s ease-out;
+  transition: filter 0.3s ease-out; /* And this */
+  transition: filter 0.3s ease-out, -webkit-filter 0.3s ease-out;
 }
 
 .lazyloaded {
