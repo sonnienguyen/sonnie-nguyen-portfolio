@@ -4,32 +4,31 @@ layout: post
 permalink: /sandbox/
 categories: Draft
 ---
-> How to blog like a hacker
+
+
 
 <!-- more -->
 
+## What are you doing now?
+
 {% highlight plain %}
-Checklist:
- [ ] Noise Cancelling Headphone
- [ ] Mechanical Keyboard
- [ ] Gaming mouse
- [ ] Multiple Monitors
- [ ] eReader
- --------------------------------------
- [X] TODO list
- [ ] Pomodoro timer
- [ ] Text Editor
- [ ] Markdown
- [ ] Command Line
- --------------------------------------
- [ ] Caffeine
- [ ] A bottle of water
- [ ] Two meals a day
- [ ] Vitamin D
- [ ] Creatine
+TODO:
+
 {% endhighlight %}
 
 {% highlight plain %}
-Sonnie Nguyen: So.. where do we go from here?
+Pomodoro:
+
+Start timer
+[ ] Deep work (50 mins)
+[ ] Time for a break (15 mins)
+[ ] Deep work (50 mins)
+[ ] Time for a break (15 mins)
+[ ] Deep work (50 mins)
+[ ] Time for a break (15 mins)
+[ ] Deep work (50 mins)
+[ ] Time for a break (15 mins)
 {% endhighlight %}
+
+## What did you learn today?
 
