@@ -1,27 +1,22 @@
----
-layout: page
+--- 
+layout: page 
 ---
 
 <div class="site-archives">
   <h2>2017</h2>
-  {%for post in site.posts %}
-    {% unless post.next %}
+  {%for post in site.posts %} {% unless post.next %}
   <ul>
-  {% else %}
-    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-    {% if year != nyear %}
+    {% else %} {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y'
+    }}{% endcapture %} {% if year != nyear %}
   </ul>
-    <h3>{{ post.date | date: '%Y' }}</h3>
+  <h3>{{ post.date | date: '%Y' }}</h3>
   <ul>
-    {% endif %}
-    {% endunless %}
-  <h2 class="entry-title">
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  </h2>
-  <small class="small post-meta-archives"> 
+    {% endif %} {% endunless %}
+    <h2 class="entry-title">
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    </h2>
+    <small class="small post-meta-archives"> 
     <time>{% include post-date.html %}</time> posted in {% include post-categories.html %}   
-  </small>
-  {% endfor %}
+  </small> {% endfor %}
   </ul>
 </div>
