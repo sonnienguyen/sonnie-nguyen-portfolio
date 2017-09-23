@@ -1,0 +1,75 @@
+.site-posts > .author-post {
+  padding-bottom: 2em;
+  // Add border bottom for Post
+  border-bottom: 1px dotted $lighter-gray;
+}
+
+.site-posts > .author-post:last-child {
+  padding-bottom: 2rem;
+  // Add border bottom for Post last child
+  border-bottom: 1px dotted $lighter-gray;
+}
+
+.post-meta {
+  display: block;
+  margin-bottom: 1.5rem;
+  color: $light-gray;
+  font-family: $post-meta-font-family;
+  font-size: 0.8rem;
+}
+
+.post-meta-archives {
+  display: block;
+  // margin-bottom: 1.5rem;
+  color: $light-gray;
+  font-family: $post-meta-font-family;
+  font-size: 0.8rem;
+  margin: 6px 0;
+}
+
+.site-archives {
+  ul {
+    list-style-type: none;
+  }
+}
+
+.author-post {
+  blockquote {
+    margin: 1em 0;
+    border-left: 0.2em solid $light-gray;
+    padding: 0 0 0 1.2em;
+    color: $gray;
+    font-size: 0.9em;
+  }
+
+  .comments {
+    margin-top: 10px;
+  }
+}
+
+.author-thumb {
+  width: 26px;
+  height: 26px;
+  float: left;
+  margin-right: 9px;
+  border-radius: 100%;
+}
+
+.post-meta-date {
+  display: block; // block
+  margin-bottom: 1.5rem;
+  color: $darker-gray;
+  font-family: $post-meta-font-family;
+  font-size: 0.8rem;
+}
+
+.small {
+  color: $darker-gray;
+  display: inline-block;
+}
+
+.read-more {
+  text-transform: lowercase;
+  font-size: 15px;
+  color: $link-color;
+}

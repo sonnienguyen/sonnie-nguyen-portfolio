@@ -1,0 +1,19 @@
+.contain img {
+  width: 100%;
+  height: auto;
+}
+
+.lazy {
+  /* Fuck dude, I don't know. Prefixes, right? */
+  -webkit-filter: blur(10px);
+  filter: blur(10px); /* This is the important bit */
+  transition: -webkit-filter 0.3s ease-out;
+  -webkit-transition: -webkit-filter 0.3s ease-out;
+  transition: filter 0.3s ease-out; /* And this */
+  transition: filter 0.3s ease-out, -webkit-filter 0.3s ease-out;
+}
+
+.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0); /* And this, as the class gets added once it's loaded */
+}

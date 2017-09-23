@@ -2,13 +2,14 @@
 layout: default 
 ---
 
+<!--[ Post links ]-->
 <div class="site-posts">
   {% for post in paginator.posts %}
   <article class="author-post">
 
-    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     {% include post-meta.html%}
-    <div class="author-entry">
+    <div class="author-content">
       {{ post.excerpt }}
     </div>
 
@@ -17,7 +18,7 @@ layout: default
   {% endfor %}
 </div>
 
-<!-- Pagination links -->
+<!--[ Pagination links ]-->
 
 {% if paginator.total_pages > 1 %}
 <div class="pagination">

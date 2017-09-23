@@ -1,0 +1,65 @@
+.site-masthead {
+  margin-bottom: 50px;
+  background: $masthead-background-color;
+}
+
+.masthead {
+  padding: 20px 0;
+
+  @include mobile {
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $link-color-hover;
+    }
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-info {
+  float: left;
+  margin-top: 10px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $site-name-color;
+  cursor: pointer;
+  font-family: $masthead-font-family;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+  a {
+    font-weight: normal;
+  }
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $site-description-color;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+}

@@ -1,17 +1,7 @@
 ---
-layout: page
+layout: default
 title: Categories
 ---
-
-<!-- 
-  
-{% for category in site.categories %}
-  <div class="cookies">
-    <h2><a href="{{ category.url }}">{{ category.title}}</a></h2>
-  </div> 
-{% endfor %} 
-
--->
 
 {% for post in site.posts %}
   {% assign c = post.categories | join: "," %}
@@ -31,11 +21,3 @@ title: Categories
     {% endif %}
    {% endfor %}
 {% endfor %} 
-
-
-
-<!-- 
-
-  what is site.posts?
-
--->

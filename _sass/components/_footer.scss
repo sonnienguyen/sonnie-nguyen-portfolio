@@ -1,0 +1,44 @@
+.wrapper-footer {
+  margin-top: 50px;
+  background-color: $white;
+}
+
+footer {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.site-footer {
+  float: center;
+  padding: 0;
+  margin: 15px 0 0;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: middle;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    a {
+      font-size: 18px;
+      color: $light-gray;
+
+      &:hover,
+      &:active {
+        color: $gray;
+      }
+    }
+  }
+}
+
+.site-copyright {
+  padding: 10px;
+  text-align: center;
+  color: $gray;
+  font-size: 14px;
+  font-weight: 100;
+}

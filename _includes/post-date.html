@@ -1,8 +1,9 @@
 {% assign day = post.date | date: "%-d"  %}
+{{ post.date | date: "%B" }}
 {% case day %}
-  {% when '1' or '21' or '31' %}{{ day }}st
-  {% when '2' or '22' %}{{ day }}nd
-  {% when '3' or '23' %}{{ day }}rd
-  {% else %}{{ day }}th
+  {% when '1' or '21' or '31' %}{{ day }}st,
+  {% when '2' or '22' %}{{ day }}nd,
+  {% when '3' or '23' %}{{ day }}rd,
+  {% else %}{{ day }}th,
 {% endcase %}
-{{ post.date | date: "%B, %Y" }}
+{{ post.date | date: '%Y' }}

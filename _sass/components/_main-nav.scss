@@ -1,0 +1,31 @@
+nav {
+  float: right;
+  margin-top: 20px; // @TODO: Vertically middle align
+  font-family: $global-font-family;
+  font-size: 18px;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $masthead-link-color;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $masthead-link-color;
+    }
+  }
+}
+
+.current {
+  border-bottom: 2px solid $masthead-link-color-active;
+  padding-bottom: 3px;
+}
