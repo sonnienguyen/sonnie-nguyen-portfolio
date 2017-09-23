@@ -32,7 +32,7 @@ Start timer
 [x] Deep work (50 mins)
 [x] Time for a break (15 mins)
 [x] Deep work (50 mins)
-[ x Time for a break (15 mins)
+[x] Time for a break (15 mins)
 [ ] Deep work (50 mins)
 [ ] Time for a break (15 mins)
 {% endhighlight %}
