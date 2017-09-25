@@ -1,12 +1,15 @@
+--- 
+layout: default 
 ---
-layout: default
----
+<div class="site-categories">
+  <article>
 
-<article class="page">
+    <h1>{{ page.title }} Posts</h1>
+    <p></p>
+    <div class="site-index">
 
-  <h1>{{ page.title }} Posts</h1>
+      {{ content }}
 
-  <div class="author-entry">
-    {{ content }}
-  </div>
-</article>
+    </div>
+  </article>
+</div>

@@ -1,30 +1,25 @@
 .site-posts > .author-post {
-  padding-bottom: 2em;
-  // Add border bottom for Post
+  // Add border bottom for posts
   border-bottom: 1px dotted $lighter-gray;
+  padding-bottom: 2em;
 }
 
 .site-posts > .author-post:last-child {
-  padding-bottom: 2rem;
   // Add border bottom for Post last child
   border-bottom: 1px dotted $lighter-gray;
+  padding-bottom: 2rem;
 }
 
-.post-meta {
-  display: block;
-  margin-bottom: 1.5rem;
-  color: $light-gray;
-  font-family: $post-meta-font-family;
-  font-size: 0.8rem;
+.site-archives > ul > .author-post {
+  // Add border bottom for archives
+  border-bottom: 1px dotted $lighter-gray;
+  padding-bottom: 2em;
 }
 
-.post-meta-archives {
-  display: block;
-  // margin-bottom: 1.5rem;
-  color: $light-gray;
-  font-family: $post-meta-font-family;
-  font-size: 0.8rem;
-  margin: 6px 0;
+.site-index > .author-post {
+  // Add border bottom for categories index
+  border-bottom: 1px dotted $lighter-gray;
+  padding-bottom: 2em;
 }
 
 .site-archives {
@@ -33,13 +28,28 @@
   }
 }
 
+.post-meta {
+  color: $light-gray;
+  display: block;
+  font-family: $post-meta-font-family;
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-meta-archives {
+  color: $light-gray;
+  display: block;
+  font-family: $post-meta-font-family;
+  font-size: .8rem;
+}
+
 .author-post {
   blockquote {
-    margin: 1em 0;
-    border-left: 0.2em solid $light-gray;
-    padding: 0 0 0 1.2em;
+    border-left: .2em solid $light-gray;
     color: $gray;
-    font-size: 0.9em;
+    font-size: .9em;
+    margin: 1em 0;
+    padding: 0 0 0 1.2em;
   }
 
   .comments {
@@ -48,19 +58,19 @@
 }
 
 .author-thumb {
-  width: 26px;
-  height: 26px;
-  float: left;
-  margin-right: 9px;
   border-radius: 100%;
+  float: left;
+  height: 26px;
+  margin-right: 9px;
+  width: 26px;
 }
 
 .post-meta-date {
-  display: block; // block
-  margin-bottom: 1.5rem;
   color: $darker-gray;
+  display: block;
   font-family: $post-meta-font-family;
-  font-size: 0.8rem;
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
 }
 
 .small {
@@ -69,7 +79,7 @@
 }
 
 .read-more {
-  text-transform: lowercase;
-  font-size: 15px;
   color: $link-color;
+  font-size: 15px;
+  text-transform: lowercase;
 }

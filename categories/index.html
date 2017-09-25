@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Categories
 ---
 
@@ -13,11 +13,15 @@ title: Categories
 {% assign categories = categories | split: "," | uniq | sort: self %}
 {% assign catobjs = site.categories | sort: "tag" %}
 
+<div class="site-categories">
 {% for category in catobjs %}
   {% for cat in categories %}
   {% comment %} matching for tag and category {% endcomment %}
-    {% if cat == category.tag %} 
-      <h2><a href="{{category.url}}">{{category.title}}</a></h2>
+    {% if cat == category.tag %}
+
+        <h1 class="entry-title"><a href="{{category.url}}">{{category.title}}</a></h1>
+
     {% endif %}
    {% endfor %}
 {% endfor %} 
+</div>
