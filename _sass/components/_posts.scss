@@ -2,12 +2,12 @@
   // Add border bottom for posts
   border-bottom: 1px dotted $lighter-gray;
   padding-bottom: 2em;
-}
 
-.site-posts > .author-post:last-child {
-  // Add border bottom for Post last child
-  border-bottom: 1px dotted $lighter-gray;
-  padding-bottom: 2rem;
+  &:last-child {
+    // Add border bottom for Post last child
+    border-bottom: 1px dotted $lighter-gray;
+    padding-bottom: 2rem;
+  }
 }
 
 .site-archives > ul > .author-post {

@@ -1,19 +1,19 @@
 .highlight {
-  font-size: 0.6875em;
+  font-size: .6875em;
   overflow: auto;
   padding: 1em 0;
 }
 
 code {
   background: $code-background-color;
-  border-radius: 0.4em;
+  border-radius: .4em;
   color: $code-color;
 }
 
 .highlighter-rouge {
   background: $code-background-color;
-  font-family: $code-font-family;
   color: $code-color;
+  font-family: $code-font-family;
   font-size: 90%;
-  padding: 0 0.4em;
+  padding: 0 .4em;
 }

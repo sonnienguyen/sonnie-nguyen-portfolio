@@ -21,30 +21,31 @@ h3,
 h4,
 h5,
 h6 {
+  @include mobile {
+    line-height: 1.4;
+  }
   color: $darker-gray;
   font-family: $header-font-family;
   font-weight: bold;
   line-height: 1.7;
   margin-top: 1.75em;
   padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
 }
 
 h1 {
   font-size: 30px;
-  a {
-    color: inherit;
-  }
   margin-left: 0;
   margin-right: 0;
   padding: 10px 0;
+
+  a {
+    color: inherit;
+  }
 }
 
 h1.entry-title {
   font-size: 1.6em;
+
   a {
     text-decoration: none;
   }
@@ -52,6 +53,7 @@ h1.entry-title {
 
 h2 {
   font-size: 24px;
+
   a {
     text-decoration: none;
   }
@@ -71,13 +73,13 @@ p {
 
 a {
   color: $darker-gray;
-  font-weight: 700;
   cursor: pointer;
-}
+  font-weight: 700;
 
-a:hover {
-  color: $darker-gray;
-  text-decoration: none;
+  &:hover {
+    color: $darker-gray;
+    text-decoration: none;
+  }
 }
 
 ul,
@@ -121,23 +123,26 @@ img {
 }
 
 // Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+.gmnoprint {
+  img {
+    max-width: none;
+  }
 }
 
 .date {
-  font-style: italic;
   color: $gray;
+  font-style: italic;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $selection-text-color;
   background: $selection-background-color;
+  color: $selection-text-color;
 }
+
 ::selection {
-  color: $selection-text-color;
   background: $selection-background-color;
+  color: $selection-text-color;
 }
 
 // Nicolas Gallagher's micro clearfix hack

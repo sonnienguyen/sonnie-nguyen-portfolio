@@ -1,27 +1,25 @@
 nav {
+  @include mobile {
+    display: block;
+    float: none;
+    font-size: 16px;
+    margin-top: 9px;
+  }
   float: right;
-  margin-top: 20px; // @TODO: Vertically middle align
   font-family: $global-font-family;
   font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
+  margin-top: 20px;
 
   a {
-    margin-left: 20px;
+    @include mobile {
+      color: $masthead-link-color;
+      margin: 0 10px;
+    }
     color: $masthead-link-color;
-    text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $masthead-link-color;
-    }
+    margin-left: 20px;
+    text-align: right;
   }
 }
 
