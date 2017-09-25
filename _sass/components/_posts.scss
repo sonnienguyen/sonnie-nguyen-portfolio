@@ -44,6 +44,12 @@
 }
 
 .author-post {
+  h1 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px 0;
+  }
+
   blockquote {
     border-left: .2em solid $light-gray;
     color: $gray;
