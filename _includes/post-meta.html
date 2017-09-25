@@ -1,12 +1,8 @@
 <small class="small post-meta">
-  <!--Post category-->
+
   posted in
   {% include post-categories.html %}
-  <!--Post category-->
-  <!--</span>-->
-  <span class="">
-    on 
-    {{ post.date | date: "%Y-%m-%d" }}
-  </span>
-  <!--</span>-->
+  on 
+  {% include post-date.html %}
+
 </small>
