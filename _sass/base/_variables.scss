@@ -46,13 +46,18 @@ $selection-text-color         : $dark-gray;
 
 $info-color                   : #05bf85; // previous <- #10AFF2
 
-// links //
+// Links
 
 $link-color                   : $info-color;
-$link-color-hover             : mix($black, $link-color, 25%);
-$link-color-visited           : mix($white, $link-color, 25%);
-$masthead-link-color          : #fff;
+$link-text-color              : $white;
+$link-color-hover             : mix($black, $link-color, 30%);
+$link-color-visited           : mix($white, $link-color, 30%);
+$masthead-link-color          : $white;
 $masthead-link-color-active   : $info-color;
+
+// Other
+
+$global-transition-speed      : .3s;
 
 // Mobile breakpoints
 @mixin mobile {

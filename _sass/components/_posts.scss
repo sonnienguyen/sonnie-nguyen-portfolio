@@ -85,7 +85,25 @@
 }
 
 .read-more {
-  color: $link-color;
-  font-size: 15px;
-  text-transform: lowercase;
+  -webkit-transition: background-color $global-transition-speed linear;
+  background: $link-color;
+  border-bottom: 2px solid $link-color-hover;
+  border-radius: .1em;
+  color: $link-text-color;
+  display: inline-block;
+  margin: 0 .4em 0 0;
+  padding: .4em .6em;
+  text-decoration: none;
+  transition: background-color $global-transition-speed linear;
+
+  &:hover {
+    background: $link-color-hover;
+    color: $link-text-color;
+  }
+
+  &:active {
+    -webkit-transform: translate(0, .1em);
+    border-bottom: 2px solid $link-color-visited;
+    transform: translate(0, .1em);
+  }
 }
