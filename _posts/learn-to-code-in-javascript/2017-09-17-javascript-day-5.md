@@ -1,7 +1,7 @@
 ---
-title: 'Learn to code in JavaScript: Day 5'
+title: 'JavaScript: Day 5'
 layout: post
-permalink: /learn-to-code-javascript-day-5/
+permalink: /javascript-day-5/
 categories: JavaScript
 ---
 
