@@ -72,10 +72,3 @@ $btn-border                    : darken($btn-background-color, 10%);
 
 $global-transition-speed       : .3s;
 
-// Mobile breakpoints
-
-@mixin mobile {
-  @media screen and (max-width: 640px) {
-    @content;
-  }
-}
