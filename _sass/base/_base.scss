@@ -24,7 +24,7 @@ h6 {
   @include mobile {
     line-height: 1.4;
   }
-  color: $darker-gray;
+  color: $header-color;
   font-family: $header-font-family;
   font-weight: bold;
   line-height: 1.7;
@@ -69,12 +69,12 @@ p {
 }
 
 a {
-  color: $darker-gray;
+  color: $link-color;
   cursor: pointer;
   font-weight: 700;
 
   &:hover {
-    color: $darker-gray;
+    color: $link-color-hover;
     text-decoration: none;
   }
 }
@@ -124,11 +124,6 @@ img {
   img {
     max-width: none;
   }
-}
-
-.date {
-  color: $gray;
-  font-style: italic;
 }
 
 // Specify the color of the selection

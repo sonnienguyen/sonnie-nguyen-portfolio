@@ -17,49 +17,63 @@ $post-meta-font-family         : $roboto;
 $code-font-family              : $consolas;
 
 // 
-// colors
+// Colors
 //
 
-$black                         : #222;
-$white                         : #fff;
+// Shades of gray
 
-$gray                          : mix($white, $black, 40%); //#7a8288;
-$dark-gray                     : mix($black, $gray, 40%);
-$darker-gray                   : mix($black, $gray, 60%);
-$light-gray                    : mix($white, $gray, 50%);
-$lighter-gray                  : mix($white, $gray, 90%);
+$gray-base                     : #000;
+$dark-gray                     : lighten($gray-base, 13.5%); // #222
+$darker-gray                   : lighten($gray-base, 20%);   // #333
+$gray                          : lighten($gray-base, 33.5%); // #555
+$light-gray                    : lighten($gray-base, 46.7%); // #777
+$lighter-gray                  : lighten($gray-base, 93.5%); // #eee
 
-$primary-color                : #fff; // in progress..
+// Font colors
+
+$primary-color                 : #fff; // in progress..
 
 // Background color
-$body-color                   : $white;
-$masthead-background-color    : $black;
-$code-background-color        : $lighter-gray;
-$selection-background-color   : $light-gray;
+
+$body-color                    : #fff;
+$masthead-background-color     : $dark-gray;
+$code-background-color         : $lighter-gray;
+$selection-background-color    : $light-gray;
 
 // Text color
-$text-color                   : $darker-gray;
-$site-name-color              : $white;
-$site-description-color       : $gray;
-$code-color                   : $black;
-$selection-text-color         : $dark-gray;
 
-$info-color                   : #05bf85; // previous <- #10AFF2
+$text-color                    : $darker-gray;
+$header-color                  : $text-color;
+$site-name-color               : #fff;
+$site-description-color        : $gray;
+$code-color                    : $text-color;
+$selection-text-color          : $dark-gray;
+
+$info-color                    : #05bf85;
 
 // Links
 
-$link-color                   : $info-color;
-$link-text-color              : $white;
-$link-color-hover             : mix($black, $link-color, 30%);
-$link-color-visited           : mix($white, $link-color, 30%);
-$masthead-link-color          : $white;
-$masthead-link-color-active   : $info-color;
+$link-color                    : $dark-gray;
+$link-color-hover              : $dark-gray;
+$link-color-visited            : $dark-gray;
+$masthead-link-color           : #fff;
+$masthead-link-color-active    : $info-color;
+$masthead-hover-color          : $info-color;
 
+// Buttons
+
+$btn-color                     : #fff;
+$btn-background-color          : $info-color;
+$btn-border                    : darken($btn-background-color, 10%);
+
+// 
 // Other
+//
 
-$global-transition-speed      : .3s;
+$global-transition-speed       : .3s;
 
 // Mobile breakpoints
+
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;
