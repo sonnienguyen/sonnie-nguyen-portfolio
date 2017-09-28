@@ -5,46 +5,32 @@ permalink: /javascript-day-3/
 categories: JavaScript
 ---
 
-Identify the core features we will need to build our shopping list app
-
-<!-- more -->
-
-## What are you doing now?
-
 {% highlight plain %}
+
 TODO:
 
 Shopping list web app (project)
 [ ] Complete shopping list web app
 [x] Create a "checked" when clicked on an item
+
 {% endhighlight %}
 
-{% highlight plain %}
-Pomodoro:
+<!-- more -->
 
-Start timer
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[ ] Deep work (50 mins)
-[ ] Time for a break (15 mins)
-{% endhighlight %}
+## Identify the core features
 
-## What did you learn today?
-
-We want to break down this project into tiny chunks. We won't pay much attention to how the application looks for the time being. Identify the core features we will need to build our shopping list app.
+Today I learned to break down this project into tiny chunks. We won't pay much attention to how the application looks for the time being. Identify the core features we will need to build our shopping list app.
 
 + Add items
 + Delete items
 + Mark items as "checked"
 
-### Mark items as checked
-
 As an example, one of the features I've added is the ability to click on an item and mark as "checked".
-{% highlight javascript %}
+
+## Mark items as checked
+
+{% highlight html %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,9 +54,11 @@ As an example, one of the features I've added is the ability to click on an item
   <script type="text/javascript" src="app.js">
   </script>
 </body>
+
 {% endhighlight %}
 
-{% highlight javascript %}
+{% highlight css %}
+
 /* main.css */
 
 .shopping-list ul li {
@@ -81,9 +69,11 @@ As an example, one of the features I've added is the ability to click on an item
 .checked {
   text-decoration: line-through;
 }
+
 {% endhighlight %}
 
 {% highlight javascript %}
+
 // app.js 
 
 // Function to add a checked when clicked on
@@ -105,12 +95,6 @@ checkedItem();
 
 {% endhighlight %}
 
-### Note-taking
-+ Add Prettier to workflow
-+ Add ESlint airbnb to workflow
-+ Add webpack to workflow
-+ Set TAB indentation to 2 spaces instead of 4, and can easily nest more deeply
+## References
 
-### References
-
-[Why use addEventListener?](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">Why use addEventListener?</a>

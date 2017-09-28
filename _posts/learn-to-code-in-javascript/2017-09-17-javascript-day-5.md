@@ -5,42 +5,24 @@ permalink: /javascript-day-5/
 categories: JavaScript
 ---
 
-Coding Challenges: Is The Number Even Or Odd?
+{% highlight plain %}
+
+TODO:
+
+Edabit Coding Challenges
+[x] Is the number even or odd?
+
+{% endhighlight %}
 
 <!-- more -->
 
-## What are you doing now?
+## Is the number even or odd?
 
-{% highlight plain %}
-TODO:
-
-Edabit Coding Challenges:
-[x] Is The Number Even Or Odd?
-{% endhighlight %}
-
-{% highlight plain %}
-Pomodoro:
-
-Start timer
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[ ] Deep work (50 mins)
-[ ] Time for a break (15 mins)
-[ ] Deep work (50 mins)
-[ ] Time for a break (15 mins)
-{% endhighlight %}
-
-## What did you learn today?
-
-Create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
+Today I learned to create a function that takes a number as an argument and returns "even" for even numbers and "odd" for odd numbers.
 
 **Instructions:**
 
 {% highlight plain %}
-
-Is The Number Even Or Odd?
 
 Rules
 • Input will always be whole numbers (don't worry about decimals).
@@ -59,7 +41,17 @@ Notes
 
 {% endhighlight %}
 
-**Solutions:**
+**Code:**
+
+{% highlight javascript %}
+
+function isEvenOrOdd(num) {
+  
+}
+
+{% endhighlight %}
+
+**Solution:**
 
 {% highlight javascript %}
 
@@ -75,6 +67,6 @@ function isEvenOrOdd(num) {
 
 {% endhighlight %}
 
-### References
+## References
 
-[Is The Number Even Or Odd?](https://edabit.com/challenge/kuzB5CMXiKDEYKXAP)
+<a href="https://edabit.com/challenge/kuzB5CMXiKDEYKXAP" target="_blank">Is The Number Even Or Odd?</a>

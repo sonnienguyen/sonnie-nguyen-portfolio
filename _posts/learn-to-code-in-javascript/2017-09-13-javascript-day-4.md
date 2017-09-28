@@ -5,43 +5,50 @@ permalink: /javascript-day-4/
 categories: JavaScript
 ---
 
-JavaScript function parameters and variable scope
+{% highlight plain %}
+
+TODO:
+
+Research
+[x] JavaScript function parameters and variable scope
+
+Read a book
+[ ] You Don't Know JS: Up & Going 
+[x] Into Programming (functions)
+
+{% endhighlight %}
 
 <!-- more -->
 
-## What are you doing now?
+Today I learned functions can optionally take arguments (aka parameters)—values you pass in. And they can also optionally return a value back. Local variables have priority over global variables in functions.
 
-{% highlight plain %}
-TODO:
+## JavaScript Function Parameters
 
-Research:
-[x] JavaScript function parameters and variable scope
+{% highlight javascript %}
 
-Read a book:
-[ ] You Don't Know JS: Up & Going 
-  [x] Into Programming (functions)
+// app.js
+
+// Declare the function 'myFunction'
+function foo(message, name) {
+  // Output to console
+  console.log(message, name);
+}
+
+// Pass object reference to the function
+foo('Hello', 'World');
+foo('Hello', 'Sonnie');
 
 {% endhighlight %}
 
-{% highlight plain %}
-Pomodoro:
+{% highlight plain%}
 
-Start timer
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[x] Deep work (50 mins)
-[x] Time for a break (15 mins)
-[ ] Deep work (50 mins)
-[ ] Time for a break (15 mins)
+output from console:
+
+Hello World
+Hello Sonnie
+
 {% endhighlight %}
-
-## What did you learn today?
-
-### JavaScript Variable Scope
-
-Local variables have priority over global variables in functions.
+## JavaScript Variable Scope
 
 {% highlight javascript %}
 
@@ -60,6 +67,7 @@ function bar() {
 }
 
 bar();
+
 {% endhighlight %}
 
 {% highlight plain%}
@@ -70,28 +78,3 @@ Hello Sonnie
 
 {% endhighlight %}
 
-### JavaScript Function Parameters
-
-Functions can optionally take arguments (aka parameters)—values you pass in. And they can also optionally return a value back.
-
-{% highlight javascript %}
-
-// app.js
-
-// Declare the function 'myFunction'
-function foo(message, name) {
-  // Output to console
-  console.log(message, name);
-}
-
-// Pass object reference to the function
-foo('Hello', 'World');
-foo('Hello', 'Sonnie');
-{% endhighlight %}
-
-{% highlight plain%}
-output from console:
-
-Hello World
-Hello Sonnie
-{% endhighlight %}
