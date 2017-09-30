@@ -1,0 +1,40 @@
+.svg-logo {
+  height: 70px;
+  width: 70px;
+}
+
+svg {
+  // Color for paper outline
+  .svg-logo-outline-color {
+    fill: $gray;
+    transition: fill $global-transition-speed linear;
+
+    &:hover {
+      fill: $info-color;
+    }
+  }
+
+  .svg-logo-primary-color {
+    fill: $info-color;
+
+    &:hover {
+      fill: $info-color;
+    }
+  }
+
+  .svg-logo-dark-color {
+    fill: $gray;
+
+    &:hover {
+      fill: $info-color;
+    }
+  }
+
+  .svg-logo-light-color {
+    fill: $light-gray;
+
+    &:hover {
+      fill: $info-color;
+    }
+  }
+}
