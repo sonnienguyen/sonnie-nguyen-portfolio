@@ -32,27 +32,25 @@ This is the list of `function` names I came up with to build our shopping list a
 
 {% highlight javascript %}
 
-// app.js
-
-function closeButton() {
+function deleteButton() {
   // do something
 }
 
-function removeItemFromChecklist() {
+function removeItemFromGroceryList() {
+  // do something 
+}
+
+function markItemAsDone() {
   // do something
 }
 
-function markItemFromChecklist() {
+function saveItemToGroceryList() {
   // do something
 }
 
-function saveItemToChecklist() {
-  // do something
-}
-
-closeButton();
-removeItemFromChecklist();
-markItemFromChecklist();
-saveItemToChecklist();
+deleteButton();
+removeItemFromGroceryList();
+markItemAsDone();
+saveItemToGroceryList();
 
 {% endhighlight %}
