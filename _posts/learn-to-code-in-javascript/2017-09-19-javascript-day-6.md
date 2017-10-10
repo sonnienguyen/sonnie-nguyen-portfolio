@@ -26,12 +26,12 @@ Let's do an experiment on how to use `return` statement and parameters within th
 
 {% highlight javascript %}
 
-// function with one parameter
+// A function with one parameter
 function square(x) {
   return x * x;
 }
 
-console.log(square(5)); // 25
+console.log(square(5));    // 25
 
 // A function with multiple parameters 
 function addNumbers(a, b) {
@@ -39,6 +39,6 @@ function addNumbers(a, b) {
   return c;
 }
 
-console.log(addNumbers(3, 6)); // 9
+console.log(addNumbers(3, 6));    // 9
 
 {% endhighlight %}
