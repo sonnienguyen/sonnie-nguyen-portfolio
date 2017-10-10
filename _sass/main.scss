@@ -11,10 +11,10 @@
 @import 'components/paging';
 @import 'components/posts';
 @import 'components/svg';
-@import 'components/prism';
-@import 'components/highlights';
+@import 'components/syntax';
 @import 'components/footer';
 
 @import 'components/util';
 
-// Note-taking: Syntax highlighting @import is at the bottom of this file
+// Vendors and external stylesheets
+@import 'vendors/prism';
