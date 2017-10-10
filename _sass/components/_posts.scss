@@ -25,8 +25,8 @@
   }
 
   blockquote {
-    border-left: .2em solid $light-gray;
-    color: $gray;
+    border-left: .2em solid $blockquote-border-color;
+    color: $blockquote-text-color;
     font-size: .9em;
     margin: 1em 0;
     padding: 0 0 0 1.2em;

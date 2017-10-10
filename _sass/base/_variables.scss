@@ -31,7 +31,7 @@ $lighter-gray                  : lighten($gray-base, 93.5%); // #eee
 
 // Font colors
 
-$primary-color                 : #fff; // in progress..
+$primary-color                 : #03A678;
 
 // Background color
 
@@ -49,7 +49,7 @@ $site-description-color        : $gray;
 $code-color                    : $text-color;
 $selection-text-color          : $dark-gray;
 
-$info-color                    : #05bf85;
+$info-color                    : $primary-color;
 
 // Links
 
@@ -66,9 +66,14 @@ $btn-color                     : #fff;
 $btn-background-color          : $info-color;
 $btn-border                    : darken($btn-background-color, 10%);
 
+// Type
+
+$blockquote-text-color         : $gray;
+$blockquote-border-color       : $light-gray;
+
+
 // 
 // Other
 //
 
 $global-transition-speed       : .3s;
-
