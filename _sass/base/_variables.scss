@@ -1,6 +1,6 @@
-//
-// Typography 
-//
+/**
+ * Typography 
+ */
 
 $georgia                       : Georgia, serif;
 $helvetica                     : Helvetica, Arial, sans-serif;
@@ -16,12 +16,12 @@ $masthead-font-family          : $merriweather;
 $post-meta-font-family         : $roboto;
 $code-font-family              : $consolas;
 
-// 
-// Colors
-//
+
+/** 
+ * Colors
+ */
 
 // Shades of gray
-
 $gray-base                     : #000;
 $dark-gray                     : lighten($gray-base, 13.5%); // #222
 $darker-gray                   : lighten($gray-base, 20%);   // #333
@@ -30,18 +30,15 @@ $light-gray                    : lighten($gray-base, 46.7%); // #777
 $lighter-gray                  : lighten($gray-base, 93.5%); // #eee
 
 // Font colors
-
 $primary-color                 : #03A678;
 
 // Background color
-
 $body-color                    : #fff;
 $masthead-background-color     : $dark-gray;
 $code-background-color         : $lighter-gray;
 $selection-background-color    : $light-gray;
 
 // Text color
-
 $text-color                    : $darker-gray;
 $header-color                  : $text-color;
 $site-name-color               : #fff;
@@ -52,28 +49,30 @@ $selection-text-color          : $dark-gray;
 $info-color                    : $primary-color;
 
 // Links
-
 $link-color                    : $dark-gray;
-$link-color-hover              : $dark-gray;
 $link-color-visited            : $dark-gray;
+$link-color-hover              : $dark-gray;
+$link-color-active             : $dark-gray;
 $masthead-link-color           : #fff;
 $masthead-link-color-active    : $info-color;
 $masthead-hover-color          : $info-color;
+$socials-color-link            : $light-gray;
+$socials-color-visited         : $light-gray;
+$socials-color-hover           : $gray;
+$socials-color-active          : $gray;
 
 // Buttons
-
 $btn-color                     : #fff;
 $btn-background-color          : $info-color;
 $btn-border                    : darken($btn-background-color, 10%);
 
 // Type
-
 $blockquote-text-color         : $gray;
 $blockquote-border-color       : $light-gray;
 
 
-// 
-// Other
-//
+/**
+ * Other
+ */
 
 $global-transition-speed       : .3s;

@@ -1,7 +1,30 @@
 // Mobile breakpoints
-
 @mixin mobile {
   @media screen and (max-width: 640px) {
     @content;
+  }
+}
+
+// Border-bottom (dotted)
+@mixin border-bottom-dotted {
+  border-bottom: 1px dotted $lighter-gray;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+// Links
+@mixin link-colors ($link, $visited, $hover, $active) {
+  color: $link;
+
+  &:visited {
+    color: $visited;
+  }
+
+  &:hover {
+    color: $hover;
+  }
+
+  &:active {
+    color: $active;
   }
 }

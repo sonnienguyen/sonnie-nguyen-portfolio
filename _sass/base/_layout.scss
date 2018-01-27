@@ -1,28 +1,48 @@
-.page {
-  border-bottom: 1px dotted $lighter-gray;
-  padding-bottom: 2em;
-}
-
-.site-posts > .author-post {
-  // Add border bottom for posts
-  border-bottom: 1px dotted $lighter-gray;
-  padding-bottom: 2em;
-
-  &:last-child {
-    // Add border bottom for Post last child
-    border-bottom: 1px dotted $lighter-gray;
-    padding-bottom: 2rem;
+// Offset posts from archieves page
+.site-archives {
+  article {
+    margin-left: 20px;
   }
 }
 
-.site-archives > ul > .author-post {
-  // Add border bottom for archives
-  border-bottom: 1px dotted $lighter-gray;
-  padding-bottom: 2em;
+// Border-bottom styling to certain pages
+.content {
+  > article {
+    @include border-bottom-dotted;
+  }
+
+  .hentry {
+    @include border-bottom-dotted;
+  }
+
+  .site-posts {
+    article {
+      @include border-bottom-dotted;
+    }
+  }
+
+  .site-index {
+    article {
+      @include border-bottom-dotted;
+    }
+  }
 }
 
-.site-index > .author-post {
-  // Add border bottom for categories index
-  border-bottom: 1px dotted $lighter-gray;
-  padding-bottom: 2em;
+// Typography
+article {
+  a {
+    font-weight: 700;
+  }
+
+  .btn {
+    font-weight: normal;
+  }
+
+  .entry-title {
+    font-size: 1.6em;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }

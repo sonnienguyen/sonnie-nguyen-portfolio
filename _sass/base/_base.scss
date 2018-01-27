@@ -40,14 +40,6 @@ h1 {
   }
 }
 
-h1.entry-title {
-  font-size: 1.6em;
-
-  a {
-    text-decoration: none;
-  }
-}
-
 h2 {
   font-size: 24px;
 
@@ -71,7 +63,6 @@ p {
 a {
   color: $link-color;
   cursor: pointer;
-  font-weight: 700;
 
   &:hover {
     color: $link-color-hover;
