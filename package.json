@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/sonnienguyen/sonnienguyen.github.io#readme",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
+    "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
-    "gulp-shell": "^0.6.3",
+    "gulp-shell": "^0.6.5",
     "lodash": "^4.17.4"
   }
 }
