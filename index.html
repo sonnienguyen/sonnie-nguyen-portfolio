@@ -5,7 +5,7 @@ layout: default
 <!--[ Post links ]-->
 <div class="site-posts">
   {% for post in paginator.posts %}
-  <article class="author-post">
+  <article>
     <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
     {% include post-meta.html%}
     <div class="author-content">

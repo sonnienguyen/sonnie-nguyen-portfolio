@@ -1,3 +1,11 @@
+blockquote {
+  border-left: .2em solid $blockquote-border-color;
+  color: $blockquote-text-color;
+  font-size: .9em;
+  margin: 1em 0;
+  padding: 0 0 0 1.2em;
+}
+
 .post-meta {
   display: block;
   font-family: $post-meta-font-family;
@@ -9,26 +17,6 @@
   display: block;
   font-family: $post-meta-font-family;
   font-size: .8rem;
-}
-
-.author-post {
-  h1 {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 10px 0;
-  }
-
-  blockquote {
-    border-left: .2em solid $blockquote-border-color;
-    color: $blockquote-text-color;
-    font-size: .9em;
-    margin: 1em 0;
-    padding: 0 0 0 1.2em;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
 }
 
 .author-thumb {
