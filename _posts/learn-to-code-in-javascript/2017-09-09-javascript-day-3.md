@@ -5,7 +5,7 @@ permalink: /javascript-day-3/
 categories: JavaScript
 ---
 
-{% highlight plain %}
+``` text
 
 TODO:
 
@@ -13,7 +13,7 @@ Shopping list web app (project)
 [ ] Complete shopping list web app
 [x] Create a "checked" when clicked on an item
 
-{% endhighlight %}
+```
 
 <!-- more -->
 
@@ -29,7 +29,7 @@ As an example, one of the features I've added is the ability to click on an item
 
 ## Mark items as checked
 
-{% highlight html %}
+``` html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,9 +55,9 @@ As an example, one of the features I've added is the ability to click on an item
   </script>
 </body>
 
-{% endhighlight %}
+```
 
-{% highlight css %}
+``` css
 
 /* main.css */
 
@@ -70,11 +70,11 @@ As an example, one of the features I've added is the ability to click on an item
   text-decoration: line-through;
 }
 
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+``` javascript
 
-// app.js 
+// app.js
 
 // Function to add a checked when clicked on
 function checkedItemFromList(event) {
@@ -93,7 +93,7 @@ function checkedItem() {
 
 checkedItem();
 
-{% endhighlight %}
+```
 
 ## References
 

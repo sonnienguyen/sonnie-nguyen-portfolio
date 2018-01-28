@@ -5,14 +5,14 @@ permalink: /javascript-day-1/
 categories: JavaScript
 ---
 
-{% highlight plain %}
+``` text
 
 TODO:
 
 Watch a video
 [x] Javascript Understanding the Weird Parts: #10 The Execution Context (Creation and Hoisting)
 
-{% endhighlight %}
+```
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ Today I learned If you look online how hoisting is explained, people are saying 
 
 ## In JavaScript, this is called hoisting.
 
-{% highlight javascript %}
+``` javascript
 
 // app.js
 
@@ -36,19 +36,20 @@ function b() {
   console.log('called b!');
 }
 
-{% endhighlight %}
+```
 
-{% highlight plain %}
+``` text
+
 output from console:
 
 called b!
 undefined
 
-{% endhighlight %}
+```
 
 ## It's a bad idea to rely on hoisting, it's better to always do this in JavaScript
 
-{% highlight javascript %}
+``` javascript
 
 // app.js
 
@@ -62,12 +63,13 @@ function b() {
 b();
 console.log(a);
 
-{% endhighlight %}
+```
 
-{% highlight plain %}
+``` text
+
 output from console:
 
 called b!
 Hello World!
 
-{% endhighlight %}
+```

@@ -5,14 +5,14 @@ permalink: /javascript-day-6/
 categories: JavaScript
 ---
 
-{% highlight plain %}
+``` text
 
 TODO:
 
 Research
 [x] What is a return statement in JavaScript?
 
-{% endhighlight %}
+```
 
 <!-- more -->
 
@@ -24,7 +24,7 @@ Today I learned  about a `return` value isn't useful unless you do something wit
 
 Let's do an experiment on how to use `return` statement and parameters within the body of a function.  
 
-{% highlight javascript %}
+``` javascript
 
 // A function with one parameter
 function square(x) {
@@ -41,4 +41,4 @@ function addNumbers(a, b) {
 
 console.log(addNumbers(3, 6));    // 9
 
-{% endhighlight %}
+```

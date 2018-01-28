@@ -5,7 +5,7 @@ permalink: /javascript-day-7/
 categories: JavaScript
 ---
 
-{% highlight plain %}
+``` text
 
 TODO:
 
@@ -16,7 +16,7 @@ Read a book:
 Shopping list web app (project)
 [x] Creating good names
 
-{% endhighlight %}
+```
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ This is the list of `function` names I came up with to build our shopping list a
 
 ## Use pronounceable names
 
-{% highlight javascript %}
+``` javascript
 
 function deleteButton() {
   // do something
@@ -53,4 +53,4 @@ removeItemFromGroceryList();
 markItemAsDone();
 saveItemToGroceryList();
 
-{% endhighlight %}
+```

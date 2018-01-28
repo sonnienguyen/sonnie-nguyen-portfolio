@@ -5,7 +5,7 @@ permalink: /javascript-day-4/
 categories: JavaScript
 ---
 
-{% highlight plain %}
+``` text
 
 TODO:
 
@@ -13,10 +13,10 @@ Research
 [x] JavaScript function parameters and variable scope
 
 Read a book
-[ ] You Don't Know JS: Up & Going 
+[ ] You Don't Know JS: Up & Going
 [x] Into Programming (functions)
 
-{% endhighlight %}
+```
 
 <!-- more -->
 
@@ -25,7 +25,7 @@ Today I learned functions can optionally take arguments (aka parameters)—value
 ## JavaScript Function Parameters
 Pass object reference to the function.
 
-{% highlight javascript %}
+``` javascript
 
 function foo(message, name) {
   console.log(message, name);
@@ -34,13 +34,13 @@ function foo(message, name) {
 foo('Hello', 'World');     // Hello World
 foo('Hello', 'Sonnie');    // Hello Sonnie
 
-{% endhighlight %}
+```
 
 ## JavaScript Variable Scope
 
 Local variables have local scope, and can't be accessed outside of the block.
 
-{% highlight javascript %}
+``` javascript
 
 // These two variables are in the global scope
 var message = 'Hello';
@@ -55,6 +55,4 @@ function bar() {
 
 bar();
 
-{% endhighlight %}
-
-
+```

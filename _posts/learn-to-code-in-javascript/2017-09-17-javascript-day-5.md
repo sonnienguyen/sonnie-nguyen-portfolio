@@ -5,14 +5,14 @@ permalink: /javascript-day-5/
 categories: JavaScript
 ---
 
-{% highlight plain %}
+``` text
 
 TODO:
 
 Edabit Coding Challenges
 [x] Is the number even or odd?
 
-{% endhighlight %}
+```
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ Today I learned to create a function that takes a number as an argument and retu
 
 **Instructions:**
 
-{% highlight plain %}
+``` text
 
 Rules
 • Input will always be whole numbers (don't worry about decimals).
@@ -39,21 +39,21 @@ Examples
 Notes
 • Be sure to return "even" or "odd" in lowercase. Test cases are case sensitive.
 
-{% endhighlight %}
+```
 
 **Code:**
 
-{% highlight javascript %}
+``` javascript
 
 function isEvenOrOdd(num) {
-  
+
 }
 
-{% endhighlight %}
+```
 
 **Solution:**
 
-{% highlight javascript %}
+``` javascript
 
 function isEvenOrOdd(num) {
   console.log(num);
@@ -65,7 +65,7 @@ function isEvenOrOdd(num) {
   return 'odd';
 }
 
-{% endhighlight %}
+```
 
 ## References
 
