@@ -23,10 +23,10 @@ $code-font-family              : $consolas;
 
 // Shades of gray
 $gray-base                     : #000;
-$dark-gray                     : lighten($gray-base, 13.5%); // #222
-$darker-gray                   : lighten($gray-base, 20%);   // #333
-$gray                          : lighten($gray-base, 33.5%); // #555
-$light-gray                    : lighten($gray-base, 46.7%); // #777
+$dark-gray                     : lighten($gray-base, 13%);   // #212
+$darker-gray                   : lighten($gray-base, 26%);   // #424
+$gray                          : lighten($gray-base, 38%);   // #616
+$light-gray                    : lighten($gray-base, 62%);   // #9e9
 $lighter-gray                  : lighten($gray-base, 93.5%); // #eee
 
 // Font colors
