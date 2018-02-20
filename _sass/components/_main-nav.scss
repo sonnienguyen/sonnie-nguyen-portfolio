@@ -5,6 +5,7 @@ nav {
     font-size: 16px;
     margin-top: 9px;
   }
+
   float: right;
   font-family: $global-font-family;
   font-size: 18px;
@@ -13,17 +14,36 @@ nav {
   a {
     @include mobile {
       color: $masthead-link-color;
-      padding-bottom: 10px;
+      display: inline-block;
+      padding: 20px 20px 20px 0;
     }
+
     color: $masthead-link-color;
     font-weight: 300;
     letter-spacing: 1px;
-    margin-left: 20px;
-    text-align: right;
-    display: inline-block;
+    padding: 20px 20px 20px 0;
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        width: 100%;
+      }
+    }
   }
 }
 
 .current {
-  border-bottom: 3px solid $masthead-link-color-active;
+  position: relative;
+
+  &::after {
+    background: $masthead-link-color-active;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: calc(100% - 20px);
+  }
 }
