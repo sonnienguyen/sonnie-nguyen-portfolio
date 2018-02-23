@@ -1,16 +1,32 @@
 nav {
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+.main-nav {
   @include mobile {
     display: block;
     float: none;
     font-size: 16px;
-    margin-top: 9px;
+    margin-top: 0;
   }
 
   float: right;
   font-family: $global-font-family;
   font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 1px;
   margin-top: 20px;
+}
 
+.nav-menu {
   a {
     @include mobile {
       color: $masthead-link-color;
@@ -19,11 +35,11 @@ nav {
     }
 
     color: $masthead-link-color;
-    font-weight: 300;
-    letter-spacing: 1px;
     padding: 20px 20px 10px 0;
+  }
 
-    &:last-child {
+  li:last-child {
+    > a {
       padding-right: 0;
 
       &::after {
