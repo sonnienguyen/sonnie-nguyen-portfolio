@@ -1,7 +1,12 @@
 <nav class="main-nav" role="navigation">
   <ul class="nav-menu">
     <li><a href="{{ site.baseurl }}/about" class="{% if page.url =='/about/' %}current{% endif %}">About</a></li>
-    <li><a href="{{ site.baseurl }}/" class="{% if page.url =='/' %}current{% endif %}">Posts</a></li>
+    <li><a href="{{ site.baseurl }}/" class="{% if page.url =='/' %}current{% endif %}">Posts <span class="counter">{{ site.posts | size }}</span></a></li>
     <li><a href="{{ site.baseurl }}/posts/archives/" class="{% if page.url =='/posts/archives/' %}current{% endif %}">Archives</a></li>
   </ul>
 </nav>
+
+
+
+
+

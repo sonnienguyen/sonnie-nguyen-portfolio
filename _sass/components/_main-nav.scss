@@ -63,3 +63,15 @@ nav {
     width: calc(100% - 20px);
   }
 }
+
+.counter {
+  background: $dark-gray;
+  border-radius: 20px;
+  color: $lighter-gray;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2px 5px;
+}
+
