@@ -23,8 +23,8 @@ $code-font-family              : $consolas;
 
 // Shades of gray
 $gray-base                     : #000;
-$dark-gray                     : lighten($gray-base, 13%);   // #212
-$darker-gray                   : lighten($gray-base, 26%);   // #424
+$darker-gray                   : lighten($gray-base, 13%);   // #212
+$dark-gray                     : lighten($gray-base, 26%);   // #424
 $gray                          : lighten($gray-base, 38%);   // #616
 $light-gray                    : lighten($gray-base, 62%);   // #9e9
 $lighter-gray                  : lighten($gray-base, 93.5%); // #eee
@@ -34,25 +34,25 @@ $primary-color                 : #03A678;
 
 // Background color
 $body-color                    : #fff;
-$masthead-background-color     : $dark-gray;
+$masthead-background-color     : $darker-gray;
 $code-background-color         : $lighter-gray;
 $selection-background-color    : $light-gray;
 
 // Text color
-$text-color                    : $darker-gray;
+$text-color                    : $dark-gray;
 $header-color                  : $text-color;
 $site-name-color               : #fff;
 $site-description-color        : $gray;
 $code-color                    : $text-color;
-$selection-text-color          : $dark-gray;
+$selection-text-color          : $darker-gray;
 
 $info-color                    : $primary-color;
 
 // Links
-$link-color                    : $dark-gray;
-$link-color-visited            : $dark-gray;
-$link-color-hover              : $dark-gray;
-$link-color-active             : $dark-gray;
+$link-color                    : $text-color;
+$link-color-visited            : $darker-gray;
+$link-color-hover              : $text-color;
+$link-color-active             : $darker-gray;
 $masthead-link-color           : #fff;
 $masthead-link-color-active    : $light-gray;
 $masthead-hover-color          : $light-gray;
