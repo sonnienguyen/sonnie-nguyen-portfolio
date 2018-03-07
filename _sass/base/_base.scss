@@ -3,9 +3,13 @@ html {
 }
 
 body {
+  @media screen and (max-width: 800px) {
+    font: 15px/1.45 $global-font-family;
+  }
+
   background: $body-color;
   color: $text-color;
-  font: 15px/1.45 $global-font-family;
+  font: 18px/1.45 $global-font-family;
 }
 
 .container {
