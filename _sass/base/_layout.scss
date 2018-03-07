@@ -1,4 +1,4 @@
-// Offset posts from archieves page
+// Offset posts from archives page
 .site-archives {
   article {
     margin-left: 20px;
@@ -7,6 +7,8 @@
 
 // Border-bottom styling to certain pages
 .content {
+  padding: 50px 0 0;
+
   > article {
     @include border-bottom-dotted;
   }

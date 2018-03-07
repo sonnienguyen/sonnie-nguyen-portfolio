@@ -1,65 +1,35 @@
-.site-masthead {
-  background: $masthead-background-color;
-  margin-bottom: 50px;
-}
+.header {
+  font-family: $global-font-family;
+  letter-spacing: .7px;
+  width: 100%;
 
-.masthead {
-  @include mobile {
-    padding: 20px 0 0;
-    text-align: center;
+  .container {
+    padding: 0;
   }
-  padding: 20px 0;
-
-  a {
-    text-decoration: none;
-
-    &:hover {
-      color: $masthead-hover-color;
-    }
-  }
-}
-
-.site-avatar {
-  @include mobile {
-    display: block;
-    float: none;
-    margin: 0 auto;
-  }
-  float: left;
-  height: 70px;
-  margin-right: 15px;
-  width: 70px;
-}
-
-.site-info {
-  @include mobile {
-    display: block;
-    float: none;
-    margin: 0 auto;
-  }
-  float: left;
-  margin-top: 10px;
 }
 
 .site-name {
-  color: $site-name-color;
   cursor: pointer;
-  font-family: $masthead-font-family;
-  font-size: 28px;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-size: 15px;
+  letter-spacing: .5px;
   margin: 0;
-
-  a {
-    font-weight: normal;
-  }
 }
 
-.site-description {
-  @include mobile {
-    margin: 3px 0;
-  }
-  color: $site-description-color;
-  font-size: 16px;
-  margin: -5px 0 0;
+.avatar {
+  border-radius: 100%;
+  float: left;
+  height: 26px;
+  padding: 14px 10px;
+  width: 26px;
+}
+
+.counter {
+  background: $info-color;
+  border-radius: 20px;
+  color: $lighter-gray;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 2px 5px;
 }
