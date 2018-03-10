@@ -6,13 +6,16 @@ pre.highlight {
 
 code {
   background: $code-background-color;
-  border-radius: .4em;
+  border-radius: .3em;
   color: $code-color;
+  margin: 0 !important;
+  padding: 0 .4em;
 }
 
 .highlighter-rouge {
-  background: $code-background-color;
+  @include mobile {
+    margin: 1rem -1rem;
+  }
   color: $code-color;
   font-family: $code-font-family;
-  padding: 0 .4em;
 }

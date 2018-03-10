@@ -28,15 +28,18 @@ $dark-gray                     : lighten($gray-base, 26%);   // #424
 $gray                          : lighten($gray-base, 38%);   // #616
 $light-gray                    : lighten($gray-base, 62%);   // #9e9
 $lighter-gray                  : lighten($gray-base, 93.5%); // #eee
+$lightest-gray                 : lighten($gray-base, 96%);   // #f5f
 
 // Font colors
 $primary-color                 : #03A678;
 
 // Background color
-$body-color                    : #fff;
+$body-background-color         : #fff;
+$content-background-color      : $body-background-color;
 $masthead-background-color     : $darker-gray;
-$code-background-color         : $lighter-gray;
+$code-background-color         : $lightest-gray;
 $selection-background-color    : $light-gray;
+$footer-background-color       : $content-background-color;
 
 // Text color
 $text-color                    : $darker-gray;
