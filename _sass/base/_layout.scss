@@ -30,3 +30,11 @@
     }
   }
 }
+
+.middot {
+  padding-left: .3em;
+  padding-right: .3em;
+}
+.middot::after {
+  content: '\00B7';
+}
