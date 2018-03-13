@@ -1,13 +1,23 @@
-pre.highlight {
-  font-size: .6875em;
-  overflow: auto;
-  padding: 1em 0;
+$terminal-window-height: 30px;
+
+pre {
+  position: relative;
+
+  code {
+    -webkit-overflow-scrolling: touch;
+    border-radius: .2em;
+    display: block;
+    overflow-x: scroll;
+    padding: .95rem;
+  }
+
+  &.highlight {
+    font-size: .6875em;
+    position: relative;
+  }
 }
 
 code {
-  background: $code-background-color;
-  border-radius: .2em;
-  color: $code-color;
   margin: 0 !important;
   padding: 0 .4em;
 }
@@ -16,6 +26,8 @@ code {
   @include mobile {
     margin: 1rem -1rem;
   }
+  background: $code-background-color;
+  border-radius: .2em;
   color: $code-color;
   font-family: $code-font-family;
 }
