@@ -5,7 +5,7 @@ permalink: /javascript-day-6/
 categories: JavaScript
 ---
 
-``` text
+```
 
 TODO:
 

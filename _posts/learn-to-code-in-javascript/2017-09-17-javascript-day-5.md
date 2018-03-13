@@ -5,7 +5,7 @@ permalink: /javascript-day-5/
 categories: JavaScript
 ---
 
-``` text
+```
 
 TODO:
 
@@ -22,7 +22,7 @@ Today I learned to create a function that takes a number as an argument and retu
 
 **Instructions:**
 
-``` text
+```
 
 Rules
 • Input will always be whole numbers (don't worry about decimals).

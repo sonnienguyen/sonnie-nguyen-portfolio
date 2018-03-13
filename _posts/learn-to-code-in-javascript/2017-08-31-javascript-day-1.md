@@ -5,7 +5,7 @@ permalink: /javascript-day-1/
 categories: JavaScript
 ---
 
-``` text
+```
 
 TODO:
 
@@ -38,7 +38,7 @@ function b() {
 
 ```
 
-``` text
+```
 
 output from console:
 
@@ -65,7 +65,7 @@ console.log(a);
 
 ```
 
-``` text
+```
 
 output from console:
 

@@ -5,7 +5,7 @@ permalink: /javascript-day-2/
 categories: JavaScript
 ---
 
-``` text
+```
 
 TODO:
 
@@ -50,7 +50,7 @@ console.log(person[firstNameProperty]);
 
 ```
 
-``` text
+```
 
 output from console:
 
@@ -75,7 +75,7 @@ console.log(person.firstname);
 
 ```
 
-``` text
+```
 
 output from console:
 
