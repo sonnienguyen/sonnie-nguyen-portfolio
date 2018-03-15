@@ -80,8 +80,10 @@ header {
   padding: 0 20px 0 0;
   font-weight: bold;
   line-height: 55px;
+  font-size: 15px;
   color: $site-name-color;
   float: left;
+  letter-spacing: .5px;
 }
 
 /* ------------------------------------------
@@ -152,19 +154,11 @@ header {
     font-size: 15px;
   }
 
-  // desktop view
+  // active link
   .active {
-    position: relative;
 
     &::after {
-      background: $masthead-link-color-active;
-      bottom: 0;
-      content: "";
-      display: block;
       height: 3px;
-      left: 0;
-      position: absolute;
-      width: calc(100% - 2rem);
     }
   }
 }
@@ -202,11 +196,23 @@ header {
 
 @media screen and (min-width: 640px) {
   .nav-collapse a {
-    padding: 1.20em 2em 1.02em 0;
+    padding: $nav-links-padding;
     text-align: center;
     border-top: 0;
     float: left;
     margin: 0;
+    position: relative;
+
+    // active link
+    &::after {
+      background: $masthead-link-color-active;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      width: calc(100% - 30px);
+    }
   }
 }
 
