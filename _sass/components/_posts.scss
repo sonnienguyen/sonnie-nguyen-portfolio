@@ -20,9 +20,10 @@ blockquote {
 
 .author-thumb {
   border-radius: 100%;
-  float: left;
+  // float: left;
   height: 26px;
-  margin-right: 9px;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
   width: 26px;
 }
 
@@ -30,11 +31,16 @@ blockquote {
   display: block;
   font-family: $post-meta-font-family;
   font-size: .8rem;
-  margin-bottom: 1.5rem;
+  // margin-bottom: 1.5rem;
+}
+
+.author-meta {
+  margin: 8px 0 24px;
 }
 
 .small {
   display: inline-block;
+  color: $dark-gray;
 }
 
 .btn {
