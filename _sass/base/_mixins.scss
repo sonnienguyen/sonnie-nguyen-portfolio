@@ -7,7 +7,7 @@
 
 // Border-bottom (dotted)
 @mixin border-bottom-dotted {
-  border-bottom: 1px dotted $lighter-gray;
+  border-bottom: 1px dotted $color-grey-lighter;
   margin-bottom: 2em;
   padding-bottom: 1em;
 }

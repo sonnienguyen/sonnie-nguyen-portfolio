@@ -22,47 +22,47 @@ $code-font-family              : $consolas;
  */
 
 // Shades of gray
-$gray-base                     : #000;
-$darker-gray                   : lighten($gray-base, 13%);   // #212
-$dark-gray                     : lighten($gray-base, 26%);   // #424
-$gray                          : lighten($gray-base, 38%);   // #616
-$light-gray                    : lighten($gray-base, 62%);   // #9e9
-$lighter-gray                  : lighten($gray-base, 93.5%); // #eee
-$lightest-gray                 : lighten($gray-base, 96%);   // #f5f
+$color-grey-base                     : #000;
+$color-grey-darker                   : lighten($color-grey-base, 13%);   // #212
+$color-grey-dark                     : lighten($color-grey-base, 26%);   // #424
+$color-grey                          : lighten($color-grey-base, 38%);   // #616
+$color-grey-light                    : lighten($color-grey-base, 62%);   // #9e9
+$color-grey-lighter                  : lighten($color-grey-base, 93.5%); // #eee
+$color-grey-lightest                 : lighten($color-grey-base, 96%);   // #f5f
 
 // Font colors
-$primary-color                 : #03A678;
+$color-primary                 : #03A678;
 
 // Background color
 $body-background-color         : #fff;
 $content-background-color      : $body-background-color;
-$masthead-background-color     : $darker-gray;
-$code-background-color         : $lightest-gray;
-$selection-background-color    : $light-gray;
+$masthead-background-color     : $color-grey-darker;
+$code-background-color         : $color-grey-lightest;
+$selection-background-color    : $color-grey-light;
 $footer-background-color       : $content-background-color;
 
 // Text color
-$text-color                    : $darker-gray;
+$text-color                    : $color-grey-darker;
 $header-color                  : $text-color;
 $site-name-color               : #fff;
-$site-description-color        : $gray;
+$site-description-color        : $color-grey;
 $code-color                    : $text-color;
-$selection-text-color          : $darker-gray;
+$selection-text-color          : $color-grey-darker;
 
-$info-color                    : $primary-color;
+$info-color                    : $color-primary;
 
 // Links
 $link-color                    : $text-color;
-$link-color-visited            : $darker-gray;
+$link-color-visited            : $color-grey-darker;
 $link-color-hover              : $text-color;
-$link-color-active             : $darker-gray;
+$link-color-active             : $color-grey-darker;
 $masthead-link-color           : #fff;
-$masthead-link-color-active    : $light-gray;
-$masthead-hover-color          : $light-gray;
-$socials-color-link            : $light-gray;
-$socials-color-visited         : $light-gray;
-$socials-color-hover           : $gray;
-$socials-color-active          : $gray;
+$masthead-link-color-active    : $color-grey-light;
+$masthead-hover-color          : $color-grey-light;
+$socials-color-link            : $color-grey-light;
+$socials-color-visited         : $color-grey-light;
+$socials-color-hover           : $color-grey;
+$socials-color-active          : $color-grey;
 
 // Buttons
 $btn-color                     : #fff;
@@ -70,8 +70,8 @@ $btn-background-color          : $info-color;
 $btn-border                    : darken($btn-background-color, 10%);
 
 // Type
-$blockquote-text-color         : $gray;
-$blockquote-border-color       : $light-gray;
+$blockquote-text-color         : $color-grey;
+$blockquote-border-color       : $color-grey-light;
 
 
 /**
