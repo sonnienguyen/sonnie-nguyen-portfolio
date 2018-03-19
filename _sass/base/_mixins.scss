@@ -7,9 +7,9 @@
 
 // Border-bottom (dotted)
 @mixin border-bottom-dotted {
-  border-bottom: 1px dotted $color-grey-lighter;
-  margin-bottom: 2em;
-  padding-bottom: 1em;
+  border-bottom: .1rem dotted $color-grey-lighter;
+  margin-bottom: 2.8rem;
+  padding-bottom: 1rem;
 }
 
 // Links

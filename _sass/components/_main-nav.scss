@@ -80,7 +80,7 @@ header {
   padding: 0 20px 0 15px;
   font-weight: bold;
   line-height: 55px;
-  font-size: 15px;
+  font-size: $navbar-font-size;
   color: $site-name-color;
   float: left;
   letter-spacing: .5px;
@@ -163,7 +163,6 @@ header {
   .nav-collapse {
     float: right;
     width: auto;
-    font-size: 15px;
   }
 
   // active link
@@ -194,6 +193,8 @@ header {
   color: $site-name-color;
   width: 100%;
   float: left;
+  font-size: $navbar-font-size;
+  letter-spacing: .05em;
 }
 
 .nav-collapse a:active,
@@ -214,6 +215,8 @@ header {
     float: left;
     margin: 0;
     position: relative;
+    font-size: $navbar-font-size;
+    letter-spacing: .05em;
 
     // active link
     &::after {

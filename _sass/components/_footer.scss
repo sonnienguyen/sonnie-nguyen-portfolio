@@ -1,11 +1,11 @@
 .site-footer {
   background-color: $body-background-color;
-  padding: 10px 0;
+  padding: 1rem 0;
   text-align: center;
 
   p {
     color: $color-grey;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 100;
   }
 
@@ -16,7 +16,7 @@
 
   li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 2rem;
 
     &:first-child {
       margin-left: 0;
@@ -30,7 +30,7 @@
         $active: $socials-color-active
         );
 
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 }

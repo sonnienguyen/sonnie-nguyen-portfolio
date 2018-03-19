@@ -3,29 +3,31 @@ pre {
 
   code {
     -webkit-overflow-scrolling: touch;
-    border-radius: .2em;
+    border-radius: .2rem;
     display: block;
     overflow-x: scroll;
-    padding: .95rem;
+    padding: 1.5rem;
   }
 
   &.highlight {
-    font-size: .6875em;
+    font-size: .8rem;
     position: relative;
   }
 }
 
 code {
+  font-size: 1rem;
   margin: 0 !important;
-  padding: 0 .4em;
+  padding: 0 .5rem;
 }
 
 .highlighter-rouge {
   @include mobile {
-    margin: 1rem -1rem;
+    margin: 1.5rem -1.5rem;
   }
+  font-size: 1.5rem;
   background: $code-background-color;
-  border-radius: .2em;
+  border-radius: .2rem;
   color: $code-color;
   font-family: $code-font-family;
 }

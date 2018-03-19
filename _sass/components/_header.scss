@@ -1,6 +1,5 @@
 .header {
   font-family: $global-font-family;
-  letter-spacing: .7px;
   width: 100%;
 
   .container {
@@ -10,11 +9,11 @@
 
 .counter {
   background: $info-color;
-  border-radius: 20px;
+  border-radius: 2rem;
   color: $color-grey-lighter;
   display: inline-block;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 1;
-  padding: 2px 5px;
+  padding: .2rem .5rem;
 }

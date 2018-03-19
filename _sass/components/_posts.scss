@@ -1,41 +1,39 @@
 blockquote {
-  border-left: .2em solid $blockquote-border-color;
+  border-left: .2rem solid $blockquote-border-color;
   color: $blockquote-text-color;
-  font-size: .9em;
-  margin: 1em 0;
-  padding: 0 0 0 1.2em;
+  font-size: 1.4rem;
+  margin: 1.5rem 0;
+  padding: 0 0 0 1.5rem;
 }
 
 .post-meta {
   font-family: $post-meta-font-family;
-  font-size: .8rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  margin-bottom: 2.4rem;
 }
 
 .post-meta-archives {
   display: block;
   font-family: $post-meta-font-family;
-  font-size: .8rem;
+  font-size: 1.3rem;
 }
 
 .author-thumb {
   border-radius: 100%;
-  // float: left;
-  height: 26px;
-  margin: 0 8px 0 0;
+  height: 2.6rem;
+  margin: 0 .8rem 0 0;
   vertical-align: middle;
-  width: 26px;
+  width: 2.6rem;
 }
 
 .post-meta-date {
   display: block;
   font-family: $post-meta-font-family;
-  font-size: .8rem;
-  // margin-bottom: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .author-meta {
-  margin: 8px 0 24px;
+  margin: .8rem 0 2.4rem;
 }
 
 .small {
@@ -46,13 +44,14 @@ blockquote {
 .btn {
   -webkit-transition: background-color $global-transition-speed linear;
   background: $btn-background-color;
-  border-bottom: 2px solid $btn-border;
-  border-radius: .2em;
+  border-bottom: .2rem solid $btn-border;
+  border-radius: .2rem;
   color: $btn-color;
   display: inline-block;
+  font-size: $default-font-size;
   font-weight: normal;
-  margin: 0 .4em 0 0;
-  padding: .4em .6em;
+  margin: 0 .4rem 0 0;
+  padding: .4rem .6rem;
   text-decoration: none;
   transition: background-color $global-transition-speed linear;
 
@@ -62,8 +61,8 @@ blockquote {
   }
 
   &:active {
-    -webkit-transform: translate(0, .1em);
-    border-bottom: 2px solid $btn-border;
-    transform: translate(0, .1em);
+    -webkit-transform: translate(0, .1rem);
+    border-bottom: .2rem solid $btn-border;
+    transform: translate(0, .1rem);
   }
 }

@@ -7,17 +7,17 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body {
-  @media screen and (min-width: 800px) {
-    background: $body-background-color;
-    color: $text-color;
-    font: 18px/1.45 $global-font-family;
-  }
+  background: $body-background-color;
   box-sizing: border-box;
-  font: 14px/1.45 $global-font-family;
+  color: $text-color;
+  font-family: $global-font-family;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.47;
 }
 
 .container {
@@ -25,8 +25,8 @@ body {
     padding: 0;
   }
   margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
+  max-width: 74rem;
+  padding: 0 1rem;
 }
 
 h1,
@@ -42,12 +42,13 @@ h6 {
   font-family: $header-font-family;
   font-weight: bold;
   line-height: 1.7;
-  // margin-top: 1.75em;
+  margin: 1.5rem 0;
   padding: 0;
 }
 
 h1 {
-  font-size: 30px;
+  // 30px
+  font-size: 3rem;
 
   a {
     color: inherit;
@@ -55,7 +56,8 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  // 24px
+  font-size: 2.4rem;
 
   a {
     text-decoration: none;
@@ -63,15 +65,17 @@ h2 {
 }
 
 h3 {
-  font-size: 20px;
+  // 20px
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 18px;
+  // 18px
+  font-size: 1.8rem;
 }
 
 p {
-  margin: 15px 0;
+  margin: 1.5rem 0;
 }
 
 a {
@@ -85,8 +89,8 @@ a {
 
 ul,
 ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 1.5rem 0;
+  padding-left: 3rem;
 }
 
 ul {

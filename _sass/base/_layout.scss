@@ -1,14 +1,14 @@
 // Offset posts from archives page
 .site-archives {
   article {
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 }
 
 // Border-bottom styling to certain pages
 .content {
   background-color: $content-background-color;
-  padding: 100px 15px;
+  padding: 10rem 1.5rem;
 
   > article {
     @include border-bottom-dotted;
@@ -32,8 +32,8 @@
 }
 
 .middot {
-  padding-left: .3em;
-  padding-right: .3em;
+  padding-left: .5rem;
+  padding-right: .5rem;
 
   &::after {
     content: '\00B7';

@@ -73,11 +73,20 @@ $btn-border                    : darken($btn-background-color, 10%);
 $blockquote-text-color         : $color-grey;
 $blockquote-border-color       : $color-grey-light;
 
+/**
+ * Sizes
+ */
+
+// Font sizes
+$default-font-size             : 1.6rem;
+$navbar-font-size              : 1.5rem;
+
+// Syntax highlighter
+$terminal-window-height        : 3rem;
 
 /**
  * Other
  */
 
 $global-transition-speed       : .3s;
-$terminal-window-height        : 30px;
-$nav-links-padding             : 17px 30px 17px 0;
+$nav-links-padding             : 1.7rem 3rem 1.7rem 0;
