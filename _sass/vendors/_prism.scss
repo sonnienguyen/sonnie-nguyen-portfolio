@@ -1,5 +1,8 @@
 code[class*="language-"],
 pre[class*="language-"] {
+  @include mobile {
+    border-radius: 0;
+  }
   color: #ABB2BF;
   background: none;
   font-family: $code-font-family;
