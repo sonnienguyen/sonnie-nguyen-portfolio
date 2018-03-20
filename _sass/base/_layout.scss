@@ -1,3 +1,10 @@
+// Remove underline from hyperlinks
+article {
+  a {
+    text-decoration: none;
+  }
+}
+
 // Offset posts from archives page
 .site-archives {
   article {
