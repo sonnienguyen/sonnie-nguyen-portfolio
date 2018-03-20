@@ -8,8 +8,8 @@
 // Border-bottom (dotted)
 @mixin border-bottom-dotted {
   border-bottom: .1rem dotted $color-grey-lighter;
-  margin-bottom: 2.8rem;
-  padding-bottom: 1rem;
+  margin: 2.8rem 0;
+  padding: 0 0 2.8rem;
 }
 
 // Links
