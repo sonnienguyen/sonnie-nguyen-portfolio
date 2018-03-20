@@ -12,6 +12,20 @@ author:
 description: The personal site of Sonnie Nguyen. A blog where you can find content on everything related to web development.
 
 #
+# Navigation bar options
+#
+
+# List of links in the navigation bar
+navigation:
+- text: About
+  url: /about/
+- text: Posts
+  url: /
+  layout: post
+- text: Archives
+  url: /posts/archives/
+
+#
 # Flags below are optional
 #
 
