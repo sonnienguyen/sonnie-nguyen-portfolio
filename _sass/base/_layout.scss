@@ -18,22 +18,22 @@ article {
   padding: 10rem 1.5rem;
 
   > article {
-    @include border-bottom-dotted;
+    @include divider-border-dotted;
   }
 
   .hentry {
-    @include border-bottom-dotted;
+    @include divider-border-dotted;
   }
 
   .site-posts {
     article {
-      @include border-bottom-dotted;
+      @include divider-border-dotted;
     }
   }
 
   .site-index {
     article {
-      @include border-bottom-dotted;
+      @include divider-border-dotted;
     }
   }
 }
