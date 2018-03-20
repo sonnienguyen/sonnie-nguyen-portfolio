@@ -220,7 +220,10 @@ header {
 
     // active link
     &::after {
-      background: $masthead-link-color-active;
+      @include gradient-horizontal(
+        $start-color: $color-gradient-start,
+        $end-color: $color-gradient-end
+      );
       bottom: 0;
       content: '';
       display: block;
