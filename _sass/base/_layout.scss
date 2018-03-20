@@ -31,11 +31,14 @@
   }
 }
 
-.middot {
-  padding-left: .5rem;
-  padding-right: .5rem;
+.divider {
+  &-middot {
+    padding-left: .5rem;
+    padding-right: .5rem;
 
-  &::after {
-    content: '\00B7';
+    &::after {
+      content: '\00B7';
+    }
   }
 }
+
