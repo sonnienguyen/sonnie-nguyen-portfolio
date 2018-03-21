@@ -1,23 +1,34 @@
-// Base stuff
+@charset 'UTF-8';
+
+// Helpers
 @import 'base/variables';
 @import 'base/functions';
 @import 'base/mixins';
-@import 'base/reset';
+
+// Vendors
+@import 'vendors/normalize';
+@import 'vendors/prism';
+
+// Base stuff
 @import 'base/base';
 @import 'base/typography';
 @import 'base/layout';
 
-// Components and modules
-@import 'components/header';
+// Layout-related sections
+@import 'layout/header';
+@import 'layout/footer';
+
+// Components
 @import 'components/main-nav';
 @import 'components/paging';
-@import 'components/posts';
 @import 'components/svg';
 @import 'components/syntax';
-@import 'components/footer';
 @import 'components/button';
 
+// Page-specific styles
+@import 'pages/posts';
+
+// Other
 @import 'components/util';
 
-// Vendors and external stylesheets
-@import 'vendors/prism';
+
