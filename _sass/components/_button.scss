@@ -1,0 +1,25 @@
+.btn {
+  -webkit-transition: background-color $global-transition-speed linear;
+  background: $btn-background-color;
+  border-bottom: .2rem solid $btn-border;
+  border-radius: .2rem;
+  color: $btn-color;
+  display: inline-block;
+  font-size: $default-font-size;
+  font-weight: normal;
+  margin: 0 .4rem 0 0;
+  padding: .4rem .6rem;
+  text-decoration: none;
+  transition: background-color $global-transition-speed linear;
+
+  &:hover {
+    background: $btn-border;
+    color: $btn-color;
+  }
+
+  &:active {
+    -webkit-transform: translate(0, .1rem);
+    border-bottom: .2rem solid $btn-border;
+    transform: translate(0, .1rem);
+  }
+}
