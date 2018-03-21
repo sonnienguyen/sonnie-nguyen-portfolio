@@ -1,19 +1,50 @@
-.contain img {
-  width: 100%;
-  height: auto;
+// Remove underline from hyperlinks
+article {
+  a {
+    text-decoration: none;
+  }
 }
 
-.lazy {
-  /* Fuck dude, I don't know. Prefixes, right? */
-  -webkit-filter: blur(10px);
-  filter: blur(10px); /* This is the important bit */
-  transition: -webkit-filter 0.3s ease-out;
-  -webkit-transition: -webkit-filter 0.3s ease-out;
-  transition: filter 0.3s ease-out; /* And this */
-  transition: filter 0.3s ease-out, -webkit-filter 0.3s ease-out;
+// Offset posts from archives page
+.site-archives {
+  article {
+    margin-left: 2rem;
+  }
 }
 
-.lazyloaded {
-  -webkit-filter: blur(0);
-  filter: blur(0); /* And this, as the class gets added once it's loaded */
+// Border-bottom styling to certain pages
+.content {
+  background-color: $content-background-color;
+  padding: 10rem 1.5rem;
+
+  > article {
+    @include divider-border-dotted;
+  }
+
+  .hentry {
+    @include divider-border-dotted;
+  }
+
+  .site-posts {
+    article {
+      @include divider-border-dotted;
+    }
+  }
+
+  .site-index {
+    article {
+      @include divider-border-dotted;
+    }
+  }
+}
+
+.divider {
+  &-middot {
+    padding-left: .5rem;
+    padding-right: .5rem;
+
+    &::after {
+      content: '\00B7';
+    }
+  }
 }
