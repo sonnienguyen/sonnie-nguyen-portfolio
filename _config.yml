@@ -89,7 +89,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  sass_dir: _sass/
+  sass_dir: assets/sass
   style: :compressed # You might prefer to minify using :compressed :expanded
 excerpt_separator: <!-- more --> # Marks end of excerpt in posts
 
