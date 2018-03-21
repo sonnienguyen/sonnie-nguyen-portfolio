@@ -48,3 +48,19 @@ article {
     }
   }
 }
+
+// Remove padding
+.padding {
+  // padding-none
+  &-none {
+    padding: 0;
+  }
+}
+
+// Removing their default bullets
+.list-style {
+  // list-style-none
+  &-none {
+    list-style: none;
+  }
+}

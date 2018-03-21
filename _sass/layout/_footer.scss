@@ -1,36 +1,25 @@
-.site-footer {
+.footer {
   background-color: $body-background-color;
+  color: $color-grey;
   padding: 1rem 0;
   text-align: center;
 
-  p {
-    color: $color-grey;
-    font-size: 1.4rem;
-    font-weight: 100;
+  // footer-copyright
+  &-copyright {
+    font-size: 1.2rem;
+    font-weight: normal;
   }
+}
 
-  // Social media icons styling
-  ul {
-    padding-left: 0;
-  }
-
-  li {
+.social {
+  // social-link
+  &-link {
     display: inline-block;
+    font-size: 2rem;
     margin-left: 2rem;
 
     &:first-child {
       margin-left: 0;
-    }
-
-    a {
-      @include link-colors(
-        $link: $socials-color-link,
-        $visited: $socials-color-visited,
-        $hover: $socials-color-hover,
-        $active: $socials-color-active
-        );
-
-      font-size: 1.8rem;
     }
   }
 }

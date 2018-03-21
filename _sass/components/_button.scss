@@ -22,4 +22,16 @@
     border-bottom: .2rem solid $btn-border;
     transform: translate(0, .1rem);
   }
+
+  // btn-social
+  &-social {
+    @include link-colors(
+      $link: $socials-color-link,
+      $visited: $socials-color-visited,
+      $hover: $socials-color-hover,
+      $active: $socials-color-active
+    );
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+  }
 }
