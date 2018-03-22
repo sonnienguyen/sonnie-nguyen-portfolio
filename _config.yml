@@ -106,7 +106,7 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - TODO.md
+  - src
   - CNAME
   - node_modules
   - gulpfile.js
