@@ -2,9 +2,11 @@ code[class*="language-"],
 pre[class*="language-"] {
   @include mobile {
     border-radius: 0;
+    font-size: 1rem;
   }
   color: #ABB2BF;
   background: none;
+  font-size: 1.4rem;
   font-family: $code-font-family;
   text-align: left;
   white-space: pre;
@@ -169,16 +171,25 @@ pre.line-numbers > code {
 }
 
 pre[rel] {
-  &::before {
-  font-size: 8px;
-  content: attr(rel);
-  color: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-indent: (0.5 * $terminal-window-height);
-  border-radius: .2em .2em 0 0;
-  background: tint(#282c34, 10%);
+  @include mobile {
+    padding-top: 1.6em;
   }
+  padding-top: 1.6em;
+
+  &::before {
+    @include mobile {
+      font-size: 1rem;
+      border-radius: 0;
+    }
+      font-size: 1.4rem;
+      content: attr(rel);
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-indent: (0.5 * $terminal-window-height);
+      border-radius: .2em .2em 0 0;
+      background: tint(#282c34, 10%);
+    }
 }

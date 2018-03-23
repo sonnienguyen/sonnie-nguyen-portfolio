@@ -22,6 +22,9 @@ code {
     position: relative;
 
     code {
+      @include mobile{
+        padding: 1rem;
+      }
       -webkit-overflow-scrolling: touch;
       border-radius: .2rem;
       display: block;
@@ -30,3 +33,7 @@ code {
     }
   }
 }
+
+// pre {
+//  padding: 0 1em;
+// }
