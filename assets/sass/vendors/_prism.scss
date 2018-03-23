@@ -27,7 +27,7 @@ pre[class*="language-"] {
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
-  background: #383e49;
+  background: tint(#383e49, 8%);
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
