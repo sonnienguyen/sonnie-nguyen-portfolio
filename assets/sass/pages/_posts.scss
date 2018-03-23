@@ -1,4 +1,17 @@
+// This file contains styles that are specific to the posts page.
+
+/**
+ * Headings entry
+ */
+
 .post {
+  // post-title
+  &-title {
+    font-size: 2.6rem;
+    margin: 0;
+  }
+
+  // post-meta
   &-meta {
     display: block;
     font-family: $post-meta-font-family;
@@ -8,11 +21,13 @@
 }
 
 .author {
+  // author-meta
   &-meta {
     display: block;
-    margin: .8rem 0 2.4rem;
+    padding: .8rem 0 2.4rem;
   }
 
+  // author-thumb
   &-thumb {
     border-radius: 100%;
     height: 2.6rem;
