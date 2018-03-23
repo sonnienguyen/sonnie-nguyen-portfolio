@@ -1,3 +1,6 @@
+// This file contains all styles, small components, all kind of specific modules.
+// Then later sorting through correct partial files.
+
 // Remove underline from hyperlinks
 article {
   a {
@@ -13,9 +16,9 @@ article {
 }
 
 // Border-bottom styling to certain pages
-.content {
+#content {
   background-color: $content-background-color;
-  padding: 10rem 1.5rem;
+  // padding: 10rem 1.5rem;
 
   > article {
     @include divider-border-dotted;
@@ -39,6 +42,7 @@ article {
 }
 
 .divider {
+  // divider-middot
   &-middot {
     padding-left: .5rem;
     padding-right: .5rem;
@@ -49,7 +53,7 @@ article {
   }
 }
 
-// Remove padding
+// Remove padding to default
 .padding {
   // padding-none
   &-none {
@@ -57,10 +61,32 @@ article {
   }
 }
 
-// Removing their default bullets
+// Removing default bullets
 .list-style {
   // list-style-none
   &-none {
     list-style: none;
+  }
+}
+
+/**
+ * Layout style components
+ */
+
+// "l-" prefix is for layout
+.l {
+  // l-content
+  &-content {
+    padding: 3rem 0;
+
+    // l-content-top100
+    &-top100 {
+      padding-top: 10rem;
+    }
+  }
+
+  // l-maxWidth740
+  &-maxWidth740 {
+    max-width: 740px;
   }
 }

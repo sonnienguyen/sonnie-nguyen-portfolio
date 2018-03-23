@@ -77,7 +77,7 @@ header {
 .logo {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
-  padding: 0 20px 0 15px;
+  padding: 0 20px 0 0;
   font-weight: bold;
   line-height: 55px;
   font-size: $navbar-font-size;
@@ -189,7 +189,7 @@ header {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
   background: $masthead-background-color;
-  padding: 0.7em 1em;
+  padding: .7em .8em;
   color: $site-name-color;
   width: 100%;
   float: left;
@@ -209,7 +209,7 @@ header {
 
 @media screen and (min-width: 640px) {
   .nav-collapse a {
-    padding: $nav-links-padding;
+    padding: 1.7rem 3rem 1.7rem 0;
     text-align: center;
     border-top: 0;
     float: left;
@@ -218,7 +218,7 @@ header {
     font-size: $navbar-font-size;
     letter-spacing: .05em;
 
-    // active link
+    // hight-light active link
     &::after {
       @include gradient-horizontal(
         $start-color: $color-gradient-start,
@@ -231,6 +231,15 @@ header {
       position: absolute;
       width: calc(100% - 30px);
     }
+  }
+
+  // Remove padding for last element, and add width 100%
+  li:last-child a {
+      padding-right: 0;
+
+      &::after {
+        width: calc(100%)
+      }
   }
 }
 

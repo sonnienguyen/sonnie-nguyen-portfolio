@@ -19,19 +19,19 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container l-maxWidth740">
     {% include navigation.html %}
     </div>
   </header>
-  <div id="main" role="main" class="container">
-    <div class="content">
+  <div id="content" class="container l-maxWidth740" role="main" >
+    <div class="l-content l-content-top100">
       {{ content }}
     </div>
   </div>
-  <footer class="footer container">
-    {% include icons.html %}
-    {% include site-footer.html %}
-  </footer>
+  <footer class="footer l-content l-maxWidth740">
+      {% include icons.html %}
+      {% include site-footer.html %}
+    </footer>
   {% include fixed-responsive-nav.html %}
   {% include vendor-prism.html %}
 </body>

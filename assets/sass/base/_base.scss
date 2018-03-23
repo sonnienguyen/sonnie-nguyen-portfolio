@@ -16,11 +16,11 @@ body {
 
 .container {
   @include mobile {
-    padding: 0;
+    padding: 0 1rem;
   }
   margin: 0 auto;
   max-width: 74rem;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 p {
