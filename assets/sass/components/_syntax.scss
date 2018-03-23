@@ -8,7 +8,7 @@ code {
 // Code blocks
 .highlighter-rouge {
   @include mobile {
-    margin: 1.6rem -1.6rem;
+    margin: 1.6rem -1rem;
   }
   background: $code-background-color;
   border-radius: .2rem;
