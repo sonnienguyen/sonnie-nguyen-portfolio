@@ -22,7 +22,7 @@ code {
     position: relative;
 
     code {
-      @include mobile{
+      @include mobile {
         padding: 1rem;
       }
       -webkit-overflow-scrolling: touch;
@@ -33,7 +33,3 @@ code {
     }
   }
 }
-
-// pre {
-//  padding: 0 1em;
-// }
