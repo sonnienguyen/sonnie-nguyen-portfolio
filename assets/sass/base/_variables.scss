@@ -1,8 +1,8 @@
 // This file contains all application-wide Sass variables.
 
-/**
- * Font stacks
- */
+//
+// Font stacks
+//
 
 $georgia                       : Georgia, serif;
 $helvetica                     : Helvetica, Arial, sans-serif;
@@ -17,24 +17,24 @@ $post-meta-font-family         : $roboto;
 $code-font-family              : $consolas;
 
 
-/** 
- * Colors
- */
+//
+// Colors
+//
 
 // Shades of gray
-$color-grey-base                     : #000;
-$color-grey-darker                   : lighten($color-grey-base, 13%);   // #212
-$color-grey-dark                     : lighten($color-grey-base, 26%);   // #424
-$color-grey                          : lighten($color-grey-base, 38%);   // #616
-$color-grey-light                    : lighten($color-grey-base, 62%);   // #9e9
-$color-grey-lighter                  : lighten($color-grey-base, 93.5%); // #eee
-$color-grey-lightest                 : lighten($color-grey-base, 96%);   // #f5f
+$color-grey-base               : #000;
+$color-grey-darker             : lighten($color-grey-base, 13%);   // #212
+$color-grey-dark               : lighten($color-grey-base, 26%);   // #424
+$color-grey                    : lighten($color-grey-base, 38%);   // #616
+$color-grey-light              : lighten($color-grey-base, 62%);   // #9e9
+$color-grey-lighter            : lighten($color-grey-base, 93.5%); // #eee
+$color-grey-lightest           : lighten($color-grey-base, 96%);   // #f5f
 
 // Font colors
 $color-primary                 : #03A678;
 
-$color-gradient-start          : #11998e;
-$color-gradient-end            : #38ef7d;
+$color-gradient-end            : #11998e;
+$color-gradient-start          : #38ef7d;
 
 // Background color
 $body-background-color         : #fff;
@@ -75,9 +75,9 @@ $btn-border                    : darken($btn-background-color, 10%);
 $blockquote-text-color         : $color-grey;
 $blockquote-border-color       : $color-grey-light;
 
-/**
- * Sizes
- */
+//
+// Sizes
+//
 
 // Font sizes
 $default-font-size             : 1.6rem;
@@ -86,8 +86,8 @@ $navbar-font-size              : 1.5rem;
 // Syntax highlighter
 $terminal-window-height        : 3rem;
 
-/**
- * Other
- */
+//
+// Other
+//
 
 $global-transition-speed       : .3s;
