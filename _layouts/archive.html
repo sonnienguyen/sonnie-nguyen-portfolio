@@ -4,7 +4,7 @@ layout: default
 
 <article role="article">
   <h1>Archives</h1>
-  <div class="site-archives">
+  <div class="l-archives">
     {%for post in site.posts %}
       {% unless post.next %}
         <h2>{{ post.date | date: '%Y' }}</h2>
@@ -15,7 +15,7 @@ layout: default
           <h2>{{ post.date | date: '%Y' }}</h2>
         {% endif %} 
       {% endunless %}
-      <article>
+      <article class="l-archives-offset20">
           <h1 class="post-title">
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h1>
