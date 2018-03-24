@@ -10,8 +10,7 @@
 // Divider border (dotted)
 @mixin divider-border-dotted {
   border-bottom: .1rem dotted $color-grey-lighter;
-  margin: 2.8rem 0;
-  padding: 0 0 2.8rem;
+  padding: 2.8rem 0;
 }
 
 // Links
