@@ -87,11 +87,8 @@ kramdown:
     # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  sass_dir: assets/sass
-  style: :compressed # You might prefer to minify using :compressed :expanded
-excerpt_separator: <!-- more --> # Marks end of excerpt in posts
+# Marks end of excerpt in posts
+excerpt_separator: <!-- more --> 
 
 # Use the following plug-ins
 plugins:
