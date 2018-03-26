@@ -4,17 +4,17 @@
 // Font stacks
 //
 
-$georgia                       : Georgia, serif;
-$helvetica                     : Helvetica, Arial, sans-serif;
-$helveticaNeue                 : 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+$georgia                                      : Georgia, serif;
+$helvetica                                    : Helvetica, Arial, sans-serif;
+$helveticaNeue                                : 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 
-$consolas                      : Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-$roboto                        : Roboto, Helvetica, Arial, sans-serif;
+$consolas                                     : Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+$roboto                                       : Roboto, Helvetica, Arial, sans-serif;
 
-$global-font-family            : $roboto;
-$header-font-family            : $roboto;
-$post-meta-font-family         : $roboto;
-$code-font-family              : $consolas;
+$global-font-family                           : $roboto;
+$header-font-family                           : $roboto;
+$post-meta-font-family                        : $roboto;
+$code-font-family                             : $consolas;
 
 
 //
@@ -22,72 +22,74 @@ $code-font-family              : $consolas;
 //
 
 // Shades of gray
-$color-grey-base               : #000;
-$color-grey-darker             : lighten($color-grey-base, 13%);   // #212
-$color-grey-dark               : lighten($color-grey-base, 26%);   // #424
-$color-grey                    : lighten($color-grey-base, 38%);   // #616
-$color-grey-light              : lighten($color-grey-base, 62%);   // #9e9
-$color-grey-lighter            : lighten($color-grey-base, 93.5%); // #eee
-$color-grey-lightest           : lighten($color-grey-base, 96%);   // #f5f
+$color-grey-base                              : #000;
+$color-grey-darker                            : lighten($color-grey-base, 13%);   // #212
+$color-grey-dark                              : lighten($color-grey-base, 26%);   // #424
+$color-grey                                   : lighten($color-grey-base, 38%);   // #616
+$color-grey-light                             : lighten($color-grey-base, 62%);   // #9e9
+$color-grey-lighter                           : lighten($color-grey-base, 93.5%); // #eee
+$color-grey-lightest                          : lighten($color-grey-base, 96%);   // #f5f
 
 // Font colors
-$color-primary                 : #03A678;
+$color-primary                                : #03A678;
 
-$color-gradient-end            : #11998e;
-$color-gradient-start          : #38ef7d;
+$color-gradient-end                           : #11998e;
+$color-gradient-start                         : #38ef7d;
 
 // Background color
-$body-background-color         : #fff;
-$content-background-color      : $body-background-color;
-$masthead-background-color     : $color-grey-darker;
-$code-background-color         : $color-grey-lightest;
-$selection-background-color    : $color-grey-light;
-$footer-background-color       : $content-background-color;
+$body-background-color                        : #fff;
+$content-background-color                     : $body-background-color;
+$masthead-background-color                    : $color-grey-darker;
+$code-background-color                        : $color-grey-lightest;
+$terminal-window-background-color             : #007acc;
+$selection-background-color                   : $color-grey-light;
+$footer-background-color                      : $content-background-color;
 
 // Text color
-$text-color                    : $color-grey-darker;
-$header-color                  : $text-color;
-$site-name-color               : #fff;
-$site-description-color        : $color-grey;
-$code-color                    : $text-color;
+$text-color                                   : $color-grey-darker;
+$header-color                                 : $text-color;
+$site-name-color                              : #fff;
+$site-description-color                       : $color-grey;
+$code-color                                   : $text-color;
+$terminal-window-color                        : #fff;
 
-$info-color                    : $color-primary;
+$info-color                                   : $color-primary;
 
 // Links
-$link-color                    : $text-color;
-$link-color-visited            : $color-grey-darker;
-$link-color-hover              : $text-color;
-$link-color-active             : $color-grey-darker;
-$masthead-link-color           : #fff;
-$masthead-link-color-active    : $color-grey-light;
-$masthead-hover-color          : $color-grey-light;
-$socials-color-link            : $color-grey-light;
-$socials-color-visited         : $color-grey-light;
-$socials-color-hover           : $color-grey;
-$socials-color-active          : $color-grey;
+$link-color                                   : $text-color;
+$link-color-visited                           : $color-grey-darker;
+$link-color-hover                             : $text-color;
+$link-color-active                            : $color-grey-darker;
+$masthead-link-color                          : #fff;
+$masthead-link-color-active                   : $color-grey-light;
+$masthead-hover-color                         : $color-grey-light;
+$socials-color-link                           : $color-grey-light;
+$socials-color-visited                        : $color-grey-light;
+$socials-color-hover                          : $color-grey;
+$socials-color-active                         : $color-grey;
 
 // Buttons
-$btn-color                     : #fff;
-$btn-background-color          : $info-color;
-$btn-border                    : darken($btn-background-color, 10%);
+$btn-color                                    : #fff;
+$btn-background-color                         : $info-color;
+$btn-border                                   : darken($btn-background-color, 10%);
 
 // Type
-$blockquote-text-color         : $color-grey;
-$blockquote-border-color       : $color-grey-light;
+$blockquote-text-color                        : $color-grey;
+$blockquote-border-color                      : $color-grey-light;
 
 //
 // Sizes
 //
 
 // Font sizes
-$default-font-size             : 1.6rem;
-$navbar-font-size              : 1.5rem;
+$default-font-size                            : 1.6rem;
+$navbar-font-size                             : 1.5rem;
 
 // Syntax highlighter
-$terminal-window-height        : 3rem;
+$terminal-window-height                       : 3rem;
 
 //
 // Other
 //
 
-$global-transition-speed       : .3s;
+$global-transition-speed                      : .3s;

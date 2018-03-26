@@ -183,13 +183,13 @@ pre[rel] {
     }
       font-size: 1.4rem;
       content: attr(rel);
-      color: #fff;
+      color: $terminal-window-color;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       text-indent: (0.5 * $terminal-window-height);
       border-radius: .2em .2em 0 0;
-      background: tint(#282c34, 10%);
+      background: $terminal-window-background-color;
     }
 }
