@@ -11,7 +11,7 @@ gulp.task('jekyll-rebuild', function() {
 
 // Compile files
 gulp.task('sass', function () {
-  return gulp.src('assets/sass/main.scss')
+  return gulp.src('_sass/main.scss')
   .pipe(sass({
     outputStyle: 'compressed'
   }))
@@ -28,7 +28,7 @@ gulp.task('sass', function () {
 gulp.task('watch', function() {
   browserSync.init({ notify: false, server: { baseDir: '_site/' } });
   // Reloads page when some of the already built files changed:
-  gulp.watch(['assets/sass/*.scss', 'assets/**/*.scss'], ['sass']);
+  gulp.watch(['_sass/*.scss', '_sass/**/*.scss'], ['sass']);
   gulp.watch('_site/**/*.*').on('change', browserSync.reload);
 });
 
