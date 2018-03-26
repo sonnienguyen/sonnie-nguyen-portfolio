@@ -33,10 +33,11 @@ $color-grey-lightest                          : lighten($color-grey-base, 96%); 
 // Font colors
 $color-primary                                : #03A678;
 
-$color-gradient-end                           : #11998e;
+// Gradient colors
 $color-gradient-start                         : #38ef7d;
+$color-gradient-end                           : #11998e;
 
-// Background color
+// Background colors
 $body-background-color                        : #fff;
 $content-background-color                     : $body-background-color;
 $masthead-background-color                    : $color-grey-darker;
@@ -45,7 +46,7 @@ $terminal-window-background-color             : #007acc;
 $selection-background-color                   : $color-grey-light;
 $footer-background-color                      : $content-background-color;
 
-// Text color
+// Text colors
 $text-color                                   : $color-grey-darker;
 $header-color                                 : $text-color;
 $site-name-color                              : #fff;
