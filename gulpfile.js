@@ -15,7 +15,7 @@ gulp.task('sass', function () {
   .pipe(sass({
     outputStyle: 'compressed'
   }))
-  .pipe(prefix())
+  .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
   .on('error', function(errorInfo) {
     console.log(errorInfo.toString());
     this.emit('end');
