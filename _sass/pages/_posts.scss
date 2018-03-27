@@ -5,10 +5,17 @@
 //
 
 .post {
+
   // post-title
   &-title {
+    clear: both;
     font-size: 2.6rem;
     margin: 0;
+  }
+
+  // post-title-small
+  &-title-small {
+    font-size: 1.8rem;
   }
 
   // post-meta
@@ -16,11 +23,13 @@
     display: block;
     font-family: $post-meta-font-family;
     font-size: 1.3rem;
-    margin-bottom: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: $color-grey;
   }
 }
 
 .author {
+
   // author-meta
   &-meta {
     display: block;

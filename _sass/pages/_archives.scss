@@ -1,0 +1,45 @@
+// This file contains styles that are specific to the archives page.
+
+// Archives components
+.archives {
+
+  // archives-offset20
+  &-offset {
+    margin-left: 2rem;
+    border-left: .2rem solid $color-grey-lighter;
+    padding-left: 3rem;
+
+    &:last-child {
+      border-left: 0;
+    }
+  }
+
+  // archives-date
+  &-date {
+    // background: linear-gradient(135deg,#ff4c9f,#ff7b74);
+    // background-color: #007acc;
+    border-radius: .2rem;
+    display: inline-block;
+    padding: 0 .5rem;
+    margin: 3rem 0 1.2rem;
+  }
+
+  // archives-date-yyyy
+  &-date-yyyy {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1em; // same as split
+    padding: .8rem 0;
+    font-weight: bold;
+    margin: 0;
+    clear: both;
+    color: $color-grey;
+    float: left;
+    // font-size: 1.3rem;
+  }
+}
+
+
+
+
+

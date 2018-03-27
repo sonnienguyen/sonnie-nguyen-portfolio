@@ -7,16 +7,20 @@ layout: default
   <div class="l-archives">
     {%for post in site.posts %}
       {% unless post.next %}
-        <h2>{{ post.date | date: '%Y' }}</h2>
+      <div class="archives-date">
+        <h2 class="archives-date-yyyy">{{ post.date | date: '%Y' }}</h2>
+      </div>
       {% else %}
         {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
         {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
         {% if year != nyear %}
-          <h2>{{ post.date | date: '%Y' }}</h2>
+        <div class="archives-date">
+          <h2 class="archives-date-yyyy">{{ post.date | date: '%Y' }}</h2>
+        </div>
         {% endif %} 
       {% endunless %}
-      <article class="l-archives-offset20">
-          <h1 class="post-title">
+      <article class="archives-offset">
+          <h1 class="post-title post-title-small">
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h1>
           <small class="post-meta">

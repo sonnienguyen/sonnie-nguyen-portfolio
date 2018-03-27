@@ -39,18 +39,6 @@ article {
       @include divider-border-dotted;
     }
   }
-
-  // l-archives
-  &-archives {
-    &:last-child {
-      @include divider-border-dotted;
-    }
-  }
-
-  // l-archives-offset
-  &-archives-offset20 {
-    margin-left: 2rem;
-  }
 }
 
 //
