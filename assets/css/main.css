@@ -863,9 +863,6 @@ blockquote {
   width: device-width;
 }
 
-/* ------------------------------------------
-   RESPONSIVE NAV STYLES
- --------------------------------------------- */
 .nav-collapse ul {
   margin: 0;
   padding: 0;
@@ -917,9 +914,6 @@ blockquote {
   }
 }
 
-/* ------------------------------------------
-   FIXED HEADER
- --------------------------------------------- */
 header {
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
@@ -957,9 +951,6 @@ header {
   width: 26px;
 }
 
-/* ------------------------------------------
-   MASK
- --------------------------------------------- */
 .mask {
   -webkit-transition: opacity 300ms;
   -o-transition: opacity 300ms;
@@ -993,9 +984,6 @@ header {
   }
 }
 
-/* ------------------------------------------
-   NAVIGATION STYLES
- --------------------------------------------- */
 .fixed {
   position: fixed;
   width: 100%;
