@@ -13,7 +13,8 @@ gulp.task('jekyll-rebuild', function() {
 gulp.task('sass', function () {
   return gulp.src('_sass/main.scss')
   .pipe(sass({
-    outputStyle: 'compressed'
+    outputStyle: 'compressed',
+    includePaths: ['node_modules']
   }))
   .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
   .on('error', function(errorInfo) {
