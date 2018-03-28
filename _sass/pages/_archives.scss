@@ -16,8 +16,6 @@
 
   // archives-date
   &-date {
-    // background: linear-gradient(135deg,#ff4c9f,#ff7b74);
-    // background-color: #007acc;
     border-radius: .2rem;
     display: inline-block;
     padding: 0 .5rem;
@@ -28,14 +26,13 @@
   &-date-yyyy {
     text-align: center;
     font-size: 1.6rem;
-    line-height: 1em; // same as split
+    line-height: 1em;
     padding: .8rem 0;
     font-weight: bold;
     margin: 0;
     clear: both;
     color: $color-grey;
     float: left;
-    // font-size: 1.3rem;
   }
 }
 
