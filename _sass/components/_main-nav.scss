@@ -1,9 +1,5 @@
 // This file contains all styles related to the navigation menu component.
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
 /* ------------------------------------------
@@ -43,10 +39,6 @@
 .nav-toggle {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
   user-select: none;
 }
 
@@ -105,8 +97,6 @@ header {
  --------------------------------------------- */
 
 .mask {
-  -webkit-transition: opacity 300ms;
-  -moz-transition: opacity 300ms;
   transition: opacity 300ms;
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
@@ -120,7 +110,6 @@ header {
 }
 
 .android .mask {
-  -webkit-transition: none;
   transition: none;
 }
 
@@ -149,8 +138,6 @@ header {
 
 .nav-collapse,
 .nav-collapse * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -222,16 +209,18 @@ header {
 
     // hight-light active link
     &::after {
-      @include gradient-horizontal(
-        $start-color: $color-gradient-start,
-        $end-color: $color-gradient-end
-      );
+      background: $color-gradient-start; // fallback for old browsers
       bottom: 0;
       content: '';
       display: block;
       left: 0;
       position: absolute;
       width: calc(100% - 30px);
+
+      @include gradient-horizontal(
+        $start-color: $color-gradient-start,
+        $end-color: $color-gradient-end
+      );
     }
   }
 
