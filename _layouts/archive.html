@@ -24,7 +24,7 @@ layout: default
             <a href="{{ post.url }}">{{ post.title }}</a>
           </h1>
           <small class="post-meta">
-            <span>{% include post-date.html %}</span><span class="divider-middot"></span>posted in {% include post-categories.html %}
+            <span class="datetime">{% include post-date.html %}</span><span class="divider-middot"></span>posted in {% include post-categories.html %}
           </small>
       </article>
     {% endfor %}
