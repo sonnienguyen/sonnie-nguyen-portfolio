@@ -1,9 +1,5 @@
 code[class*="language-"],
 pre[class*="language-"] {
-  @include mobile {
-    border-radius: 0;
-    font-size: 1rem;
-  }
   background: none;
   border-radius: .2em;
   color: #ABB2BF;
@@ -17,6 +13,11 @@ pre[class*="language-"] {
   word-break: normal;
   word-spacing: normal;
   word-wrap: normal;
+
+  @include mobile {
+    border-radius: 0;
+    font-size: 1rem;
+  }
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
@@ -161,25 +162,27 @@ pre.line-numbers > code {
 }
 
 pre[rel] {
+  padding-top: 1.6em;
+
   @include mobile {
     padding-top: 1.6em;
   }
-  padding-top: 1.6em;
 
   &::before {
+    background: $terminal-window-background-color;
+    border-radius: .2em .2em 0 0;
+    color: $terminal-window-color;
+    content: attr(rel);
+    font-size: 1.4rem;
+    left: 0;
+    position: absolute;
+    text-indent: (0.5 * $terminal-window-height);
+    top: 0;
+    width: 100%;
+
     @include mobile {
       border-radius: 0;
       font-size: 1rem;
     }
-      background: $terminal-window-background-color;
-      border-radius: .2em .2em 0 0;
-      color: $terminal-window-color;
-      content: attr(rel);
-      font-size: 1.4rem;
-      left: 0;
-      position: absolute;
-      text-indent: (0.5 * $terminal-window-height);
-      top: 0;
-      width: 100%;
-    }
+  }
 }

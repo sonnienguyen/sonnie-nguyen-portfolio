@@ -9,27 +9,29 @@ code {
 
 // Code blocks
 .highlighter-rouge {
-  @include mobile {
-    margin: 1.6rem -1rem;
-  }
   background: $code-background-color;
   border-radius: .2rem;
   color: $code-color;
   font-family: $code-font-family;
   font-size: 1.5rem;
 
+  @include mobile {
+    margin: 1.6rem -1rem;
+  }
+
   pre {
     position: relative;
 
     code {
-      @include mobile {
-        padding: 1rem;
-      }
       -webkit-overflow-scrolling: touch;
       border-radius: .2rem;
       display: block;
       overflow-x: scroll;
       padding: 1.6rem;
+
+      @include mobile {
+        padding: 1rem;
+      }
     }
   }
 }

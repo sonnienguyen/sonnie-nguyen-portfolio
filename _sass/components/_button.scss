@@ -25,12 +25,13 @@
 
   // btn-social
   &-social {
+    transition: color .3s ease-in-out;
+
     @include link-colors(
       $link: $socials-color-link,
       $visited: $socials-color-visited,
       $hover: $socials-color-hover,
       $active: $socials-color-active
     );
-    transition: color .3s ease-in-out;
   }
 }
