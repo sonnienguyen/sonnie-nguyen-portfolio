@@ -68,8 +68,8 @@ article {
 .divider {
   // divider-middot
   &-middot {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 
     &::after {
       content: "\00B7";

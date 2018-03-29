@@ -157,7 +157,7 @@ pre.line-numbers > code {
   color: #5C6370;
   content: counter(linenumber);
   display: block;
-  padding-right: 0.8em;
+  padding-right: .8em;
   text-align: right;
 }
 
@@ -176,7 +176,7 @@ pre[rel] {
     font-size: 1.4rem;
     left: 0;
     position: absolute;
-    text-indent: (0.5 * $terminal-window-height);
+    text-indent: (.5 * $terminal-window-height);
     top: 0;
     width: 100%;
 
