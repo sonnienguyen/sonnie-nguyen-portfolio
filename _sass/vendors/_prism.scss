@@ -4,31 +4,31 @@ pre[class*="language-"] {
     border-radius: 0;
     font-size: 1rem;
   }
-  color: #ABB2BF;
   background: none;
-  font-size: 1.4rem;
+  border-radius: .2em;
+  color: #ABB2BF;
   font-family: $code-font-family;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
+  font-size: 1.4rem;
+  hyphens: none;
   line-height: 1.5;
   tab-size: 4;
-  hyphens: none;
-  border-radius: .2em;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
 }
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  text-shadow: none;
   background: tint(#383e49, 8%);
+  text-shadow: none;
 }
 
 pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
 code[class*="language-"]::selection, code[class*="language-"] ::selection {
-  text-shadow: none;
   background: #9aa2b1;
+  text-shadow: none;
 }
 
 @media print {
@@ -125,9 +125,9 @@ pre[class*="language-"] {
 }
 
 pre.line-numbers {
-  position: relative;
-  padding-left: 3.8em;
   counter-reset: linenumber;
+  padding-left: 3.8em;
+  position: relative;
 }
 
 pre.line-numbers > code {
@@ -135,28 +135,26 @@ pre.line-numbers > code {
 }
 
 .line-numbers .line-numbers-rows {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
+  border-right: 0;
   font-size: 100%;
   left: -3.8em;
-  width: 3em; /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 0;
-
+  pointer-events: none;
+  position: absolute;
+  top: 0;
   user-select: none;
-
+  width: 3em; /* works for line-numbers below 1000 lines */
 }
 
 .line-numbers-rows > span {
-  pointer-events: none;
-  display: block;
   counter-increment: linenumber;
+  display: block;
+  pointer-events: none;
 }
 
 .line-numbers-rows > span:before {
-  content: counter(linenumber);
   color: #5C6370;
+  content: counter(linenumber);
   display: block;
   padding-right: 0.8em;
   text-align: right;
@@ -170,18 +168,18 @@ pre[rel] {
 
   &::before {
     @include mobile {
-      font-size: 1rem;
       border-radius: 0;
+      font-size: 1rem;
     }
-      font-size: 1.4rem;
-      content: attr(rel);
-      color: $terminal-window-color;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-indent: (0.5 * $terminal-window-height);
-      border-radius: .2em .2em 0 0;
       background: $terminal-window-background-color;
+      border-radius: .2em .2em 0 0;
+      color: $terminal-window-color;
+      content: attr(rel);
+      font-size: 1.4rem;
+      left: 0;
+      position: absolute;
+      text-indent: (0.5 * $terminal-window-height);
+      top: 0;
+      width: 100%;
     }
 }
