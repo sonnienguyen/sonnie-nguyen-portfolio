@@ -1,26 +1,43 @@
 // This file contains all styles related to the button component.
 
+// Button components
 .btn {
   background: $btn-background-color;
-  border-bottom: .2rem solid $btn-border;
   border-radius: .2rem;
-  color: $btn-color;
-  display: inline-block;
-  font-size: $default-font-size;
-  font-weight: normal;
+  color: $btn-color-text;
   margin: 0 .4rem 0 0;
-  padding: .4rem .6rem;
+  padding: .6rem .8rem;
   text-decoration: none;
-  transition: background-color $global-transition-speed linear;
 
-  &:hover {
-    background: $btn-border;
-    color: $btn-color;
+  // btn-read-more
+  &-read-more {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    transition: color $global-transition-speed linear, background-color $global-transition-speed linear, border-bottom $global-transition-speed linear;
+
+    @include mobile {
+      letter-spacing: .03em;
+    }
   }
 
-  &:active {
-    border-bottom: .2rem solid $btn-border;
-    transform: translate(0, .1rem);
+  // btn-green
+  &-green {
+    background: $btn-color-green;
+    border-bottom: .2rem solid darken($btn-color-green, 10%);
+    color: tint($btn-color-green, 90%);
+
+    &:hover {
+      background-color: lighten($btn-color-green, 5%);
+      border-bottom: .2rem solid darken($btn-color-green, 4%);
+      color: $btn-color-text;
+    }
+
+    &:active {
+      border-bottom: .2rem solid $btn-color-green;
+      transform: translate(0, .1rem);
+    }
   }
 
   // btn-social

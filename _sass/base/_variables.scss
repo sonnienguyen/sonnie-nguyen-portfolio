@@ -21,7 +21,7 @@ $code-font-family:                              $consolas;
 //
 
 // Shades of gray
-$color-grey-base:                             #000;
+$color-grey-base:                               #000;
 $color-grey-darker:                             lighten($color-grey-base, 13%);   // #212
 $color-grey-dark:                               lighten($color-grey-base, 26%);   // #424
 $color-grey:                                    lighten($color-grey-base, 38%);   // #616
@@ -30,36 +30,38 @@ $color-grey-lighter:                            lighten($color-grey-base, 93.5%)
 $color-grey-lightest:                           lighten($color-grey-base, 96%);   // #f5f
 
 // Font colors
-$color-primary:                               #03a678;
+$color-primary:                                 #03a678;
+$color-secondary:                               #007acc;
+
 // Gradient colors
-$color-gradient-start:                        #38ef7d;
-$color-gradient-end:                          #11998e;
+$color-gradient-start:                          #38ef7d;
+$color-gradient-end:                            #11998e;
 
 // Background colors
-$body-background-color:                       #fff;
+$body-background-color:                         #fff;
 $content-background-color:                      $body-background-color;
 $masthead-background-color:                     $color-grey-darker;
 $code-background-color:                         $color-grey-lighter;
-$terminal-window-background-color:            #007acc;
+$terminal-window-background-color:              $color-secondary;
 $selection-background-color:                    $color-grey-light;
 $footer-background-color:                       $content-background-color;
 
 // Text colors
 $text-color:                                    $color-grey-darker;
 $header-color:                                  $text-color;
-$site-name-color:                             #fff;
+$site-name-color:                               #fff;
 $site-description-color:                        $color-grey;
 $code-color:                                    $text-color;
-$terminal-window-color:                       #fff;
+$terminal-window-color:                         #fff;
 
-$info-color: $color-primary;
+$info-color:                                    $color-primary;
 
 // Links
 $link-color:                                    $text-color;
 $link-color-visited:                            $color-grey-darker;
 $link-color-hover:                              $text-color;
 $link-color-active:                             $color-grey-darker;
-$masthead-link-color:                         #fff;
+$masthead-link-color:                           #fff;
 $masthead-link-color-active:                    $color-grey-light;
 $masthead-hover-color:                          $color-grey-light;
 $socials-color-link:                            $color-grey-light;
@@ -68,9 +70,9 @@ $socials-color-hover:                           $color-grey;
 $socials-color-active:                          $color-grey;
 
 // Buttons
-$btn-color:                                   #fff;
-$btn-background-color:                          $info-color;
-$btn-border:                                    darken($btn-background-color, 10%);
+$btn-color-text:                                #fff;
+$btn-background-color:                          $color-secondary;
+$btn-color-green:                               $color-primary;
 
 // Type
 $blockquote-text-color:                         $color-grey;
