@@ -1427,7 +1427,7 @@ article a {
 }
 
 .l-page:last-child {
-  border-bottom: 0.1rem dotted #eeeeee;
+  border-bottom: 1px dotted #eeeeee;
   padding: 2.8rem 0;
 }
 
@@ -1449,6 +1449,6 @@ article a {
 }
 
 .divider-dotted {
-  border-bottom: 0.1rem dotted #eeeeee;
+  border-bottom: 1px dotted #eeeeee;
   padding: 2.8rem 0;
 }

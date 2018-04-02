@@ -41,7 +41,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 // Divider border (dotted)
 @mixin divider-border-dotted {
-  border-bottom: .1rem dotted $color-grey-lighter;
+  border-bottom: 1px dotted $color-grey-lighter;
   padding: 2.8rem 0;
 }
 
