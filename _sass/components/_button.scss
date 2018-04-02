@@ -32,18 +32,18 @@
   // btn-green
   &-green {
     background: $btn-color-green;
-    border-bottom: .2rem solid darken($btn-color-green, 10%);
+    border-bottom: .2em solid darken($btn-color-green, 8%);
     color: tint($btn-color-green, 90%);
 
     &:hover {
       background-color: lighten($btn-color-green, 5%);
-      border-bottom: .2rem solid darken($btn-color-green, 4%);
+      border-bottom: .2em solid darken($btn-color-green, 4%);
       color: $btn-color-text;
     }
 
     &:active {
-      border-bottom: .2rem solid $btn-color-green;
-      transform: translate(0, .1rem);
+      border-bottom: .2em solid $btn-color-green;
+      transform: translate(0, .1em);
     }
   }
 

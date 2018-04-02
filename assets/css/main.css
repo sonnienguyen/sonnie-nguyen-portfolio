@@ -1243,21 +1243,21 @@ code {
 
 .btn-green {
   background: #03a678;
-  border-bottom: 0.2rem solid #027454;
+  border-bottom: 0.2em solid #027e5b;
   color: #e6f6f2;
 }
 
 .btn-green:hover {
   background-color: #03bf8a;
-  border-bottom: 0.2rem solid #03926a;
+  border-bottom: 0.2em solid #03926a;
   color: #fff;
 }
 
 .btn-green:active {
-  border-bottom: 0.2rem solid #03a678;
-  -webkit-transform: translate(0, 0.1rem);
-      -ms-transform: translate(0, 0.1rem);
-          transform: translate(0, 0.1rem);
+  border-bottom: 0.2em solid #03a678;
+  -webkit-transform: translate(0, 0.1em);
+      -ms-transform: translate(0, 0.1em);
+          transform: translate(0, 0.1em);
 }
 
 .btn-social {
