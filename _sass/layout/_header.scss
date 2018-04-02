@@ -13,4 +13,22 @@
   font-weight: 500;
   line-height: 1;
   padding: .2rem .5rem;
+
+  @include breakpoint(desktop) {
+    font-size: 1.1rem;
+    padding: .2rem .4rem;
+  }
+
+  @include breakpoint(tab-land) {
+    font-size: 1.3rem;
+  }
+
+  @include breakpoint(tab-port) {
+    font-size: $default-font-size;
+  }
+
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    padding: .3rem .5rem;
+  }
 }

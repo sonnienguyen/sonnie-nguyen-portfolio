@@ -14,9 +14,9 @@ pre[class*="language-"] {
   word-spacing: normal;
   word-wrap: normal;
 
-  @include mobile {
+  @include breakpoint(mobile) {
     border-radius: 0;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -164,7 +164,7 @@ pre.line-numbers > code {
 pre[rel] {
   padding-top: 1.6em;
 
-  @include mobile {
+  @include breakpoint(mobile) {
     padding-top: 1.6em;
   }
 
@@ -180,9 +180,9 @@ pre[rel] {
     top: 0;
     width: 100%;
 
-    @include mobile {
+    @include breakpoint(mobile) {
       border-radius: 0;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 }

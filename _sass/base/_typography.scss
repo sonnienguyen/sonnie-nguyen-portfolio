@@ -4,7 +4,7 @@ body {
   background: $body-background-color;
   color: $text-color;
   font-family: $global-font-family;
-  font-size: $default-font-size;
+  // font-size: $default-font-size;
   font-weight: 400;
   line-height: 1.47;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1.5rem 0;
   padding: 0;
 
-  @include mobile {
+  @include breakpoint(mobile) {
     line-height: 1.4;
   }
 }

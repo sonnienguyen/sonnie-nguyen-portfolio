@@ -49,8 +49,6 @@ $footer-background-color:                       $content-background-color;
 // Text colors
 $text-color:                                    $color-grey-darker;
 $header-color:                                  $text-color;
-$site-name-color:                               #fff;
-$site-description-color:                        $color-grey;
 $code-color:                                    $text-color;
 $terminal-window-color:                         #fff;
 
@@ -61,13 +59,17 @@ $link-color:                                    $text-color;
 $link-color-visited:                            $color-grey-darker;
 $link-color-hover:                              $text-color;
 $link-color-active:                             $color-grey-darker;
-$masthead-link-color:                           #fff;
-$masthead-link-color-active:                    $color-grey-light;
-$masthead-hover-color:                          $color-grey-light;
 $socials-color-link:                            $color-grey-light;
 $socials-color-visited:                         $color-grey-light;
 $socials-color-hover:                           $color-grey;
 $socials-color-active:                          $color-grey;
+
+// Navigation
+$navbar-text-color:                             #fff;
+$navbar-background-color:                       $color-grey-darker;
+$navbar-color-active:                           #fff;
+$navbar-color-inactive:                         $color-grey-light;
+$navbar-color-hover:                            $navbar-color-active;
 
 // Buttons
 $btn-color-text:                                #fff;
@@ -84,7 +86,6 @@ $blockquote-border-color:                       $color-grey-light;
 
 // Font sizes
 $default-font-size:                             1.6rem;
-$navbar-font-size:                              1.5rem;
 
 // Syntax highlighter
 $terminal-window-height:                        3rem;

@@ -16,6 +16,14 @@
   // post-title-small
   &-title-small {
     font-size: 1.8rem;
+
+    @include breakpoint(tab-port) {
+      font-size: 2.2rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 2rem;
+    }
   }
 
   // post-meta
@@ -25,15 +33,53 @@
     font-family: $post-meta-font-family;
     font-size: 1.3rem;
     padding-bottom: 2.4rem;
+
+    @include breakpoint(tab-port) {
+      font-size: 1.6rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 1.5rem;
+    }
   }
 }
 
 .author {
 
+  // author-content
+  &-content {
+    font-size: $default-font-size;
+
+    @include breakpoint(desktop) {
+      font-size: 1.4rem;
+    }
+
+    @include breakpoint(tab-port) {
+      font-size: 1.7rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 1.7rem;
+    }
+  }
+
   // author-meta
   &-meta {
     display: block;
+    font-size: 1.2rem;
     padding: .8rem 0 2.4rem;
+
+    @include breakpoint(tab-land) {
+      font-size: 1.3rem;
+    }
+
+    @include breakpoint(tab-port) {
+      font-size: 1.5rem;
+    }
+
+    @include breakpoint(mobile) {
+      font-size: 1.5rem;
+    }
   }
 
   // author-thumb

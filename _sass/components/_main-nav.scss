@@ -42,7 +42,7 @@
   user-select: none;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 37.5em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -59,7 +59,7 @@
 //
 
 header {
-  background: $masthead-background-color;
+  background-color: $navbar-background-color;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -70,13 +70,25 @@ header {
 .logo {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding-right: 1.7rem;
   font-weight: bold;
   line-height: 55px;
-  font-size: $navbar-font-size;
-  color: $site-name-color;
+  font-size: 1.5rem;
+  color: $navbar-text-color;
   float: left;
   letter-spacing: .5px;
+
+  @include breakpoint(desktop) {
+    font-size: 1.4rem;
+  }
+
+  @include breakpoint(tab-land) {
+    font-size: 1.7rem;
+  }
+
+  @include breakpoint(tab-port) {
+    font-size: 1.9rem;
+  }
 
   &::before {
     background: url('/assets/images/16827429.jpeg') center left no-repeat;
@@ -117,7 +129,7 @@ header {
   opacity: 1;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 37.5em) {
   .mask {
     display: none !important;
     opacity: 0 !important;
@@ -147,18 +159,39 @@ header {
   float: left;
 }
 
-@media screen and (min-width: 640px) {
+// width > 600px
+@media screen and (min-width: 37.5em) {
   .nav-collapse {
     float: right;
     width: auto;
+    line-height: 55px;
+
+    // high-light active link
+    .active {
+      border-bottom: 3px solid;
+      border-image: linear-gradient(to right, $color-gradient-start, $color-gradient-end) 100% 0;
+      color: $navbar-color-active;
+
+      &:hover {
+        border-bottom: 3px solid lighten($color-secondary, 15%);
+        color: $navbar-color-hover;
+      }
+    }
   }
 
-  // active link
-  .active {
+  // width > 600px
+  .nav-collapse a:hover {
+    color: $navbar-color-hover;
+    border-bottom: 3px solid $color-grey-dark;
+  }
+}
 
-    &::after {
-      height: 3px;
-    }
+// width < 600px
+.nav-collapse li {
+
+  // high-light active link
+  .active {
+    color: $navbar-color-active;
   }
 }
 
@@ -167,78 +200,74 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 37.5em) {
   .nav-collapse li {
     width: auto;
+    margin-left: 1rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
-  background: $masthead-background-color;
   padding: .7em .8em;
-  color: $site-name-color;
+  color: $navbar-color-inactive;
   width: 100%;
   float: left;
-  font-size: $navbar-font-size;
+  font-size: 1.5rem;
   letter-spacing: .05em;
+
+  @include breakpoint(mobile) {
+    font-size: 1.9rem;
+  }
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  color: $masthead-link-color-active;
+  color: $navbar-color-active;
 }
 
 .nav-collapse a:hover {
-  color: $masthead-hover-color;
+  color: $navbar-color-hover;
   transition: color .3s ease-in-out;
 }
 
-@media screen and (min-width: 640px) {
+// width > 600px
+@media screen and (min-width: 37.5em) {
   .nav-collapse a {
-    padding: 1.7rem 3rem 1.7rem 0;
+    padding: 0 1rem;
     text-align: center;
     border-top: 0;
     float: left;
     margin: 0;
     position: relative;
-    font-size: $navbar-font-size;
+    font-size: 1.5rem;
     letter-spacing: .05em;
 
-    // hight-light active link
-    &::after {
-      background: $color-gradient-start; // fallback for old browsers
-      bottom: 0;
-      content: '';
-      display: block;
-      left: 0;
-      position: absolute;
-      width: calc(100% - 30px);
-
-      @include gradient-horizontal(
-        $start-color: $color-gradient-start,
-        $end-color: $color-gradient-end
-      );
+    @include breakpoint(desktop) {
+      font-size: 1.4rem;
     }
-  }
 
-  // Remove padding for last element, and add width 100%
-  li:last-child a {
-      padding-right: 0;
+    @include breakpoint(tab-land) {
+      font-size: 1.7rem;
+    }
 
-      &::after {
-        width: calc(100%)
-      }
+    @include breakpoint(tab-port) {
+      font-size: 1.9rem;
+    }
   }
 }
 
 .nav-collapse ul ul a {
-  background: $color-grey-dark;
+  background: $navbar-background-color;
   padding-left: 2em;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 37.5em) {
   .nav-collapse ul ul a {
     display: none;
   }

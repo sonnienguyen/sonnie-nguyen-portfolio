@@ -5,6 +5,7 @@
   background: $btn-background-color;
   border-radius: .2rem;
   color: $btn-color-text;
+  display: inline-block;
   margin: 0 .4rem 0 0;
   padding: .6rem .8rem;
   text-decoration: none;
@@ -17,8 +18,14 @@
     text-transform: uppercase;
     transition: color $global-transition-speed linear, background-color $global-transition-speed linear, border-bottom $global-transition-speed linear;
 
-    @include mobile {
+    @include breakpoint(tab-port) {
+      letter-spacing: .04em;
+      font-size: 1.4rem;
+    }
+
+    @include breakpoint(mobile) {
       letter-spacing: .03em;
+      font-size: 1.5rem;
     }
   }
 

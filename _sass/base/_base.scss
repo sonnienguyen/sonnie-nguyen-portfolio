@@ -9,7 +9,26 @@
 }
 
 html {
+  // 1 rem = 10px; 10px/16px = 62.5%
   font-size: 62.5%;
+
+  // width < 900px?
+  @include breakpoint(tab-land) {
+    // 1 rem = 9px, 9/16 = 56.25%
+    font-size: 56.25%;
+  }
+
+  // width < 600px?
+  @include breakpoint(tab-port) {
+    // 1 rem = 8px, 8/16 = 50%
+    font-size: 50%;
+  }
+
+  // width > 1800px?
+  @include breakpoint(desktop) {
+    // 1 rem = 12px, 12/16
+    font-size: 75%;
+  }
 }
 
 body {
@@ -21,7 +40,7 @@ body {
   max-width: 74rem;
   padding: 0 3rem;
 
-  @include mobile {
+  @include breakpoint(mobile) {
     padding: 0 1rem;
   }
 }
