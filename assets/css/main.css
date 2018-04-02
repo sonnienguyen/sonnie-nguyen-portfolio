@@ -784,7 +784,7 @@ blockquote {
   background: #424242;
   -webkit-border-radius: 2rem;
           border-radius: 2rem;
-  color: #eeeeee;
+  color: inherit;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 500;
