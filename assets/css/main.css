@@ -1208,8 +1208,8 @@ code {
 
 .btn {
   background: #007acc;
-  -webkit-border-radius: .2rem;
-          border-radius: .2rem;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   color: #fff;
   display: inline-block;
   margin: 0 .4rem 0 0;
