@@ -14,7 +14,7 @@ code {
 // Code blocks
 .highlighter-rouge {
   background: $code-background-color;
-  border-radius: .2rem;
+  border-radius: 2px;
   font-family: $code-font-family;
   font-size: 1.5rem;
   vertical-align: middle;
@@ -29,7 +29,7 @@ code {
 
     code {
       -webkit-overflow-scrolling: touch;
-      border-radius: .2rem;
+      border-radius: 2px;
       display: block;
       overflow-x: scroll;
       padding: 1.6rem;

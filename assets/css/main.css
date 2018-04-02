@@ -356,8 +356,8 @@ template {
 code[class*="language-"],
 pre[class*="language-"] {
   background: none;
-  -webkit-border-radius: .2em;
-          border-radius: .2em;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   color: #ABB2BF;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1.4rem;
@@ -541,8 +541,8 @@ pre[rel] {
 
 pre[rel]::before {
   background: #007acc;
-  -webkit-border-radius: .2em .2em 0 0;
-          border-radius: .2em .2em 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+          border-radius: 2px 2px 0 0;
   color: #fff;
   content: attr(rel);
   font-size: 1.4rem;
@@ -782,8 +782,8 @@ blockquote {
 
 .counter {
   background: #424242;
-  -webkit-border-radius: 2rem;
-          border-radius: 2rem;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
   color: inherit;
   display: inline-block;
   font-size: 1.2rem;
@@ -1173,8 +1173,8 @@ code {
 
 .highlighter-rouge {
   background: #eeeeee;
-  -webkit-border-radius: .2rem;
-          border-radius: .2rem;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1.5rem;
   vertical-align: middle;
@@ -1193,8 +1193,8 @@ code {
 
 .highlighter-rouge pre code {
   -webkit-overflow-scrolling: touch;
-  -webkit-border-radius: .2rem;
-          border-radius: .2rem;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
   display: block;
   overflow-x: scroll;
   padding: 1.6rem;

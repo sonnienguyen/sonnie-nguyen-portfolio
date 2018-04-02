@@ -1,7 +1,7 @@
 code[class*="language-"],
 pre[class*="language-"] {
   background: none;
-  border-radius: .2em;
+  border-radius: 2px;
   color: #ABB2BF;
   font-family: $code-font-family;
   font-size: 1.4rem;
@@ -170,7 +170,7 @@ pre[rel] {
 
   &::before {
     background: $terminal-window-background-color;
-    border-radius: .2em .2em 0 0;
+    border-radius: 2px 2px 0 0;
     color: $terminal-window-color;
     content: attr(rel);
     font-size: 1.4rem;
