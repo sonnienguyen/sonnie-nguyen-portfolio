@@ -39,6 +39,11 @@ article {
       @include divider-border-dotted;
     }
   }
+
+  // l-nav
+  &-nav {
+    @include clearfix;
+  }
 }
 
 //

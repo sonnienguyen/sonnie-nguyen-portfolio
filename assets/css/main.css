@@ -1430,6 +1430,12 @@ article a {
   padding: 2.8rem 0;
 }
 
+.l-nav::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 .padding-none {
   padding: 0;
 }
