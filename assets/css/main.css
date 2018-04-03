@@ -904,7 +904,7 @@ blockquote {
 }
 
 header {
-  background-color: #212121;
+  background-color: #262626;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -1114,7 +1114,7 @@ header {
 }
 
 .nav-collapse ul ul a {
-  background: #212121;
+  background: #262626;
   padding-left: 2em;
 }
 

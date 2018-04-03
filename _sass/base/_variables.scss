@@ -66,7 +66,7 @@ $socials-color-active:                          $color-grey;
 
 // Navigation
 $navbar-text-color:                             #fff;
-$navbar-background-color:                       $color-grey-darker;
+$navbar-background-color:                       lighten($color-grey-base, 15%);
 $navbar-color-active:                           #fff;
 $navbar-color-inactive:                         $color-grey-light;
 $navbar-color-hover:                            $navbar-color-active;
