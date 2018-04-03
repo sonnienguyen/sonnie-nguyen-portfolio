@@ -1162,7 +1162,7 @@ header {
 code {
   font-size: 1rem;
   margin: 0 !important;
-  padding: 0 .5rem;
+  padding: .2rem .5rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1176,18 +1176,11 @@ code {
   -webkit-border-radius: 2px;
           border-radius: 2px;
   font-family: inherit;
-  font-size: 1.6rem;
-}
-
-@media only screen and (min-width: 112.5em) {
-  .highlighter-rouge {
-    font-size: 1.4rem;
-  }
+  font-size: inherit;
 }
 
 @media only screen and (max-width: 37.5em) {
   .highlighter-rouge {
-    font-size: 1.6rem;
     margin: 1.6rem -1rem;
   }
 }
