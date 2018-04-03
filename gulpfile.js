@@ -20,7 +20,7 @@ gulp.task('sass', function() {
   return gulp
     .src('_sass/main.scss')
     .pipe(sass({
-        outputStyle: 'compressed',
+        outputStyle: 'expanded',
         includePaths: ['node_modules']
       }).on('error', sass.logError)
     )
