@@ -1175,15 +1175,20 @@ code {
   background: #eeeeee;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1.5rem;
-  vertical-align: middle;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 112.5em) {
+  .highlighter-rouge {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
   .highlighter-rouge {
-    margin: 1.6rem -1rem;
     font-size: 1.6rem;
+    margin: 1.6rem -1rem;
   }
 }
 
