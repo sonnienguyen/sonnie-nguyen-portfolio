@@ -1345,6 +1345,7 @@ code {
   display: block;
   font-size: 1.2rem;
   padding: .8rem 0 2.4rem;
+  color: #616161;
 }
 
 @media only screen and (max-width: 75em) {
