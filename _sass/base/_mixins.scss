@@ -66,3 +66,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 @mixin gradient-horizontal($start-color, $end-color) {
   background: linear-gradient(to right, $start-color, $end-color);
 }
+
+//
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
