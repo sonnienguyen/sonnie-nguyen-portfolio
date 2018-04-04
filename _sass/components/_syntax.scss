@@ -19,7 +19,7 @@ code {
   font-size: inherit;
 
   @include breakpoint(mobile) {
-    margin: 1.6rem -1rem;
+    margin: 1.6rem -1.3rem;
   }
 
   pre {
@@ -33,7 +33,7 @@ code {
       padding: 1.6rem;
 
       @include breakpoint(mobile) {
-        padding: 1rem;
+        padding: 1.3rem;
       }
     }
   }

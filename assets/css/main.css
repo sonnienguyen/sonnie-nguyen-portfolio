@@ -600,12 +600,12 @@ body {
 .container {
   margin: 0 auto;
   max-width: 74rem;
-  padding: 0 3rem;
+  padding: 0 20px;
 }
 
 @media only screen and (max-width: 37.5em) {
   .container {
-    padding: 0 1rem;
+    padding: 0 8px;
   }
 }
 
@@ -1183,7 +1183,7 @@ code {
 
 @media only screen and (max-width: 37.5em) {
   .highlighter-rouge {
-    margin: 1.6rem -1rem;
+    margin: 1.6rem -1.3rem;
   }
 }
 
@@ -1202,7 +1202,7 @@ code {
 
 @media only screen and (max-width: 37.5em) {
   .highlighter-rouge pre code {
-    padding: 1rem;
+    padding: 1.3rem;
   }
 }
 
