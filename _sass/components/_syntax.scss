@@ -2,13 +2,9 @@
 
 // Inline code
 code {
-  font-size: 1rem;
+  font-size: .8em;
   margin: 0 !important;
-  padding: .2rem .5rem;
-
-  @include breakpoint(mobile) {
-    font-size: 1.4rem;
-  }
+  padding: .1em .3em;
 }
 
 // Code blocks
@@ -19,7 +15,7 @@ code {
   font-size: inherit;
 
   @include breakpoint(mobile) {
-    margin: 1.6rem -1.3rem;
+    margin: 1.6em -1em;
   }
 
   pre {
@@ -30,10 +26,10 @@ code {
       border-radius: 2px;
       display: block;
       overflow-x: scroll;
-      padding: 1.6rem;
+      padding: 1.25em;
 
       @include breakpoint(mobile) {
-        padding: 1.3rem;
+        padding: 1.2em;
       }
     }
   }

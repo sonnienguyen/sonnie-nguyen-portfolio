@@ -360,11 +360,11 @@ pre[class*="language-"] {
           border-radius: 2px;
   color: #ABB2BF;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
-  font-size: 1.4rem;
+  font-size: .9em;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
-  line-height: 1.5;
+  line-height: 1.4em;
   -moz-tab-size: 4;
     -o-tab-size: 4;
        tab-size: 4;
@@ -380,7 +380,6 @@ pre[class*="language-"] {
   pre[class*="language-"] {
     -webkit-border-radius: 0;
             border-radius: 0;
-    font-size: 1.6rem;
   }
 }
 
@@ -545,7 +544,7 @@ pre[rel]::before {
           border-radius: 2px 2px 0 0;
   color: #fff;
   content: attr(rel);
-  font-size: 1.4rem;
+  font-size: .9em;
   left: 0;
   position: absolute;
   text-indent: 1.5rem;
@@ -557,7 +556,6 @@ pre[rel]::before {
   pre[rel]::before {
     -webkit-border-radius: 0;
             border-radius: 0;
-    font-size: 1.2rem;
   }
 }
 
@@ -600,6 +598,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 74rem;
+  overflow: hidden;
   padding: 0 20px;
 }
 
@@ -1162,15 +1161,9 @@ header {
 }
 
 code {
-  font-size: 1rem;
+  font-size: .8em;
   margin: 0 !important;
-  padding: .2rem .5rem;
-}
-
-@media only screen and (max-width: 37.5em) {
-  code {
-    font-size: 1.4rem;
-  }
+  padding: .1em .3em;
 }
 
 .highlighter-rouge {
@@ -1183,7 +1176,7 @@ code {
 
 @media only screen and (max-width: 37.5em) {
   .highlighter-rouge {
-    margin: 1.6rem -1.3rem;
+    margin: 1.6em -1em;
   }
 }
 
@@ -1197,12 +1190,12 @@ code {
           border-radius: 2px;
   display: block;
   overflow-x: scroll;
-  padding: 1.6rem;
+  padding: 1.25em;
 }
 
 @media only screen and (max-width: 37.5em) {
   .highlighter-rouge pre code {
-    padding: 1.3rem;
+    padding: 1.2em;
   }
 }
 
