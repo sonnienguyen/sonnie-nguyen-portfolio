@@ -1027,7 +1027,7 @@ header {
     color: #fff;
   }
   .nav-collapse .active:hover {
-    border-bottom: 3px solid #1aa3ff;
+    border-bottom: 3px solid;
     color: #fff;
   }
   .nav-collapse a:hover {

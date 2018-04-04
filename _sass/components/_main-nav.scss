@@ -173,7 +173,7 @@ header {
       color: $navbar-color-active;
 
       &:hover {
-        border-bottom: 3px solid lighten($color-secondary, 15%);
+        border-bottom: 3px solid;
         color: $navbar-color-hover;
       }
     }
