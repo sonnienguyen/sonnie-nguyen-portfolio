@@ -66,9 +66,9 @@ paginate_path: /page:num/ # paginate_path: /blog/page/:num
 # Collections allow you to define a new type of document that behave like Pages or Posts 
 # do normally, but also have their own unique properties and namespace.
 collections:
-  categories:
+  sections:
     output: true
-  archives:
+  categories:
     output: true
 
 defaults:
