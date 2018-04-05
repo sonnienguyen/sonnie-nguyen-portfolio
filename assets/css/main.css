@@ -770,11 +770,6 @@ blockquote {
   padding: 0 0 0 1.5rem;
 }
 
-.font-bold {
-  color: #212121;
-  font-weight: 700;
-}
-
 .header {
   font-family: Roboto, Helvetica, Arial, sans-serif;
 }
@@ -1400,10 +1395,6 @@ code {
   text-align: center;
 }
 
-article a {
-  text-decoration: none;
-}
-
 #content {
   background-color: #fff;
 }
@@ -1451,4 +1442,22 @@ article a {
 .divider-dotted {
   border-bottom: 1px dotted #eeeeee;
   padding: 2.8rem 0;
+}
+
+.link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link--bold {
+  font-weight: 700;
+}
+
+.link--grey-darker {
+  color: #212121;
 }

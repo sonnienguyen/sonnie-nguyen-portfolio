@@ -1,13 +1,6 @@
 // This file contains all styles, small components, all kind of specific modules.
 // Then later sorting through correct partial files.
 
-// Remove underline from hyperlinks
-article {
-  a {
-    text-decoration: none;
-  }
-}
-
 #content {
   background-color: $content-background-color;
 }
@@ -86,3 +79,25 @@ article {
     @include divider-border-dotted;
   }
 }
+
+// Link components
+.link {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  // link--bold (modifier)
+  &--bold {
+    font-weight: 700;
+  }
+
+  // link--grey-darker (modifier)
+  &--grey-darker {
+    color: $color-grey-darker;
+  }
+}
+
