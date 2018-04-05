@@ -29,8 +29,8 @@
     }
   }
 
-  // btn-green
-  &-green {
+  // btn-green modifier
+  &--green {
     background: $btn-color-green;
     border-bottom: .2em solid darken($btn-color-green, 8%);
     color: tint($btn-color-green, 90%);

@@ -14,7 +14,7 @@
   }
 
   // post-title-small
-  &-title-small {
+  &-title--small {
     font-size: 1.8rem;
 
     @include breakpoint(tab-port) {

@@ -11,6 +11,7 @@
 
 // "l-" prefix is for layout
 .l {
+
   // l-maxWidth740
   &-maxWidth740 {
     max-width: 740px;
@@ -21,9 +22,9 @@
     padding: 3rem 0;
   }
 
-  // l-content-top100
-  &-content-top100 {
-    padding-top: 10rem;
+  // l-content--t-padding100 modifier
+  &-content--t-padding100 {
+    padding-top: 100px;
   }
 
   // l-page
@@ -45,16 +46,18 @@
 
 // Remove paddings and set to default
 .padding {
-  // padding-none
-  &-none {
+
+  // padding-none modifier
+  &--none {
     padding: 0;
   }
 }
 
 // Removing default bullets
 .list-style {
-  // list-style-none
-  &-none {
+
+  // list-style-none modifier
+  &--none {
     list-style: none;
   }
 }
@@ -64,6 +67,7 @@
 //
 
 .divider {
+
   // divider-middot
   &-middot {
     padding-left: .5rem;
@@ -90,12 +94,12 @@
     text-decoration: underline;
   }
 
-  // link--bold (modifier)
+  // link--bold modifier
   &--bold {
     font-weight: 700;
   }
 
-  // link--grey-darker (modifier)
+  // link--grey-darker modifier
   &--grey-darker {
     color: $color-grey-darker;
   }
