@@ -776,70 +776,6 @@ blockquote {
   padding: 0 0 0 1.5rem;
 }
 
-.header {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
-}
-
-.counter {
-  background: #424242;
-  -webkit-border-radius: 20px;
-          border-radius: 20px;
-  color: inherit;
-  display: inline-block;
-  font-size: 1.2rem;
-  font-weight: 500;
-  line-height: 1;
-  padding: .2rem .5rem;
-}
-
-@media only screen and (min-width: 112.5em) {
-  .counter {
-    font-size: 1.1rem;
-    padding: .2rem .4rem;
-  }
-}
-
-@media only screen and (max-width: 75em) {
-  .counter {
-    font-size: 1.3rem;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  .counter {
-    font-size: 1.6rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .counter {
-    font-size: 1.4rem;
-    padding: .3rem .5rem;
-  }
-}
-
-.footer {
-  background-color: #fff;
-  color: #616161;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer-copyright {
-  font-size: 1.2rem;
-  font-weight: normal;
-}
-
-.social-link {
-  display: inline-block;
-  font-size: 2rem;
-  margin-left: 2rem;
-}
-
-.social-link:first-child {
-  margin-left: 0;
-}
-
 @-ms-viewport {
   width: device-width;
 }
@@ -912,6 +848,10 @@ header {
   top: 0;
 }
 
+.header {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
 .logo {
   -webkit-tap-highlight-color: transparent;
   color: #fff;
@@ -956,6 +896,44 @@ header {
   margin: 0 10px 2px 0;
   vertical-align: middle;
   width: 26px;
+}
+
+.counter {
+  background: #424242;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  color: inherit;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1;
+  padding: .2rem .5rem;
+}
+
+@media only screen and (min-width: 112.5em) {
+  .counter {
+    font-size: 1.1rem;
+    padding: .2rem .4rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .counter {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .counter {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .counter {
+    font-size: 1.4rem;
+    padding: .3rem .5rem;
+  }
 }
 
 .mask {
@@ -1155,6 +1133,28 @@ header {
 .nav-toggle.active:before {
   font-size: 24px;
   content: "\00d7";
+}
+
+.footer {
+  background-color: #fff;
+  color: #616161;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-copyright {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.social-link {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.social-link:first-child {
+  margin-left: 0;
 }
 
 .pagination {
