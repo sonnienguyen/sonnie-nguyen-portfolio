@@ -1,8 +1,8 @@
 // basic type style
 
 body {
-  background: $body-background-color;
-  color: $text-color;
+  background: $body-color-background;
+  color: $base-color-text;
   font-family: $global-font-family;
   // font-size: $default-font-size;
   font-weight: 400;
@@ -12,7 +12,7 @@ body {
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  color: $header-color;
+  color: $header-color-text;
   font-family: $header-font-family;
   font-weight: bold;
   line-height: 1.7;
@@ -31,8 +31,8 @@ h4 { font-size: 1.8rem; }                                 // 18px
 
 // Blockquotes
 blockquote {
-  border-left: .2rem solid $blockquote-border-color;
-  color: $blockquote-text-color;
+  border-left: .2rem solid $blockquote-color-border;
+  color: $blockquote-color-text;
   font-size: .9em;
   margin: 1.5rem 0;
   padding: 0 0 0 1.5rem;

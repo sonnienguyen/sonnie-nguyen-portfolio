@@ -174,9 +174,9 @@ pre[rel] {
   }
 
   &::before {
-    background: $terminal-window-background-color;
+    background: $terminal-window-color-background;
     border-radius: 2px 2px 0 0;
-    color: $terminal-window-color;
+    color: $terminal-window-color-text;
     content: attr(rel);
     font-size: .9em;
     left: 0;

@@ -59,7 +59,7 @@
 //
 
 header {
-  background-color: $navbar-background-color;
+  background-color: $navbar-color-background;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -73,7 +73,7 @@ header {
 
 .logo {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: $navbar-text-color;
+  color: $navbar-color-text;
   text-decoration: none;
   padding-right: 1.7rem;
   font-weight: bold;
@@ -297,7 +297,7 @@ header {
 }
 
 .nav-collapse ul ul a {
-  background: $navbar-background-color;
+  background: $navbar-color-background;
   padding-left: 2em;
 }
 
