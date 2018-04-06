@@ -1223,15 +1223,15 @@ code {
 
 @media only screen and (max-width: 56.25em) {
   .btn-read-more {
-    letter-spacing: .04em;
     font-size: 1.4rem;
+    letter-spacing: .04em;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .btn-read-more {
-    letter-spacing: .03em;
     font-size: 1.5rem;
+    letter-spacing: .03em;
   }
 }
 
@@ -1442,7 +1442,7 @@ code {
 }
 
 .divider-middot::after {
-  content: "\00B7";
+  content: '\00B7';
 }
 
 .divider-dotted {
