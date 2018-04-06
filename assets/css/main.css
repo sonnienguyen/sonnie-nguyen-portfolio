@@ -439,15 +439,21 @@ pre[class*="language-"] {
 .token.number,
 .token.constant,
 .token.symbol,
-.token.attr-name,
-.token.deleted {
+.token.attr-name {
   color: #d19a66;
+}
+
+.token.deleted {
+  color: #e06c75;
 }
 
 .token.string,
 .token.char,
 .token.attr-value,
-.token.builtin,
+.token.builtin {
+  color: #98c379;
+}
+
 .token.inserted {
   color: #98c379;
 }
