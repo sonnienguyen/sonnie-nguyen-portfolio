@@ -997,11 +997,11 @@ header {
   }
   .nav-collapse .active {
     border-bottom: 3px solid;
-    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e)) 100% 0;
-    -webkit-border-image: -webkit-linear-gradient(left, #38ef7d, #11998e) 100% 0;
-         -o-border-image: -o-linear-gradient(left, #38ef7d, #11998e) 100% 0;
-            border-image: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e)) 100% 0;
-            border-image: linear-gradient(to right, #38ef7d, #11998e) 100% 0;
+    -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#fc00ff), to(#00dbde)) 100% 0;
+    -webkit-border-image: -webkit-linear-gradient(left, #fc00ff, #00dbde) 100% 0;
+         -o-border-image: -o-linear-gradient(left, #fc00ff, #00dbde) 100% 0;
+            border-image: -webkit-gradient(linear, left top, right top, from(#fc00ff), to(#00dbde)) 100% 0;
+            border-image: linear-gradient(to right, #fc00ff, #00dbde) 100% 0;
     color: #fff;
   }
   .nav-collapse .active:hover {
