@@ -623,10 +623,6 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: none;
-}
-
 ul,
 ol {
   margin: 1.5rem 0;
@@ -993,7 +989,7 @@ header {
   .nav-collapse {
     float: right;
     width: auto;
-    line-height: 55px;
+    line-height: 50px;
   }
   .nav-collapse .active {
     border-bottom: 3px solid;
@@ -1105,34 +1101,86 @@ header {
 }
 
 .nav-toggle {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-decoration: none;
-  text-indent: -300px;
-  position: relative;
-  overflow: hidden;
-  width: 60px;
-  height: 55px;
+  cursor: pointer;
   float: right;
+  height: 50px;
+  margin-right: -8px;
+  padding: 17px 15px;
+  position: relative;
+  width: 50px;
 }
 
-.nav-toggle:before {
-  color: #fff;
-  font: normal 28px/55px "responsivenav";
-  text-transform: none;
-  text-align: center;
+.nav-toggle::before {
+  background-color: #fff;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+  content: '';
+  height: 2px;
   position: absolute;
-  content: "\2261";
-  text-indent: 0;
-  speak: none;
-  width: 100%;
-  left: 0;
-  top: 0;
+  top: 18px;
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  -o-transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  width: 20px;
 }
 
-.nav-toggle.active:before {
-  font-size: 24px;
-  content: "\00d7";
+.nav-toggle-icon {
+  background-color: #fff;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+  height: 2px;
+  position: absolute;
+  top: 25px;
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  width: 20px;
+}
+
+.nav-toggle::after {
+  background-color: #fff;
+  -webkit-border-radius: 9px;
+          border-radius: 9px;
+  content: '';
+  height: 2px;
+  position: absolute;
+  top: 32px;
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  -o-transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  width: 20px;
+}
+
+.nav-toggle.active::before {
+  -webkit-transform: rotate(45deg) scaleX(1.07);
+      -ms-transform: rotate(45deg) scaleX(1.07);
+          transform: rotate(45deg) scaleX(1.07);
+}
+
+.nav-toggle.active .nav-toggle-icon {
+  opacity: 0;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.nav-toggle.active::after {
+  -webkit-transform: rotate(-45deg) scaleX(1.05) translateX(-1px);
+      -ms-transform: rotate(-45deg) scaleX(1.05) translateX(-1px);
+          transform: rotate(-45deg) scaleX(1.05) translateX(-1px);
 }
 
 .footer {

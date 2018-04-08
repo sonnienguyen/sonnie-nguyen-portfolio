@@ -65,6 +65,7 @@ $socials-color-active:                          $color-grey;
 // Navigation
 $navbar-color-text:                             #fff;
 $navbar-color-background:                       lighten($color-grey-base, 15%);
+$navbar-color-icon:                             #fff;
 $navbar-color-active:                           #fff;
 $navbar-color-inactive:                         $color-grey-light;
 $navbar-color-hover:                            $navbar-color-active;
@@ -93,3 +94,4 @@ $terminal-window-height:                        3rem;
 //
 
 $global-transition-speed:                       .3s;
+$navbar-transition-speed:                       .4s;

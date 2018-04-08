@@ -198,7 +198,7 @@ header {
   .nav-collapse {
     float: right;
     width: auto;
-    line-height: 55px;
+    line-height: 50px;
 
     // high-light active link
     .active {
@@ -312,33 +312,62 @@ header {
 //
 
 .nav-toggle {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-decoration: none;
-  text-indent: -300px;
-  position: relative;
-  overflow: hidden;
-  width: 60px;
-  height: 55px;
+  cursor: pointer;
   float: right;
+  height: 50px;
+  margin-right: -8px;
+  padding: 17px 15px;
+  position: relative;
+  width: 50px;
+
+  &::before {
+    background-color: $navbar-color-icon;
+    border-radius: 9px;
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: 18px;
+    transform-origin: 0 0;
+    transition: transform $navbar-transition-speed ease-out;
+    width: 20px;
+  }
+
+  &-icon {
+    background-color: $navbar-color-icon;
+    border-radius: 9px;
+    height: 2px;
+    position: absolute;
+    top: 25px;
+    transform-origin: 0 50%;
+    transition: all $navbar-transition-speed ease-in-out;
+    width: 20px;
+  }
+
+  &::after {
+    background-color: $navbar-color-icon;
+    border-radius: 9px;
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: 32px;
+    transform-origin: 0 50%;
+    transition: transform $navbar-transition-speed ease-out;
+    width: 20px;
+  }
 }
 
-.nav-toggle:before {
-  color: #fff;                            // Edit this to change the icon color
-  font: normal 28px/55px "responsivenav";   // Edit font-size (28px) to change the icon size
-  text-transform: none;
-  text-align: center;
-  position: absolute;
-  content: "\2261";                         // Hamburger icon
-  text-indent: 0;
-  speak: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
+.nav-toggle.active {
 
-.nav-toggle.active:before {
-  font-size: 24px;
-  content: "\00d7";                         // Close icon
-}
+  &::before {
+    transform: rotate(45deg) scaleX(1.07);
+  }
 
+  .nav-toggle-icon {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+
+  &::after {
+    transform: rotate(-45deg) scaleX(1.05) translateX(-1px);
+  }
+}
