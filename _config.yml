@@ -13,7 +13,6 @@ author:
   name: Sonnie Nguyen
   picture: https://avatars2.githubusercontent.com/u/16827429?s=88&v=4
 
-
 #
 # Navigation bar options
 #
@@ -109,6 +108,6 @@ exclude:
   - node_modules
   - gulpfile.js
 
-# Include files inside _sections directory
+# Include files inside _pages directory
 include:
-  [_sections]
+  [_pages]
