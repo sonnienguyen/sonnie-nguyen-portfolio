@@ -59,7 +59,7 @@
 //
 
 header {
-  background-color: $navbar-color-background;
+  background-color: $nav-color-background;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -73,7 +73,7 @@ header {
 
 .logo {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  color: $navbar-color-text;
+  color: $nav-color-text;
   text-decoration: none;
   padding-right: 1.7rem;
   font-weight: bold;
@@ -135,7 +135,6 @@ header {
     padding: .3rem .5rem;
   }
 }
-
 
 //
 // MASK
@@ -204,18 +203,18 @@ header {
     .active {
       border-bottom: 3px solid;
       border-image: linear-gradient(to right, $color-gradient-start, $color-gradient-end) 100% 0;
-      color: $navbar-color-active;
+      color: $nav-color-active;
 
       &:hover {
         border-bottom: 3px solid;
-        color: $navbar-color-hover;
+        color: $nav-color-hover;
       }
     }
   }
 
   // width > 600px
   .nav-collapse a:hover {
-    color: $navbar-color-hover;
+    color: $nav-color-hover;
     border-bottom: 3px solid $color-grey-dark;
   }
 }
@@ -225,7 +224,7 @@ header {
 
   // high-light active link
   .active {
-    color: $navbar-color-active;
+    color: $nav-color-active;
   }
 }
 
@@ -249,7 +248,7 @@ header {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
   padding: .7em .8em;
-  color: $navbar-color-inactive;
+  color: $nav-color-inactive;
   width: 100%;
   float: left;
   font-size: 1.5rem;
@@ -262,11 +261,11 @@ header {
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  color: $navbar-color-active;
+  color: $nav-color-active;
 }
 
 .nav-collapse a:hover {
-  color: $navbar-color-hover;
+  color: $nav-color-hover;
   transition: color .3s ease-in-out;
 }
 
@@ -297,7 +296,7 @@ header {
 }
 
 .nav-collapse ul ul a {
-  background: $navbar-color-background;
+  background: $nav-color-background;
   padding-left: 2em;
 }
 
@@ -321,37 +320,37 @@ header {
   width: 50px;
 
   &::before {
-    background-color: $navbar-color-icon;
+    background-color: $nav-color-icon;
     border-radius: 9px;
     content: '';
     height: 2px;
     position: absolute;
     top: 18px;
     transform-origin: 0 0;
-    transition: transform $navbar-transition-speed ease-out;
+    transition: transform $nav-transition-speed ease-out;
     width: 20px;
   }
 
   &-icon {
-    background-color: $navbar-color-icon;
+    background-color: $nav-color-icon;
     border-radius: 9px;
     height: 2px;
     position: absolute;
     top: 25px;
     transform-origin: 0 50%;
-    transition: all $navbar-transition-speed ease-in-out;
+    transition: all $nav-transition-speed ease-in-out;
     width: 20px;
   }
 
   &::after {
-    background-color: $navbar-color-icon;
+    background-color: $nav-color-icon;
     border-radius: 9px;
     content: '';
     height: 2px;
     position: absolute;
     top: 32px;
     transform-origin: 0 50%;
-    transition: transform $navbar-transition-speed ease-out;
+    transition: transform $nav-transition-speed ease-out;
     width: 20px;
   }
 }
