@@ -69,8 +69,6 @@ paginate_path: /page:num/ # paginate_path: /blog/page/:num
 # Collections allow you to define a new type of document that behave like Pages or Posts 
 # do normally, but also have their own unique properties and namespace.
 collections:
-  sections:
-    output: true
   categories:
     output: true
 
@@ -110,3 +108,7 @@ exclude:
   - CNAME
   - node_modules
   - gulpfile.js
+
+# Include files inside _sections directory
+include:
+  [_sections]
