@@ -623,6 +623,10 @@ a {
   cursor: pointer;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 ul,
 ol {
   margin: 1.5rem 0;
