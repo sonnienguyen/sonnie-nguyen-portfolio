@@ -1442,9 +1442,7 @@ code {
 }
 
 .archives-date-yyyy {
-  clear: both;
   color: #616161;
-  float: left;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1em;
