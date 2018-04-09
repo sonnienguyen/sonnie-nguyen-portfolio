@@ -33,17 +33,15 @@ navigation:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: info@sonnienguyen.com
   facebook:
   github: sonnienguyen
   instagram: sonniephotography
+  codepen: sonnienguyen
   linkedin:
-  pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: 
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
 
 # Your website URL (e.g. http://sonnienguyen.github.io or http://www.sonnienguyen.com)
 # Used for Sitemap.xml and your RSS feed
