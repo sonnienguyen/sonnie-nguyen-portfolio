@@ -98,15 +98,7 @@ plugins:
   - jemoji
 
 # Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - src
-  - CNAME
-  - node_modules
-  - gulpfile.js
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "node_modules", "package.json", "package-lock.json", "gulpfile.js", "src"]
 
 # Include files inside _pages directory
 include:
