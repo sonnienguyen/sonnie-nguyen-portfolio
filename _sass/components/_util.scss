@@ -54,12 +54,8 @@
 }
 
 // Removing default bullets
-.list-style {
-
-  // list-style-none modifier
-  &--none {
-    list-style: none;
-  }
+.list-style-none {
+  list-style: none;
 }
 
 //
