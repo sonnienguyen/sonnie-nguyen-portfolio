@@ -1,19 +1,18 @@
 // This file contains styles that are specific to the posts page.
 
 //
-// Headings entry
+// Post components
 //
 
 .post {
 
   // post-title
   &-title {
-    clear: both;
     font-size: 2.6rem;
     margin: 0;
   }
 
-  // post-title-small
+  // post-title--small modifier
   &-title--small {
     font-size: 1.8rem;
 
@@ -59,20 +58,25 @@
       font-size: 1.75rem;
     }
 
+    // post-content--grey modifier
     &--grey {
       color: $color-grey;
       }
   }
 }
 
+//
+// Author components
+//
+
 .author {
 
   // author-meta
   &-meta {
+    color: $color-grey-dark;
     display: block;
     font-size: 1.2rem;
     padding: .8rem 0 2.4rem;
-    color: $color-grey-dark;
 
     @include breakpoint(tab-land) {
       font-size: 1.3rem;
