@@ -1355,29 +1355,29 @@ code {
   }
 }
 
-.author-content {
+.post-content {
   font-size: 1.6rem;
 }
 
 @media only screen and (min-width: 112.5em) {
-  .author-content {
+  .post-content {
     font-size: 1.4rem;
   }
 }
 
 @media only screen and (max-width: 56.25em) {
-  .author-content {
+  .post-content {
     font-size: 1.7rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
-  .author-content {
+  .post-content {
     font-size: 1.75rem;
   }
 }
 
-.author-content--grey {
+.post-content--grey {
   color: #616161;
 }
 

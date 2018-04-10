@@ -42,11 +42,8 @@
       font-size: 1.5rem;
     }
   }
-}
 
-.author {
-
-  // author-content
+  // post-content
   &-content {
     font-size: $default-font-size;
 
@@ -66,6 +63,9 @@
       color: $color-grey;
       }
   }
+}
+
+.author {
 
   // author-meta
   &-meta {
