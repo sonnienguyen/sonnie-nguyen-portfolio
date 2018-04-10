@@ -44,15 +44,6 @@
 // Styling components
 //
 
-// Remove paddings and set to default
-.padding {
-
-  // padding-none modifier
-  &--none {
-    padding: 0;
-  }
-}
-
 // Removing default bullets
 .list-style-none {
   list-style: none;
