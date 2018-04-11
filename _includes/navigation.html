@@ -1,19 +1,17 @@
 {% unless page.layout == 'front' %}
-  <div>
-    <a href="{{ site.baseurl }}/" class="logo">{{ site.name }}</a>
-  </div>
-  <nav class="nav-collapse" role="navigation">
-    <ul>
+<a href="{{ site.baseurl }}/" class="logo">{{ site.name }}</a>
+<nav class="nav-collapse" role="navigation">
+  <ul>
     {% for link in site.navigation %}
       {% assign active = nil %}
       {% if page.url == link.url or page.layout == link.layout %}
         {% assign active = 'active' %}
       {% endif %}
-
-      <li>
-        <a class="{{active}}" href="{{ link.url }}">{{ link.text }} {% if link.text == 'Posts' %} <span class="counter">{{ site.posts | size }}</span> {% endif %}</a>
-      </li>
+    <li>
+      <a class="{{active}}" href="{{ link.url }}">{{ link.text }} {% if link.text == 'Posts' %}
+        <span class="counter">{{ site.posts | size }}</span> {% endif %}</a>
+    </li>
     {% endfor %}
-    </ul>
-  </nav>
+  </ul>
+</nav>
 {% endunless %}
