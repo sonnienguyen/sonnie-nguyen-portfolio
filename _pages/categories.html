@@ -19,7 +19,7 @@ permalink: /categories/
   {% for cat in categories %}
   {% comment %} matching for tag and category {% endcomment %}
     {% if cat == category.tag %}
-      <h1 class="post-title"><a href="{{category.url}}">{{category.title}}</a></h1>
+      <h1 class="post-title"><a href="{{ category.url }}">{{ category.title }}</a></h1>
     {% endif %}
    {% endfor %}
 {% endfor %}
