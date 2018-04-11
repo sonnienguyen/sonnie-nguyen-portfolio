@@ -1,9 +1,9 @@
 // This file contains all styles related to the icon component.
 
 .icon {
-  height: 2em;
+  height: 2rem;
   transition: color .3s ease-in-out;
-  width: 2em;
+  width: 2rem;
 
   &:hover {
     animation: pulsate 1s infinite;

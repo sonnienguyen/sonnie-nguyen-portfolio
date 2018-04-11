@@ -1337,11 +1337,11 @@ code {
 }
 
 .icon {
-  height: 2em;
+  height: 2rem;
   -webkit-transition: color .3s ease-in-out;
   -o-transition: color .3s ease-in-out;
   transition: color .3s ease-in-out;
-  width: 2em;
+  width: 2rem;
   color: #9e9e9e;
 }
 
