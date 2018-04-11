@@ -56,38 +56,3 @@
     color: $color-grey-dark;
   }
 }
-
-//
-// Icon components
-//
-
-.icon {
-  height: 2em;
-  transition: color .3s ease-in-out;
-  width: 2em;
-
-  &:hover {
-    animation: pulsate 1s infinite;
-  }
-
-  @include link-colors(
-    $link: $socials-color-link,
-    $visited: $socials-color-visited,
-    $hover: $socials-color-hover,
-    $active: $socials-color-active
-  );
-
-  @keyframes pulsate {
-    0% {
-      transform: scale(1);
-    }
-
-    50% {
-      transform: scale(1.10);
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  }
-}
