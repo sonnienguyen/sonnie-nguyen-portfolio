@@ -1216,6 +1216,29 @@ header {
   margin-left: 0;
 }
 
+.l-maxWidth740 {
+  max-width: 740px;
+}
+
+.l-content {
+  padding: 3rem 0;
+}
+
+.l-content--t-padding100 {
+  padding-top: 100px;
+}
+
+.l-page:last-child {
+  border-bottom: 1px dotted #eeeeee;
+  padding: 2.8rem 0;
+}
+
+.l-nav::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 .pagination {
   text-align: center;
 }
@@ -1444,29 +1467,6 @@ code {
 
 #content {
   background-color: #fff;
-}
-
-.l-maxWidth740 {
-  max-width: 740px;
-}
-
-.l-content {
-  padding: 3rem 0;
-}
-
-.l-content--t-padding100 {
-  padding-top: 100px;
-}
-
-.l-page:last-child {
-  border-bottom: 1px dotted #eeeeee;
-  padding: 2.8rem 0;
-}
-
-.l-nav::after {
-  clear: both;
-  content: '';
-  display: table;
 }
 
 .list-style-none {

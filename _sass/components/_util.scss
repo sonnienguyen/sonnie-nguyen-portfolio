@@ -6,41 +6,6 @@
 }
 
 //
-// Layout style components
-//
-
-// "l-" prefix is for layout
-.l {
-
-  // l-maxWidth740
-  &-maxWidth740 {
-    max-width: 740px;
-  }
-
-  // l-content
-  &-content {
-    padding: 3rem 0;
-  }
-
-  // l-content--t-padding100 modifier
-  &-content--t-padding100 {
-    padding-top: 100px;
-  }
-
-  // l-page
-  &-page {
-    &:last-child {
-      @include divider-border-dotted;
-    }
-  }
-
-  // l-nav
-  &-nav {
-    @include clearfix;
-  }
-}
-
-//
 // Styling components
 //
 
