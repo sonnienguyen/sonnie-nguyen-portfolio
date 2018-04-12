@@ -1493,13 +1493,20 @@ code {
   width: 2.6rem;
 }
 
+.archives {
+  padding-top: 1.3rem;
+}
+
 .archives-offset {
-  border-left: 0.2rem solid #eeeeee;
   margin-left: 2rem;
   padding-left: 3rem;
 }
 
-.archives-offset:last-child {
+.archives-offset-border {
+  border-left: 0.2rem solid #eeeeee;
+}
+
+.archives-offset-border:last-child {
   border-left: 0;
 }
 
@@ -1507,7 +1514,7 @@ code {
   -webkit-border-radius: .2rem;
           border-radius: .2rem;
   display: inline-block;
-  margin: 3rem 0 1.2rem;
+  margin: 1.2rem 0;
   padding: 0 .5rem;
 }
 

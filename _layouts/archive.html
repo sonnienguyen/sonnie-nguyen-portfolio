@@ -3,8 +3,8 @@ layout: default
 ---
 
 <article role="article">
-  <h1>Archives</h1>
-  <div class="l-archives">
+  <h1 class="archives-offset">Archives</h1>
+  <div class="archives">
     {%for post in site.posts %}
       {% unless post.next %}
       <div class="archives-date">
@@ -19,7 +19,7 @@ layout: default
         </div>
         {% endif %} 
       {% endunless %}
-      <article class="archives-offset">
+      <article class="archives-offset archives-offset-border">
           <h1 class="post-title post-title--small">
             <a class="link" href="{{ post.url }}">{{ post.title }}</a>
           </h1>
