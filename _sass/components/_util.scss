@@ -30,9 +30,9 @@
     }
   }
 
-  // divider-dotted
-  &-dotted {
-    @include divider-border-dotted;
+  // divider-border
+  &-border {
+    @include divider-border-solid;
   }
 }
 

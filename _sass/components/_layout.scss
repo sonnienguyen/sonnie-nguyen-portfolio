@@ -21,7 +21,7 @@
   // l-page
   &-page {
     &:last-child {
-      @include divider-border-dotted;
+      @include divider-border-solid;
     }
   }
 

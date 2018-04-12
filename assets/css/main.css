@@ -1229,7 +1229,7 @@ header {
 }
 
 .l-page:last-child {
-  border-bottom: 1px dotted #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding: 2.8rem 0;
 }
 
@@ -1545,8 +1545,8 @@ code {
   content: '\00B7';
 }
 
-.divider-dotted {
-  border-bottom: 1px dotted #eeeeee;
+.divider-border {
+  border-bottom: 1px solid #eeeeee;
   padding: 2.8rem 0;
 }
 
