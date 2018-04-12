@@ -4,8 +4,8 @@ title: Summary
 permalink: /about/
 ---
 
-Coding Journal
+{{ site.author.summary }}
 
 ### Contact me
 
-[info@sonnienguyen.com](mailto:info@sonnienguyen.com)
+<a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>

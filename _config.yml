@@ -11,7 +11,9 @@ description: The personal site of Sonnie Nguyen. A blog where you can find conte
 # Your author name to display on your posts and URL of your avatar
 author:
   name: Sonnie Nguyen
-  picture: https://avatars2.githubusercontent.com/u/16827429?s=88&v=4
+  email: info@sonnienguyen.com
+  avatar: https://avatars2.githubusercontent.com/u/16827429?s=88&v=4
+  summary: Coding Journal
 
 #
 # Navigation bar options
@@ -33,7 +35,6 @@ navigation:
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  email: info@sonnienguyen.com
   facebook:
   github: sonnienguyen
   instagram: sonniephotography
