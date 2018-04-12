@@ -2,7 +2,8 @@ var gulp = require('gulp'),
 child = require('child_process'),
 browserSync = require('browser-sync').create(),
 sass = require('gulp-sass'),
-prefix = require('gulp-autoprefixer');
+prefix = require('gulp-autoprefixer'),
+webpack = require('webpack');
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
@@ -37,6 +38,17 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('assets/css'));
 });
 
+// Scripts
+gulp.task('scripts', function(callback) {
+  webpack(require('./webpack.config.js'), function(err, stats) {
+    if (err) {
+      console.log(err.toString());
+    }
+    console.log(stats.toString());
+    callback();
+  });
+});
+
 // Task for serving blog with browserSync + watching scss/html files
 gulp.task('watch', function() {
   // Serve files from the root of this project
@@ -45,6 +57,7 @@ gulp.task('watch', function() {
   gulp.watch(['_sass/*.scss', '_sass/**/*.scss'], function() {
     gulp.start('cssInject');
   });
+  gulp.watch('src/js/**/*.js', ['scripts', 'jekyll-rebuild']);
   gulp.watch(['*.html', '_categories/*', '_includes/*.html', '_layouts/*.html', '_pages/*.html', '_posts/*', '_posts/**/*'], ['jekyll-rebuild']);
 });
 
