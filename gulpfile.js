@@ -33,7 +33,7 @@ gulp.task('sass', function() {
         onError: browserSync.notify
       }).on('error', sass.logError)
     )
-    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(prefix())
     .pipe(gulp.dest('_site/assets/css'))
     .pipe(gulp.dest('assets/css'));
 });
