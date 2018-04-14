@@ -1,4 +1,5 @@
-// app.js
 import FixedResponsiveNav from './modules/FixedResponsiveNav';
+import TimeAgo from './modules/TimeAgo';
 
-var fixedResponsiveNav = new FixedResponsiveNav ();
+const fixedResponsiveNav = new FixedResponsiveNav();
+const timeAgo = new TimeAgo();
