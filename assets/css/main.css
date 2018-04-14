@@ -1177,24 +1177,24 @@ header {
   margin-left: 0;
 }
 
-.l-maxWidth740 {
+.layout-maxWidth740 {
   max-width: 740px;
 }
 
-.l-content {
+.layout-content {
   padding: 3rem 0;
 }
 
-.l-content--t-padding100 {
+.layout-content--t-padding100 {
   padding-top: 100px;
 }
 
-.l-page:last-child {
+.layout-page:last-child {
   border-bottom: 1px solid #eeeeee;
   padding: 2.8rem 0;
 }
 
-.l-nav::after {
+.layout-nav::after {
   clear: both;
   content: '';
   display: table;

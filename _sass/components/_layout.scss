@@ -1,31 +1,31 @@
 // This file contains all styles related to the layout component.
 
-// "l-" prefix is for layout
-.l {
+// Layout components
+.layout {
 
-  // l-maxWidth740
+  // layout-maxWidth740
   &-maxWidth740 {
     max-width: 740px;
   }
 
-  // l-content
+  // layout-content
   &-content {
     padding: 3rem 0;
   }
 
-  // l-content--t-padding100 modifier
+  // layout-content--t-padding100 modifier
   &-content--t-padding100 {
     padding-top: 100px;
   }
 
-  // l-page
+  // layout-page
   &-page {
     &:last-child {
       @include divider-border-solid;
     }
   }
 
-  // l-nav
+  // layout-nav
   &-nav {
     @include clearfix;
   }
