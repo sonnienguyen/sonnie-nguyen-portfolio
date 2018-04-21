@@ -404,7 +404,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #282c34;
+  background: #313640;
 }
 
 :not(pre) > code[class*="language-"] {
@@ -434,7 +434,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.attr-name {
-  color: #d19a66;
+  color: #d49959;
 }
 
 .token.deleted {
@@ -452,12 +452,15 @@ pre[class*="language-"] {
   color: #98c379;
 }
 
-.token.operator,
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string {
   color: #56b6c2;
+}
+
+.token.operator {
+  color: #849bf8;
 }
 
 .token.atrule,
@@ -466,7 +469,7 @@ pre[class*="language-"] {
 }
 
 .token.function {
-  color: #61afef;
+  color: #56b6c2;
 }
 
 .token.regex,
