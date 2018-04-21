@@ -197,16 +197,16 @@ header {
   .nav-collapse {
     float: right;
     width: auto;
-    line-height: 50px;
+    line-height: ($nav-height-header - $nav-height-active);
 
     // high-light active link
     .active {
-      border-bottom: 3px solid;
+      border-bottom: $nav-height-active solid;
       border-image: linear-gradient(to right, $color-gradient-start, $color-gradient-end) 100% 0;
       color: $nav-color-active;
 
       &:hover {
-        border-bottom: 3px solid;
+        border-bottom: $nav-height-active solid;
         color: $nav-color-hover;
       }
     }
@@ -215,7 +215,7 @@ header {
   // width > 600px
   .nav-collapse a:hover {
     color: $nav-color-hover;
-    border-bottom: 3px solid $color-grey-dark;
+    border-bottom: $nav-height-active solid $color-grey-dark;
   }
 }
 
@@ -313,7 +313,7 @@ header {
 .nav-toggle {
   cursor: pointer;
   float: right;
-  height: 50px;
+  height: $nav-height-toggle;
   margin-right: -8px;
   padding: 17px 15px;
   position: relative;

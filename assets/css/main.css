@@ -977,7 +977,7 @@ header {
   .nav-collapse {
     float: right;
     width: auto;
-    line-height: 50px;
+    line-height: 47px;
   }
   .nav-collapse .active {
     border-bottom: 3px solid;
