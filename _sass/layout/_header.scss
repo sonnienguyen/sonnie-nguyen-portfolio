@@ -58,17 +58,18 @@
 //  FIXED HEADER
 //
 
-header {
+.header {
   background-color: $nav-color-background;
+  font-family: $global-font-family;
   position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
-}
 
-.header {
-  font-family: $global-font-family;
+  @include breakpoint(mobile) {
+    position: absolute;
+  }
 }
 
 .logo {
