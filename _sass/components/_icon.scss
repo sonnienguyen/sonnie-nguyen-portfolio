@@ -1,32 +1,30 @@
 // This file contains all styles related to the icon component.
 
-.icon {
-  height: 2rem;
-  transition: color .3s ease-in-out;
-  width: 2rem;
+// social-icons
+.social-icons {
+  text-align: center;
 
-  &:hover {
-    animation: pulsate 1s infinite;
+  &:first-child {
+    margin-left: 0;
   }
 
-  @include link-colors(
-    $link: $socials-color-link,
-    $visited: $socials-color-visited,
-    $hover: $socials-color-hover,
-    $active: $socials-color-active
-  );
+  &--icon {
+    background-color: $social-color-background;
+    border-radius: 50%;
+    display: inline-block;
+    height: 30px;
+    position: relative;
+    width: 30px;
 
-  @keyframes pulsate {
-    0% {
-      transform: scale(1);
-    }
-
-    50% {
-      transform: scale(1.10);
-    }
-
-    100% {
-      transform: scale(1);
+    .icon {
+      color: $social-color-icon;
+      display: block;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: color .3s ease-in-out;
+      width: 16px;
     }
   }
 }

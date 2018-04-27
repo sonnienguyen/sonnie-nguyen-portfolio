@@ -44,6 +44,7 @@ $code-color-background:                         $color-grey-lighter;
 $selection-color-background:                    $color-grey-light;
 $footer-color-background:                       $content-color-background;
 $terminal-window-color-background:              $color-secondary;
+$social-color-background:                       $color-grey-lightest;
 
 // Text colors
 $base-color-text:                               $color-grey-darker;
@@ -57,10 +58,7 @@ $link-color:                                    $base-color-text;
 $link-color-visited:                            $color-grey-darker;
 $link-color-hover:                              $base-color-text;
 $link-color-active:                             $color-grey-darker;
-$socials-color-link:                            $color-grey-light;
-$socials-color-visited:                         $color-grey-light;
-$socials-color-hover:                           $color-grey-dark;
-$socials-color-active:                          $color-grey-dark;
+$social-color-icon:                             $color-grey-light;
 
 // Navigation
 $nav-color-text:                                #fff;
