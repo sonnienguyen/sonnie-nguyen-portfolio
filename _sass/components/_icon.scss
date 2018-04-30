@@ -9,15 +9,15 @@
   }
 
   &--icon {
-    background-color: $social-color-background;
+    background-color: $social-background-color;
     border-radius: 50%;
+    color: $social-color-icon;
     display: inline-block;
     height: 30px;
     position: relative;
     width: 30px;
 
     .icon {
-      color: $social-color-icon;
       display: block;
       left: 50%;
       position: absolute;

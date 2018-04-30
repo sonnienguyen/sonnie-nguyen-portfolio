@@ -38,13 +38,12 @@ $color-gradient-start:                          #fc00ff;
 $color-gradient-end:                            #00dbde;
 
 // Background colors
-$body-color-background:                         #fff;
-$content-color-background:                      $body-color-background;
-$code-color-background:                         $color-grey-lighter;
-$selection-color-background:                    $color-grey-light;
-$footer-color-background:                       $content-color-background;
-$terminal-window-color-background:              $color-secondary;
-$social-color-background:                       $color-grey-lightest;
+$body-background-color:                         #fff;
+$content-background-color:                      $body-background-color;
+$code-background-color:                         $color-grey-lighter;
+$selection-background-color:                    $color-grey-light;
+$footer-background-color:                       $content-background-color;
+$terminal-window-background-color:              $color-secondary;
 
 // Text colors
 $base-color-text:                               $color-grey-darker;
@@ -54,24 +53,27 @@ $footer-color-text:                             $color-grey-light;
 $terminal-window-color-text:                    #fff;
 
 // Links
-$link-color:                                    $base-color-text;
+$link-color-text:                               $base-color-text;
 $link-color-visited:                            $color-grey-darker;
 $link-color-hover:                              $base-color-text;
 $link-color-active:                             $color-grey-darker;
+
+// Social links
 $social-color-icon:                             $color-grey-light;
+$social-background-color:                       $color-grey-lightest;
 
 // Navigation
 $nav-color-text:                                #fff;
-$nav-color-background:                          lighten($color-grey-base, 15%);
 $nav-color-icon:                                #fff;
 $nav-color-active:                              #fff;
 $nav-color-inactive:                            $color-grey-light;
 $nav-color-hover:                               $nav-color-active;
+$nav-color-background:                          lighten($color-grey-base, 15%);
 
 // Buttons
 $btn-color-text:                                #fff;
-$btn-color-background:                          $color-secondary;
 $btn-color-green:                               $color-primary;
+$btn-background-color:                          $color-secondary;
 
 // Type
 $blockquote-color-text:                         $color-grey;

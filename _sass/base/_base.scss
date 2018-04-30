@@ -51,7 +51,7 @@ p {
 }
 
 a {
-  color: $link-color;
+  color: $link-color-text;
   cursor: pointer;
 
   &:hover {
@@ -109,7 +109,7 @@ img {
 
 // Specify the color of the selection
 ::selection {
-  background: $selection-color-background;
+  background: $selection-background-color;
   text-shadow: none;
 }
 
