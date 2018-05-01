@@ -1258,7 +1258,7 @@ code {
   font-weight: 700;
   letter-spacing: .08em;
   text-transform: uppercase;
-  transition: color 0.3s linear, background-color 0.3s linear, border-bottom 0.3s linear;
+  transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1277,20 +1277,20 @@ code {
 
 .btn--green {
   background: #03a678;
-  border-bottom: 0.2em solid #027e5b;
-  color: #e6f6f2;
-}
-
-.btn--green:hover {
-  background-color: #03bf8a;
-  border-bottom: 0.2em solid #03926a;
+  box-shadow: inset 0 -2px rgba(97, 97, 97, 0.4);
   color: #fff;
 }
 
+.btn--green:hover {
+  background-color: #039c71;
+}
+
 .btn--green:active {
-  border-bottom: 0.2em solid #03a678;
-  -webkit-transform: translate(0, 0.1em);
-          transform: translate(0, 0.1em);
+  background-color: #038d66;
+  box-shadow: none;
+  color: #e6f6f2;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .social-icons {
