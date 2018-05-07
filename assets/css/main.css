@@ -1276,19 +1276,19 @@ code {
 }
 
 .btn--green {
-  background: #03a678;
+  background: #0a5;
   box-shadow: inset 0 -2px rgba(97, 97, 97, 0.4);
   color: #fff;
 }
 
 .btn--green:hover {
-  background-color: #039c71;
+  background-color: #00a050;
 }
 
 .btn--green:active {
-  background-color: #038d66;
+  background-color: #009148;
   box-shadow: none;
-  color: #e6f6f2;
+  color: #e6f7ee;
   -webkit-transform: scale(0.95);
           transform: scale(0.95);
 }
