@@ -8,8 +8,9 @@ const webpack = require('webpack');
 const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 
 // Task for building blog when something changed
-gulp.task('jekyll-build', done =>
-  child.spawn(jekyll, ['build', '--incremental'], { stdio: 'inherit' }).on('close', done));
+gulp.task('jekyll-build', done => {
+  child.spawn(jekyll, ['build', '--incremental'], { stdio: 'inherit' }).on('close', done);
+});
 
 // Rebuild Jekyll and reload browserSync
 gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
@@ -17,10 +18,12 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
 });
 
 // Compile sass into CSS & auto-inject into browsers
-gulp.task('cssInject', ['sass'], () => gulp.src('assets/css/main.css').pipe(browserSync.stream()));
+gulp.task('cssInject', ['sass'], () => {
+  gulp.src('assets/css/main.css').pipe(browserSync.stream());
+});
 
 // Compile sass into CSS
-gulp.task('sass', () =>
+gulp.task('sass', () => {
   gulp
     .src('_sass/main.scss')
     .pipe(sass({
@@ -30,7 +33,8 @@ gulp.task('sass', () =>
     }).on('error', sass.logError))
     .pipe(prefix())
     .pipe(gulp.dest('_site/assets/css'))
-    .pipe(gulp.dest('assets/css')));
+    .pipe(gulp.dest('assets/css'));
+});
 
 // Scripts
 gulp.task('scripts', callback => {
@@ -52,7 +56,18 @@ gulp.task('watch', () => {
     gulp.start('cssInject');
   });
   gulp.watch('src/js/**/*.js', ['scripts', 'jekyll-rebuild']);
-  gulp.watch(['*.html', '_categories/*', '_includes/*.html', '_layouts/*.html', '_pages/*.html', '_posts/*', '_posts/**/*'], ['jekyll-rebuild']);
+  gulp.watch(
+    [
+      '*.html',
+      '_categories/*',
+      '_includes/*.html',
+      '_layouts/*.html',
+      '_pages/*.html',
+      '_posts/*',
+      '_posts/**/*',
+    ],
+    ['jekyll-rebuild'],
+  );
 });
 
 // Default task
