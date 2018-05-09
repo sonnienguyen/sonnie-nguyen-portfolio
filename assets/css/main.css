@@ -548,7 +548,9 @@ pre[rel]::before {
   content: attr(rel);
   font-size: .9em;
   left: 0;
+  padding: 0 10px;
   position: absolute;
+  text-align: right;
   text-indent: 1.5rem;
   top: 0;
   width: 100%;
@@ -557,6 +559,7 @@ pre[rel]::before {
 @media only screen and (max-width: 37.5em) {
   pre[rel]::before {
     border-radius: 0;
+    padding: 0 15px;
   }
 }
 
