@@ -3,8 +3,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-  {% if page.excerpt %}
+  {%- if page.excerpt -%}
   <meta name="description" content="{{ page.excerpt| strip_html }}"/>
   <meta property="og:description" content="{{ page.excerpt| strip_html }}"/>
   {% else %}
@@ -13,7 +12,7 @@
   {% endif %}
   <meta name="author" content="{{ site.name }}"/>
 
-  {% if page.title %}
+  {%- if page.title -%}
   <meta property="og:title" content="{{ page.title }}"/>
   <meta property="twitter:title" content="{{ page.title }}"/>
   {% endif %}
@@ -23,12 +22,10 @@
     <![endif]-->
 
   <script src="/assets/js/Vendor.js"></script>
-
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} | {{ site.description }}" href="{{ site.baseurl }}/feed.xml"
   />
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" media="all">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts/data-woff.css" media="all">
-
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   
 </head>
