@@ -5,11 +5,12 @@ code {
   font-size: .8em;
   margin: 0 !important;
   padding: 0 .4em;
+  background: $code-inline-background-color;
+  color: $code-inline-color-text;
 }
 
 // Code blocks
 .highlighter-rouge {
-  background: $code-background-color;
   border-radius: 2px;
   font-family: inherit;
   font-size: inherit;

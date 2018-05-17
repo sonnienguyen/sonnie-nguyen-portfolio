@@ -40,15 +40,12 @@ $color-gradient-end:                            #00dbde;
 // Background colors
 $body-background-color:                         #fff;
 $content-background-color:                      $body-background-color;
-$code-background-color:                         $color-grey-lighter;
 $selection-background-color:                    $color-grey-light;
 $footer-background-color:                       $content-background-color;
-$terminal-window-background-color:              $color-secondary;
 
 // Text colors
 $base-color-text:                               $color-grey-darker;
 $header-color-text:                             $base-color-text;
-$code-color-text:                               $base-color-text;
 $footer-color-text:                             $color-grey-light;
 $terminal-window-color-text:                    #fff;
 
@@ -78,6 +75,13 @@ $btn-background-color:                          $color-secondary;
 // Type
 $blockquote-color-text:                         $color-grey;
 $blockquote-color-border:                       $color-grey-light;
+
+// Syntax
+$code-inline-color-text:                        #c7254e;
+$code-inline-background-color:                  #f9f2f4;
+$code-blocks-background-color:                  #313640;
+$terminal-toolbar-background-color:             lighten($code-blocks-background-color, 3%);
+$terminal-border-top-color:                     $color-secondary;
 
 //
 // Sizes

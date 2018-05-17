@@ -380,7 +380,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  background: #484d58;
+  background: #313640;
   text-shadow: none;
 }
 
@@ -542,7 +542,8 @@ pre[rel] {
 }
 
 pre[rel]::before {
-  background: #007acc;
+  background: #383d49;
+  border-top: 3px solid #007acc;
   border-radius: 2px 2px 0 0;
   color: #fff;
   content: attr(rel);
@@ -1213,10 +1214,11 @@ code {
   font-size: .8em;
   margin: 0 !important;
   padding: 0 .4em;
+  background: #f9f2f4;
+  color: #c7254e;
 }
 
 .highlighter-rouge {
-  background: #eeeeee;
   border-radius: 2px;
   font-family: inherit;
   font-size: inherit;
