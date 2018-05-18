@@ -21,7 +21,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  background: $code-blocks-background-color;
+  background: tint($code-blocks-background-color, 8%);
   text-shadow: none;
 }
 
@@ -46,7 +46,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #313640;
+  background: $code-blocks-background-color;
 }
 
 // Inline code
