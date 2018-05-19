@@ -1,13 +1,13 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
   entry: {
-    App: "./src/js/App.js",
-    Vendor : "./src/js/Vendor.js"
+    App: './src/js/App.js',
+    Vendor: './src/js/Vendor.js',
   },
   output: {
-    path: path.resolve(__dirname, "assets/js"),
-    filename: "[name].js"
+    path: path.resolve(__dirname, 'assets/js'),
+    filename: '[name].js',
   },
   module: {
     rules: [
@@ -16,8 +16,8 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-        }
-      }
-    ]
-  }
-}
+        },
+      },
+    ],
+  },
+};
