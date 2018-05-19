@@ -13,7 +13,7 @@
     "babel-core": "^6.26.2",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.23.7",
+    "browser-sync": "^2.24.4",
     "child_process": "^1.0.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
