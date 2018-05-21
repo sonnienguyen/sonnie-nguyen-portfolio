@@ -1,20 +1,24 @@
 <!DOCTYPE html>
-<html>
+{% if page.lang %}
+<html lang="{{ page.lang }}">
+{% else %}
+<html lang="en">
+{% endif %}
 
-  {% include site-head.html %}
+  {%- include site-head.html -%}
 
-  <body>
-    {% include navigation.html %}
-    <div id="content" class="container layout-maxWidth740" role="main">
-      <div class="layout-content layout-content--t-padding100">
-        {{ content }}
-      </div>
+<body>
+  {% include navigation.html %}
+  <div id="content" class="container layout-maxWidth740" role="main">
+    <div class="layout-content layout-content--t-padding100">
+      {{ content }}
     </div>
-    <footer class="footer layout-content layout-maxWidth740">
-      {% include icons.html %}
-      {% include site-footer.html %}
-    </footer>
-    {% include scripts.html %}
-  </body>
+  </div>
+  <footer class="footer layout-content layout-maxWidth740">
+    {% include icons.html %}
+    {% include site-footer.html %}
+  </footer>
+  {% include scripts.html %}
+</body>
 
 </html>
