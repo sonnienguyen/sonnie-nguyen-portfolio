@@ -1,0 +1,17 @@
+// This file contains all styles related to the markdown component.
+
+.markdown-body {
+  line-height: 1.5;
+
+  .task-list {
+    &-item {
+      list-style-type: none;
+    }
+
+    &-item-checkbox {
+      margin: 0 0.5em 0.25em -1.6em;
+    }
+  }
+}
+
+

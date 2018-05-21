@@ -1327,6 +1327,18 @@ code {
   width: 16px;
 }
 
+.markdown-body {
+  line-height: 1.5;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item-checkbox {
+  margin: 0 0.5em 0.25em -1.6em;
+}
+
 .post-title {
   font-size: 2.6rem;
   margin: 0;
