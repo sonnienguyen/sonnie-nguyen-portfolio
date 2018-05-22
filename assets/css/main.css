@@ -354,7 +354,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   background: none;
   border-radius: 2px;
-  color: #ABB2BF;
+  color: #abb2bf;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: .9em;
   -webkit-hyphens: none;
@@ -380,7 +380,7 @@ pre[class*="language-"] {
 
 pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
 code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-  background: #41464f;
+  background: #393d44;
   text-shadow: none;
 }
 
@@ -404,7 +404,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: #313640;
+  background: #282c34;
 }
 
 :not(pre) > code[class*="language-"] {
@@ -416,7 +416,8 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #5C6370;
+  color: #90939a;
+  font-style: italic;
 }
 
 .token.punctuation {
@@ -465,7 +466,7 @@ pre[class*="language-"] {
 
 .token.atrule,
 .token.keyword {
-  color: #c678dd;
+  color: #d17de9;
 }
 
 .token.function {
@@ -475,7 +476,7 @@ pre[class*="language-"] {
 .token.regex,
 .token.important,
 .token.variable {
-  color: #c678dd;
+  color: #d17de9;
 }
 
 .token.important,
@@ -524,7 +525,7 @@ pre.line-numbers > code {
 }
 
 .line-numbers-rows > span:before {
-  color: #5C6370;
+  color: #90939a;
   content: counter(linenumber);
   display: block;
   padding-right: .8em;
@@ -542,7 +543,7 @@ pre[rel] {
 }
 
 pre[rel]::before {
-  background: #383d49;
+  background: #2f333d;
   border-top: 3px solid #007acc;
   border-radius: 2px 2px 0 0;
   color: #fff;
