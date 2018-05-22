@@ -4,25 +4,19 @@
 // MEDIA QUERY MANAGER
 //
 
-/*
+// Mobile                              : 0 - 600px
+// Tablet portrait                     : 600 - 900px
+// Tablet landscape                    : 900 - 1200px
+// Where our normal styles apply       : 1200 - 1800px
+// Desktop                             : 1800px+
 
-0 - 600px:                          Mobile
-600 - 900px:                        Tablet portrait
-900 - 1200px:                       Tablet landscape
-->1200 - 1800px:                    is where our normal styles apply
-1800px+ :                           Big desktop
+// $breakpoint argument choices:
+// - mobile
+// - tab-port
+// - tab-land
+// - desktop
 
-$breakpoint argument choices:
-- mobile
-- tab-port
-- tab-land
-- big-desktop
-
-ORDER: Base + typography > general layout + grid > page layout > components
-
-1em = 16px
-
-*/
+// So by default 1em = 16px
 
 @mixin breakpoint($class) {
   @if $class == mobile {
@@ -73,7 +67,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   background: linear-gradient(to right, $start-color, $end-color);
 }
 
-//
+// Clearfix
 @mixin clearfix {
   &::after {
     clear: both;
