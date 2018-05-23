@@ -19,7 +19,7 @@ const units = [
   },
 ];
 
-const dateTimes = document.querySelectorAll('#js-posted-on');
+const dateTime = document.querySelectorAll('#js-posted-on');
 const postedAgo = document.querySelectorAll('#js-posted-ago');
 
 function format(diff, divisor, unit, prev) {
@@ -43,9 +43,9 @@ function ago(date) {
 }
 
 function TimeAgo() {
-  dateTimes.forEach((dateTime, position) => {
-    postedAgo[position].innerHTML = ago(new Date(dateTime.getAttribute('datetime')));
-  });
+  for (let i = 0; i < dateTime.length; i++) {
+    postedAgo[i].innerHTML = ago(new Date(dateTime[i].getAttribute('datetime')));
+  }
 }
 
 export default TimeAgo;
