@@ -30,8 +30,12 @@
     color: $color-grey-dark;
     display: block;
     font-family: $post-meta-font-family;
-    font-size: 1.3rem;
     padding-bottom: 2.4rem;
+  }
+
+  // post-meta--small
+  &-meta--small {
+    font-size: 1.3rem;
 
     @include breakpoint(tab-port) {
       font-size: 1.6rem;

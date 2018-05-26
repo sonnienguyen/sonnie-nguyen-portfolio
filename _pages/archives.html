@@ -25,9 +25,9 @@ permalink: "/posts/archives/"
           <h1 class="post-title post-title--small">
             <a class="link" href="{{ post.url }}">{{ post.title }}</a>
           </h1>
-          <small class="post-meta">
+          <div class="post-meta post-meta--small">
             <span class="datetime">{% include post-date.html %}</span><span class="divider-middot"></span>posted in {% include post-categories.html %}
-          </small>
+          </div>
       </article>
     {% endfor %}
   </div>

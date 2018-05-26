@@ -1346,18 +1346,21 @@ code {
   color: #424242;
   display: block;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 1.3rem;
   padding-bottom: 2.4rem;
 }
 
+.post-meta--small {
+  font-size: 1.3rem;
+}
+
 @media only screen and (max-width: 56.25em) {
-  .post-meta {
+  .post-meta--small {
     font-size: 1.6rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
-  .post-meta {
+  .post-meta--small {
     font-size: 1.5rem;
   }
 }
