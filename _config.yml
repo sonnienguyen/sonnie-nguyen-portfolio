@@ -59,8 +59,7 @@ baseurl:
 #
 
 # Outputting
-# permalink: /:categories/:title/ #disable, causing erro to collections.
-permalink: /blog/:year/:month/:day/:title/
+permalink: /:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/ # paginate_path: /blog/page/:num
 
