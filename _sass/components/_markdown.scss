@@ -12,6 +12,39 @@
       margin: 0 0.5em 0.25em -1.6em;
     }
   }
+
+  // Basic table
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    display: block;
+    margin-bottom: 16px;
+    margin-top: 0;
+    overflow: auto;
+    width: 100%;
+
+    th {
+      font-weight: 700;
+    }
+
+    th,
+    td {
+      border: $table-border-width solid $table-color-border;
+      padding: 6px 13px;
+    }
+
+    tr {
+      background-color: $table-background-color;
+    }
+
+    // Zebra-striping
+    tr:nth-child(2n) {
+      background-color: $table-color-striped-order;
+    }
+  }
+
+  th,
+  td {
+    padding: 0;
+  }
 }
-
-

@@ -1321,6 +1321,39 @@ code {
   margin: 0 0.5em 0.25em -1.6em;
 }
 
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 0;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 700;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body th,
+.markdown-body td {
+  padding: 0;
+}
+
 .post-title {
   font-size: 2.6rem;
   margin: 0;

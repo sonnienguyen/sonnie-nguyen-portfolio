@@ -72,6 +72,11 @@ $btn-color-text:                                #fff;
 $btn-color-green:                               $color-primary;
 $btn-background-color:                          $color-secondary;
 
+// Tables
+$table-color-border:                            #dfe2e5;
+$table-color-striped-order:                     #f6f8fa;
+$table-background-color:                        #fff;
+
 // Type
 $blockquote-color-text:                         $color-grey;
 $blockquote-color-border:                       $color-grey-light;
@@ -94,6 +99,9 @@ $nav-height-active:                             3px;
 
 // Font sizes
 $default-font-size:                             1.6rem;
+
+// Table sizes
+$table-border-width:                            1px;
 
 // Syntax highlighter
 $terminal-window-height:                        3rem;
