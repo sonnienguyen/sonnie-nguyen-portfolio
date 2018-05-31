@@ -59,7 +59,7 @@
 //
 
 .header {
-  background-color: $nav-color-background;
+  background-color: $nav-background-color;
   font-family: $global-font-family;
   position: fixed;
   z-index: 3;
@@ -297,7 +297,7 @@
 }
 
 .nav-collapse ul ul a {
-  background: $nav-color-background;
+  background: $nav-background-color;
   padding-left: 2em;
 }
 
