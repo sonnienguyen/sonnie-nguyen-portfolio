@@ -1,7 +1,7 @@
 {
   "name": "sonnienguyen.github.io",
   "author": "Sonnie",
-  "main": "index.js",
+  "main": "App.js",
   "scripts": {
     "gulp": "gulp"
   },
