@@ -71,9 +71,9 @@ collections:
 
 defaults:
   - scope:
-      path: "_categories"
+      path: _categories
     values:
-      layout: "category" 
+      layout: category
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -86,7 +86,7 @@ kramdown:
     css_class: 'highlight'
 
 # Marks end of excerpt in posts
-excerpt_separator: <!-- more --> 
+excerpt_separator: <!-- more -->
 
 # Use the following plug-ins
 plugins:
@@ -96,8 +96,19 @@ plugins:
   - jemoji
 
 # Exclude these files from your production _site
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md", "CNAME", "node_modules", "package.json", "package-lock.json", "gulpfile.js", "src", "webpack.config.js"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - node_modules
+  - package.json
+  - package-lock.json
+  - gulpfile.js
+  - src
+  - webpack.config.js
 
 # Include files inside _pages directory
 include:
-  [_pages]
+  - _pages
