@@ -3,7 +3,9 @@
   "author": "Sonnie",
   "main": "App.js",
   "scripts": {
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "jekyll:build": "jekyll build",
+    "jekyll:clean": "rm -rf _site && npm run jekyll:build && npm run gulp"
   },
   "license": "MIT",
   "dependencies": {
