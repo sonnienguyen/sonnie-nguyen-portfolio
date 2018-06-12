@@ -4,8 +4,10 @@
   "main": "App.js",
   "scripts": {
     "gulp": "gulp",
+    "dev": "npm run jekyll:clean && webpack --mode development --colors && npm run gulp",
+    "build": "webpack --mode production",
     "jekyll:build": "jekyll build",
-    "jekyll:clean": "rm -rf _site && npm run jekyll:build && npm run gulp"
+    "jekyll:clean": "rm -rf _site && npm run jekyll:build"
   },
   "license": "MIT",
   "dependencies": {
