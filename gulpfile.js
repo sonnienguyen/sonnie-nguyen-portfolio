@@ -42,7 +42,7 @@ gulp.task('scripts', callback => {
     if (err) {
       console.log(err.toString());
     }
-    console.log(stats.toString());
+    console.log(stats.toString({ colors: true}));
     callback();
   });
 });
