@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -18,6 +19,15 @@ module.exports = {
           loader: 'babel-loader',
         },
       },
+    ],
+  },
+  // Tell webpack to minimize the bundle.
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+      }),
     ],
   },
 };
