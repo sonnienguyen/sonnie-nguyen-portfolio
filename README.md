@@ -5,7 +5,7 @@
 
 This is the source code for my website [sonnienguyen.com]
 
-## Copyright and licence
+## Copyright and license
 
 See [LICENSE][license] for details.
 
