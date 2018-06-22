@@ -1,7 +1,15 @@
 {
-  "name": "sonnienguyen.github.io",
-  "author": "Sonnie",
-  "main": "App.js",
+  "name": "sonnie-nguyen-portfolio",
+  "description": "Sonnie Nguyen's Portfolio Website",
+  "private": true,
+  "author": "Sonnie @sonnienguyen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonnienguyen/sonnienguyen.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonnienguyen/sonnienguyen.github.io/issues"
+  },
   "scripts": {
     "gulp": "gulp",
     "dev": "npm run jekyll:clean && webpack --mode development --colors && npm run gulp",
