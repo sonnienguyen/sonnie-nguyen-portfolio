@@ -1,9 +1,9 @@
-<h2 align="center">Sonnie Nguyen's Website</h2>
-
-[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)][license]
-[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.8-blue.svg?style=flat-square)][jekyll]
+<h2>Sonnie Nguyen's Portfolio Website</h2>
 
 This is the source code for my website [sonnienguyen.com]
+
+[![MIT licensed](https://img.shields.io/badge/license-MIT-009ffd.svg)][license]
+[![Jekyll](https://img.shields.io/badge/jekyll-%3E%3D%203.8-009ffd.svg)][jekyll]
 
 ## Copyright and license
 
