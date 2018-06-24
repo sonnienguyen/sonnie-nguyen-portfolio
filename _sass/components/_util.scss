@@ -1,12 +1,13 @@
-// This file contains all styles, small components, all kind of specific modules.
-// Then later sorting through correct partial files.
+// Helpers
+//
+// This file contains CSS helper classes.
 
 #content {
   background-color: $content-background-color;
 }
 
 //
-// Styling components
+// Styling component
 //
 
 // Removing default bullets
@@ -15,12 +16,12 @@
 }
 
 //
-// Divider components
+// Divider component
 //
 
 .divider {
 
-  // divider-middot
+  // Class name `divider-middot`.
   &-middot {
     padding-left: .5rem;
     padding-right: .5rem;
@@ -30,13 +31,16 @@
     }
   }
 
-  // divider-border
+  // Class name `divider-border`.
   &-border {
     @include divider-border-solid;
   }
 }
 
-// Link components
+//
+// Link component
+//
+
 .link {
   color: inherit;
   cursor: pointer;
@@ -46,12 +50,12 @@
     text-decoration: underline;
   }
 
-  // link--bold modifier
+  // Class name `link--bold`.
   &--bold {
     font-weight: 700;
   }
 
-  // link--grey-darker modifier
+  // Class name `link--grey-darker`.
   &--grey-darker {
     color: $color-grey-dark;
   }

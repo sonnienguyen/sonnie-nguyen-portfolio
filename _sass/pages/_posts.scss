@@ -1,18 +1,16 @@
+// Posts
+//
 // This file contains styles that are specific to the posts page.
-
-//
-// Post components
-//
 
 .post {
 
-  // post-title
+  // Class name `post-title`.
   &-title {
     font-size: 2.6rem;
     margin: 0;
   }
 
-  // post-title--small modifier
+  // Class name `post-title--small`.
   &-title--small {
     font-size: 1.8rem;
 
@@ -25,7 +23,7 @@
     }
   }
 
-  // post-meta
+  // Class name `post-meta`.
   &-meta {
     color: $color-grey-dark;
     display: block;
@@ -33,7 +31,7 @@
     padding-bottom: 2.4rem;
   }
 
-  // post-meta--small
+  // Class name `post-meta--small`.
   &-meta--small {
     font-size: 1.3rem;
 
@@ -46,7 +44,7 @@
     }
   }
 
-  // post-content
+  // Class name `post-content`.
   &-content {
     font-size: $default-font-size;
 
@@ -62,7 +60,7 @@
       font-size: 1.75rem;
     }
 
-    // post-content--grey modifier
+    // Class name `post-content--grey`.
     &--grey {
       color: $color-grey;
       }
@@ -70,12 +68,12 @@
 }
 
 //
-// Author components
+// Author component
 //
 
 .author {
 
-  // author-meta
+  // Class name `author-meta`.
   &-meta {
     color: $color-grey-dark;
     display: block;
@@ -95,7 +93,7 @@
     }
   }
 
-  // author-thumb
+  // Class name `author-thumb`.
   &-thumb {
     border-radius: 100%;
     height: 2.6rem;

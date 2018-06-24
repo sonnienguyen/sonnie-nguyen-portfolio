@@ -1,31 +1,32 @@
+// Layout
+//
 // This file contains all styles related to the layout component.
 
-// Layout components
 .layout {
 
-  // layout-maxWidth740
+  // Class name `layout-maxWidth740`.
   &-maxWidth740 {
     max-width: 740px;
   }
 
-  // layout-content
+  // Class name `layout-content`.
   &-content {
     padding: 3rem 0;
   }
 
-  // layout-content--t-padding100 modifier
+  // Class name `layout-content--t-padding100`.
   &-content--t-padding100 {
     padding-top: 100px;
   }
 
-  // layout-page
+  // Class name `layout-page`.
   &-page {
     &:last-child {
       @include divider-border-solid;
     }
   }
 
-  // layout-nav
+  // Class name `layout-nav`.
   &-nav {
     @include clearfix;
   }

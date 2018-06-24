@@ -1,6 +1,8 @@
+// Icon
+//
 // This file contains all styles related to the icon component.
 
-// social-icons
+// Class name `social-icons`.
 .social-icons {
   text-align: center;
 
@@ -8,6 +10,7 @@
     margin-left: 0;
   }
 
+  // Class name `social-icons--icon`.
   &--icon {
     background-color: $social-background-color;
     border-radius: 50%;
@@ -17,6 +20,7 @@
     position: relative;
     width: 30px;
 
+    // Class name `icon`.
     .icon {
       display: block;
       left: 50%;

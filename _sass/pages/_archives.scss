@@ -1,17 +1,18 @@
+// Archives
+//
 // This file contains styles that are specific to the archives page.
 
-// Archives components
 .archives {
   padding-top: 1.3rem;
 
-  // archives-offset
+  // Class name `archives-offset`.
   &-offset {
 
     margin-left: 2rem;
     padding-left: 3rem;
   }
 
-  // archives-offset-border
+  // Class name `archives-offset-border`.
   &-offset-border {
     border-left: .2rem solid $color-grey-lighter;
 
@@ -20,7 +21,7 @@
     }
   }
 
-  // archives-date
+  // Class name `archives-date`.
   &-date {
     border-radius: .2rem;
     display: inline-block;
@@ -28,7 +29,7 @@
     padding: 0 .5rem;
   }
 
-  // archives-date-yyyy
+  // Class name `archives-date-yyyy`.
   &-date-yyyy {
     color: $color-grey;
     font-size: 1.6rem;
