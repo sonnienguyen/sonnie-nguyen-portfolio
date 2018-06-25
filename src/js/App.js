@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/sonnienguyen/sonnienguyen.github.io/blob/master/LICENSE)
  */
 
-import FixedResponsiveNav from './vendors/FixedResponsiveNav';
+import FixedResponsiveNav from './vendor/FixedResponsiveNav';
 import TimeAgo from './modules/TimeAgo';
 
 const fixedResponsiveNav = new FixedResponsiveNav();
