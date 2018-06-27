@@ -4,11 +4,11 @@
 
 // Inline code
 code {
+  background: $code-inline-background-color;
+  color: $code-inline-color-text;
   font-size: 0.8em;
   margin: 0 !important;
   padding: 0 0.4em;
-  background: $code-inline-background-color;
-  color: $code-inline-color-text;
 }
 
 // Code blocks
@@ -25,9 +25,9 @@ code {
     position: relative;
 
     code {
-      -webkit-overflow-scrolling: touch;
       border-radius: 2px;
       display: block;
+      -webkit-overflow-scrolling: touch;
       overflow-x: scroll;
       padding: 1.25em;
 
