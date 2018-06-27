@@ -82,7 +82,7 @@
   font-weight: 700;
   font-size: 1.5rem;
   float: left;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   transform: translateY(50%);
 
   @include breakpoint(desktop) {
@@ -118,11 +118,11 @@
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1;
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
 
   @include breakpoint(desktop) {
     font-size: 1.1rem;
-    padding: .2rem .4rem;
+    padding: 0.2rem 0.4rem;
   }
 
   @include breakpoint(tab-land) {
@@ -135,7 +135,7 @@
 
   @include breakpoint(mobile) {
     font-size: 1.4rem;
-    padding: .3rem .5rem;
+    padding: 0.3rem 0.5rem;
   }
 }
 
@@ -145,7 +145,7 @@
 
 .mask {
   transition: opacity 300ms;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   position: fixed;
   opacity: 0;
@@ -250,12 +250,12 @@
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   text-decoration: none;
-  padding: .7em .8em;
+  padding: 0.7em 0.8em;
   color: $nav-color-inactive;
   width: 100%;
   float: left;
   font-size: 1.5rem;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 
   @include breakpoint(mobile) {
     font-size: 1.9rem;
@@ -269,7 +269,7 @@
 
 .nav-collapse a:hover {
   color: $nav-color-hover;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 // width > 600px
@@ -282,7 +282,7 @@
     margin: 0;
     position: relative;
     font-size: 1.5rem;
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
 
     @include breakpoint(desktop) {
       font-size: 1.4rem;
