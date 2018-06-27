@@ -15,6 +15,7 @@
     "gulp": "gulp",
     "dev": "npm run jekyll:clean && webpack --mode development --colors && npm run gulp",
     "build": "webpack --mode production",
+    "css:lint": "stylelint \"_sass/**/*.scss\" --syntax scss",
     "jekyll:build": "jekyll build",
     "jekyll:clean": "rm -rf _site && npm run jekyll:build"
   },
