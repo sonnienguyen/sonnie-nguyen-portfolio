@@ -24,12 +24,15 @@
   @if $class == mobile {
     @media only screen and (max-width: 37.5em) { @content; }
   }
+
   @if $class == tab-port {
     @media only screen and (max-width: 56.25em) { @content; }
   }
+
   @if $class == tab-land {
     @media only screen and (max-width: 75em) { @content; }
   }
+
   @if $class == desktop {
     @media only screen and (min-width: 112.5em) { @content; }
   }
