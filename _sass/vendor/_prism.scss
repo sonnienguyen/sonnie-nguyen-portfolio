@@ -167,7 +167,7 @@ pre.line-numbers > code {
   pointer-events: none;
 }
 
-.line-numbers-rows > span:before {
+.line-numbers-rows > span::before {
   color: #90939a;
   content: counter(linenumber);
   display: block;
