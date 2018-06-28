@@ -102,13 +102,6 @@ img {
   max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint {
-  img {
-    max-width: none;
-  }
-}
-
 // Specify the color of the selection
 ::selection {
   background: $selection-background-color;
