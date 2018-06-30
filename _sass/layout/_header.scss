@@ -113,7 +113,7 @@
 }
 
 .counter {
-  background: $color-grey-dark;
+  background: $color-gray-dark;
   border-radius: 20px;
   color: inherit;
   display: inline-block;
@@ -220,7 +220,7 @@
   // width > 600px
   .nav-collapse a:hover {
     color: $nav-color-hover;
-    border-bottom: $nav-height-active solid $color-grey-dark;
+    border-bottom: $nav-height-active solid $color-gray-dark;
   }
 }
 

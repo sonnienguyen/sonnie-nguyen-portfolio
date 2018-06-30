@@ -25,7 +25,7 @@
 
   // Class name `post-meta`.
   &-meta {
-    color: $color-grey-dark;
+    color: $color-gray-dark;
     display: block;
     font-family: $post-meta-font-family;
     padding-bottom: 2.4rem;
@@ -60,9 +60,9 @@
       font-size: 1.75rem;
     }
 
-    // Class name `post-content--grey`.
-    &--grey {
-      color: $color-grey;
+    // Class name `post-content--gray`.
+    &--gray {
+      color: $color-gray;
     }
   }
 }
@@ -75,7 +75,7 @@
 
   // Class name `author-meta`.
   &-meta {
-    color: $color-grey-dark;
+    color: $color-gray-dark;
     display: block;
     font-size: 1.2rem;
     padding: 0.8rem 0 2.4rem;

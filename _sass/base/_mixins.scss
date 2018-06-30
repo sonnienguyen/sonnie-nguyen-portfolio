@@ -40,13 +40,13 @@
 
 // Divider border dotted
 @mixin divider-border-dotted {
-  border-bottom: 1px dotted $color-grey-lighter;
+  border-bottom: 1px dotted $color-gray-lighter;
   padding: 2.8rem 0;
 }
 
 // Divider border solid
 @mixin divider-border-solid {
-  border-bottom: 1px solid $color-grey-lighter;
+  border-bottom: 1px solid $color-gray-lighter;
   padding: 2.8rem 0;
 }
 

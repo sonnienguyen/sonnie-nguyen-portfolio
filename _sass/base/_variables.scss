@@ -23,13 +23,13 @@ $code-font-family:                              $consolas;
 //
 
 // Shades of gray
-$color-grey-base:                               #000;
-$color-grey-darker:                             lighten($color-grey-base, 13%);   // #212
-$color-grey-dark:                               lighten($color-grey-base, 26%);   // #424
-$color-grey:                                    lighten($color-grey-base, 38%);   // #616
-$color-grey-light:                              lighten($color-grey-base, 62%);   // #9e9
-$color-grey-lighter:                            lighten($color-grey-base, 93.5%); // #eee
-$color-grey-lightest:                           lighten($color-grey-base, 96%);   // #f5f
+$color-gray-base:                               #000;
+$color-gray-darker:                             lighten($color-gray-base, 13%);   // #212
+$color-gray-dark:                               lighten($color-gray-base, 26%);   // #424
+$color-gray:                                    lighten($color-gray-base, 38%);   // #616
+$color-gray-light:                              lighten($color-gray-base, 62%);   // #9e9
+$color-gray-lighter:                            lighten($color-gray-base, 93.5%); // #eee
+$color-gray-lightest:                           lighten($color-gray-base, 96%);   // #f5f
 
 // Font colors
 $color-primary:                                 #0a5;
@@ -42,32 +42,32 @@ $color-gradient-end:                            #00dbde;
 // Background colors
 $body-background-color:                         #fff;
 $content-background-color:                      $body-background-color;
-$selection-background-color:                    $color-grey-light;
+$selection-background-color:                    $color-gray-light;
 $footer-background-color:                       $content-background-color;
 
 // Text colors
-$base-color-text:                               $color-grey-darker;
+$base-color-text:                               $color-gray-darker;
 $header-color-text:                             $base-color-text;
-$footer-color-text:                             $color-grey;
+$footer-color-text:                             $color-gray;
 $terminal-window-color-text:                    #fff;
 
 // Links
 $link-color-text:                               $base-color-text;
-$link-color-visited:                            $color-grey-darker;
+$link-color-visited:                            $color-gray-darker;
 $link-color-hover:                              $base-color-text;
-$link-color-active:                             $color-grey-darker;
+$link-color-active:                             $color-gray-darker;
 
 // Social links
-$social-color-icon:                             $color-grey-light;
-$social-background-color:                       $color-grey-lightest;
+$social-color-icon:                             $color-gray-light;
+$social-background-color:                       $color-gray-lightest;
 
 // Navigation
 $nav-color-text:                                #fff;
 $nav-color-icon:                                #fff;
 $nav-color-active:                              #fff;
-$nav-color-inactive:                            $color-grey-light;
+$nav-color-inactive:                            $color-gray-light;
 $nav-color-hover:                               $nav-color-active;
-$nav-background-color:                          lighten($color-grey-base, 15%);
+$nav-background-color:                          lighten($color-gray-base, 15%);
 
 // Buttons
 $btn-color-text:                                #fff;
@@ -80,8 +80,8 @@ $table-color-striped-order:                     #f6f8fa;
 $table-background-color:                        #fff;
 
 // Type
-$blockquote-color-text:                         $color-grey;
-$blockquote-color-border:                       $color-grey-light;
+$blockquote-color-text:                         $color-gray;
+$blockquote-color-border:                       $color-gray-light;
 
 // Syntax
 $code-inline-color-text:                        #c7254e;
