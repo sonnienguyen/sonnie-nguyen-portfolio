@@ -7,7 +7,7 @@ permalink: "/posts/archives/"
 <article role="article">
   <h1 class="archives-offset">Archives</h1>
   <div class="archives">
-    {%for post in site.posts %}
+    {% for post in site.posts %}
       {% unless post.next %}
       <div class="archives-date">
         <h2 class="archives-date-yyyy">{{ post.date | date: '%Y' }}</h2>
