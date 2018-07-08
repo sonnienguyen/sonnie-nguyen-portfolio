@@ -1,0 +1,12 @@
+extends:
+  # https://www.npmjs.com/package/eslint-config-airbnb-base
+  - "airbnb-base"
+
+env:
+  es6: true
+  browser: true
+  node: true
+
+rules:
+  # ECMAScript 6
+  arrow-parens: "off"
