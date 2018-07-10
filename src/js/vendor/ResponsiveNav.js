@@ -7,8 +7,7 @@
  * Available under the MIT license
  */
 
-function ResponsiveNav(document, window, index) {
-
+export default function ResponsiveNav(document, window, index) {
   var responsiveNav = function (el, options) {
 
     var computed = !!window.getComputedStyle;
@@ -657,5 +656,3 @@ function ResponsiveNav(document, window, index) {
   window.responsiveNav = responsiveNav;
 
 }
-
-export default ResponsiveNav;

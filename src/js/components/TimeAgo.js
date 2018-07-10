@@ -1,3 +1,6 @@
+
+export default TimeAgo;
+
 const units = [
   { // max: 46 minutes
     max: 2760000, value: 60000, name: 'minute', prev: 'a minute ago',
@@ -47,5 +50,3 @@ function TimeAgo() {
     postedAgo[i].innerHTML = ago(new Date(dateTime[i].getAttribute('datetime')));
   }
 }
-
-export default TimeAgo;

@@ -4,6 +4,6 @@
  * Licensed under MIT (https://github.com/sonnienguyen/sonnienguyen.github.io/blob/master/LICENSE)
  */
 
-import ResponsiveNav from './vendor/ResponsiveNav.js';
+import ResponsiveNav from './vendor/ResponsiveNav';
 
-const responsiveNav = new ResponsiveNav(document, window, 0);
+const responsiveNav = ResponsiveNav(document, window, 0);

@@ -7,5 +7,5 @@
 import FixedResponsiveNav from './vendor/FixedResponsiveNav';
 import TimeAgo from './components/TimeAgo';
 
-const fixedResponsiveNav = new FixedResponsiveNav();
-const timeAgo = new TimeAgo();
+const fixedResponsiveNav = FixedResponsiveNav();
+const timeAgo = TimeAgo();

@@ -8,7 +8,7 @@
  * Free to use under the MIT License.
  */
 
-function FixedResponsiveNav() {
+export default function FixedResponsiveNav() {
   // Feature test to rule out some older browsers
   if ('querySelector' in document && 'addEventListener' in window) {
     // forEach method, that passes back the stuff we need
@@ -155,5 +155,3 @@ function FixedResponsiveNav() {
     });
   }
 }
-
-export default FixedResponsiveNav;
