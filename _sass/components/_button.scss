@@ -11,7 +11,7 @@
   padding: 0.6rem 0.8rem;
   text-decoration: none;
 
-  // Class name `btn-read-more`.
+  // btn-read-more
   &-read-more {
     font-size: 1.2rem;
     font-weight: 700;
@@ -30,7 +30,7 @@
     }
   }
 
-  // Class name `btn--green`.
+  // btn--green
   &--green {
     background: $btn-color-green;
     box-shadow: inset 0 -2px rgba($color-gray, 0.4);

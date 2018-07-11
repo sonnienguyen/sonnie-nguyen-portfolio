@@ -21,7 +21,7 @@
 
 .divider {
 
-  // Class name `divider-middot`.
+  // divider-middot
   &-middot {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -31,7 +31,7 @@
     }
   }
 
-  // Class name `divider-border`.
+  // divider-border
   &-border {
     @include divider-border-solid;
   }
@@ -50,12 +50,12 @@
     text-decoration: underline;
   }
 
-  // Class name `link--bold`.
+  // link--bold
   &--bold {
     font-weight: 700;
   }
 
-  // Class name `link--gray-darker`.
+  // link--gray-darker
   &--gray-darker {
     color: $color-gray-dark;
   }

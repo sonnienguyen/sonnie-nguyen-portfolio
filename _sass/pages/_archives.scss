@@ -5,13 +5,13 @@
 .archives {
   padding-top: 1.3rem;
 
-  // Class name `archives-offset`.
+  // archives-offset
   &-offset {
     margin-left: 2rem;
     padding-left: 3rem;
   }
 
-  // Class name `archives-offset-border`.
+  // archives-offset-border
   &-offset-border {
     border-left: 0.2rem solid $color-gray-lighter;
 
@@ -20,7 +20,7 @@
     }
   }
 
-  // Class name `archives-date`.
+  // archives-date
   &-date {
     border-radius: 0.2rem;
     display: inline-block;
@@ -28,7 +28,7 @@
     padding: 0 0.5rem;
   }
 
-  // Class name `archives-date-yyyy`.
+  // archives-date-yyyy
   &-date-yyyy {
     color: $color-gray;
     font-size: 1.6rem;

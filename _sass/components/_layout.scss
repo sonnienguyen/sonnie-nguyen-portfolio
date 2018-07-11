@@ -4,29 +4,29 @@
 
 .layout {
 
-  // Class name `layout-maxWidth740`.
+  // layout-maxWidth740
   &-maxWidth740 {
     max-width: 740px;
   }
 
-  // Class name `layout-content`.
+  // layout-content
   &-content {
     padding: 3rem 0;
   }
 
-  // Class name `layout-content--t-padding100`.
+  // layout-content--t-padding100
   &-content--t-padding100 {
     padding-top: 100px;
   }
 
-  // Class name `layout-page`.
+  // layout-page
   &-page {
     &:last-child {
       @include divider-border-solid;
     }
   }
 
-  // Class name `layout-nav`.
+  // layout-nav
   &-nav {
     @include clearfix;
   }
