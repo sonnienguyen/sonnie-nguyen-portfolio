@@ -13,12 +13,14 @@
   },
   "scripts": {
     "gulp": "gulp",
-    "dev": "npm run jekyll:clean && webpack --mode development --colors && npm run gulp",
+    "dev": "webpack --mode development --colors",
     "build": "webpack --mode production",
-    "lint": "npm run lint:css",
-    "lint:css": "stylelint \"_sass/**/*.scss\" --syntax scss",
+    "clean": "rm -rf _site",
+    "start": "run-s jekyll:clean dev gulp",
     "jekyll:build": "jekyll build",
-    "jekyll:clean": "rm -rf _site && npm run jekyll:build"
+    "jekyll:clean": "run-s clean jekyll:build",
+    "lint": "npm run lint:css",
+    "lint:css": "stylelint \"_sass/**/*.scss\" --syntax scss"
   },
   "license": "MIT",
   "dependencies": {
