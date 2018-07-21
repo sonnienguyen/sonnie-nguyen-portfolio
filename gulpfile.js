@@ -27,7 +27,7 @@ gulp.task("cssInject", ["sass"], () => {
 // Compile sass into CSS
 gulp.task("sass", () => {
   gulp
-    .src("src/_sass/main.scss")
+    .src("src/scss/main.scss")
     .pipe(
       sass({
         outputStyle: "expanded",
@@ -56,7 +56,7 @@ gulp.task("watch", () => {
   // Serve files from the root of this project
   browserSync.init({ notify: false, server: { baseDir: "_site/" } });
   // Reloads page when some of the already built files changed
-  gulp.watch(["src/_sass/*.scss", "src/_sass/**/*.scss"], () => {
+  gulp.watch(["src/scss/*.scss", "src/scss/**/*.scss"], () => {
     gulp.start("cssInject");
   });
   gulp.watch("src/js/**/*.js", ["scripts", "jekyll-rebuild"]);
