@@ -13,12 +13,12 @@
   },
   "scripts": {
     "gulp": "gulp",
+    "start": "run-s jekyll dev gulp",
     "dev": "webpack --mode development --colors",
     "build": "webpack --mode production",
-    "clean": "rm -rf _site",
-    "start": "run-s jekyll:clean dev gulp",
+    "jekyll": "run-s jekyll:*",
+    "jekyll:clean": "rm -rf _site",
     "jekyll:build": "jekyll build",
-    "jekyll:clean": "run-s clean jekyll:build",
     "lint": "npm run lint:css",
     "lint:css": "stylelint \"_sass/**/*.scss\" --syntax scss"
   },
