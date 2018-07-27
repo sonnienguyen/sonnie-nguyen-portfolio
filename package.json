@@ -20,7 +20,7 @@
     "jekyll:clean": "rm -rf _site",
     "jekyll:build": "jekyll build",
     "lint": "npm run lint:css",
-    "lint:css": "stylelint \"_sass/**/*.scss\" --syntax scss"
+    "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss"
   },
   "license": "MIT",
   "dependencies": {
