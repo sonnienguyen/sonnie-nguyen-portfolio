@@ -59,6 +59,7 @@ baseurl:
 #
 
 # Outputting
+source: site
 permalink: /:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/ # paginate_path: /blog/page/:num

@@ -21,7 +21,7 @@ gulp.task("jekyll-rebuild", ["jekyll-build"], () => {
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task("cssInject", ["sass"], () => {
-  gulp.src("assets/css/main.css").pipe(browserSync.stream());
+  gulp.src("site/assets/css/main.css").pipe(browserSync.stream());
 });
 
 // Compile sass into CSS
@@ -37,7 +37,7 @@ gulp.task("sass", () => {
     )
     .pipe(prefix())
     .pipe(gulp.dest("_site/assets/css"))
-    .pipe(gulp.dest("assets/css"));
+    .pipe(gulp.dest("site/assets/css"));
 });
 
 // Scripts
@@ -62,13 +62,13 @@ gulp.task("watch", () => {
   gulp.watch("src/js/**/*.js", ["scripts", "jekyll-rebuild"]);
   gulp.watch(
     [
-      "*.html",
-      "_categories/*",
-      "_includes/*.html",
-      "_layouts/*.html",
-      "_pages/*.html",
-      "_posts/*",
-      "_posts/**/*"
+      "site/*.html",
+      "site/_categories/*",
+      "site/_includes/*.html",
+      "site/_layouts/*.html",
+      "site/_pages/*.html",
+      "site/_posts/*",
+      "site/_posts/**/*"
     ],
     ["jekyll-rebuild"]
   );
