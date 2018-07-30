@@ -1,3 +1,5 @@
 source "https://rubygems.org"
 
-gem 'github-pages'
+group :deployment do
+  gem 'github-pages'
+end
