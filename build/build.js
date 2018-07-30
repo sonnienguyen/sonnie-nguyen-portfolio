@@ -10,7 +10,9 @@ const jekyll = process.platform === "win32" ? "jekyll.bat" : "jekyll";
 // Task for building blog when something changed
 gulp.task("jekyll-build", done => {
   child
-    .spawn(jekyll, ["build", "--incremental"], { stdio: "inherit" })
+    .spawn("bundle", ["exec", "jekyll", "build", "--incremental"], {
+      stdio: "inherit"
+    })
     .on("close", done);
 });
 

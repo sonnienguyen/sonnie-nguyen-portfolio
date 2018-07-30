@@ -18,7 +18,7 @@
     "build": "webpack --mode production",
     "jekyll": "run-s jekyll:*",
     "jekyll:clean": "rm -rf _site",
-    "jekyll:build": "jekyll build",
+    "jekyll:build": "bundle exec jekyll build",
     "lint": "npm run lint:css",
     "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss"
   },
