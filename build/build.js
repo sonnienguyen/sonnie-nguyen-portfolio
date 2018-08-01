@@ -5,8 +5,6 @@ const sass = require('gulp-sass');
 const prefix = require('gulp-autoprefixer');
 const webpack = require('webpack');
 
-const jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
-
 // Task for building blog when something changed
 gulp.task('jekyll-build', done => {
   child
