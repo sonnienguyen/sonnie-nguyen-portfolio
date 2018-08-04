@@ -1,25 +1,27 @@
 #
-# This file contains configuration flags to customize your site
+# Jekyll configuration
 #
 
-# Name of your site (displayed in the header)
+# site settings
 name: Sonnie
-
-# Short bio or description (displayed in the header)
 description: The personal site of Sonnie Nguyen. A blog where you can find content on everything related to web development.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.sonnienguyen.com
+excerpt_separator: <!-- more -->
 
-# Your author name to display on your posts and URL of your avatar
+# site author
 author:
   name: Sonnie Nguyen
   bio: Coding Journal
   email: info@sonnienguyen.com
   avatar: https://avatars2.githubusercontent.com/u/16827429?s=88&v=4
 
-#
-# Navigation bar options
-#
+# collections
+collections:
+  categories:
+    output: true
 
-# List of links in the navigation bar
+# navigation settings
 navigation:
 - text: About
   url: /about/
@@ -29,11 +31,7 @@ navigation:
 - text: Archives
   url: /posts/archives/
 
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
+# social
 footer-links:
   facebook:
   github: sonnienguyen
@@ -41,75 +39,35 @@ footer-links:
   codepen: sonnienguyen
   linkedin:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   youtube: # channel/<your_long_string> or user/<user-name>
 
-# Your website URL (e.g. http://sonnienguyen.github.io or http://www.sonnienguyen.com)
-# Used for Sitemap.xml and your RSS feed
-url: https://www.sonnienguyen.com
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: 
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-# Outputting
+# outputting
 source: site
 permalink: /:title/
 paginate: 10 # amount of posts to show
-paginate_path: /page:num/ # paginate_path: /blog/page/:num
+paginate_path: /page:num/
 
-# Collections allow you to define a new type of document that behave like Pages or Posts 
-# do normally, but also have their own unique properties and namespace.
-collections:
-  categories:
-    output: true
-
+# defaults
 defaults:
   - scope:
       path: _categories
     values:
       layout: category
 
-# Jekyll 3 now only supports Kramdown for Markdown
+# markdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-# Marks end of excerpt in posts
-excerpt_separator: <!-- more -->
-
-# Use the following plug-ins
 plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-sitemap
+  - jekyll-feed
   - jekyll-paginate
   - jemoji
 
-# Exclude these files from your production _site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
-  - node_modules
-  - package.json
-  - package-lock.json
-  - gulpfile.js
-  - src
-  - webpack.config.js
-
-# Include files inside _pages directory
 include:
+  # include files inside _pages directory
   - _pages
