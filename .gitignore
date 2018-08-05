@@ -1,13 +1,13 @@
 .DS_Store
 
-.jekyll
 .bundle
 .sass-cache
 .vscode
+.jekyll
+site/.jekyll-metadata
 
 # Ignore docs files
 _site
 
 # Folders to ignore
 node_modules
-assets/.jekyll-metadata
