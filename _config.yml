@@ -33,14 +33,10 @@ navigation:
 
 # social
 footer-links:
-  facebook:
   github: sonnienguyen
   instagram: sonniephotography
   codepen: sonnienguyen
-  linkedin:
   rss: # just type anything here for a working RSS icon
-  twitter:
-  youtube: # channel/<your_long_string> or user/<user-name>
 
 # outputting
 source: site
