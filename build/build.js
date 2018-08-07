@@ -40,7 +40,7 @@ gulp.task('sass', () => {
 
 // Scripts
 gulp.task('scripts', callback => {
-  webpack(require('./webpack.config.js'), (err, stats) => {
+  webpack(require('./../webpack.config.js'), (err, stats) => {
     if (err) {
       console.log(err.toString());
     }
