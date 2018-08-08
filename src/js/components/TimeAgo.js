@@ -5,7 +5,7 @@ import { qsa } from './Helpers';
  * Displaying the time elapsed since posted.
  */
 
-function TimeAgo () {
+function TimeAgo() {
   const dateTime = qsa('.js-posted-on');
 
   for (let i = 0; i < dateTime.length; i++) {
