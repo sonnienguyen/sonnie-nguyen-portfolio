@@ -29,7 +29,7 @@ gulp.task('sass', () => {
   gulp
     .src('src/scss/main.scss')
     .pipe(sass({
-      outputStyle: 'expanded',
+      outputStyle: 'compressed',
       includePaths: ['node_modules'],
       onError: browserSync.notify,
     }).on('error', sass.logError))
