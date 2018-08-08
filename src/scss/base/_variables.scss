@@ -1,10 +1,12 @@
-// Variables
-//
-// This file contains all application-wide Sass variables.
+/**
+ * Variables.
+ *
+ * This file contains all application-wide Sass variables.
+ */
 
-//
-// Font stacks
-//
+/**
+ * Font stacks.
+ */
 
 $georgia:                                       Georgia, serif;
 $helvetica:                                     Helvetica, Arial, sans-serif;
@@ -18,11 +20,11 @@ $header-font-family:                            $roboto;
 $post-meta-font-family:                         $roboto;
 $code-font-family:                              $consolas;
 
-//
-// Colors
-//
+/**
+ * Color system.
+ */
 
-// Shades of gray
+// shades of gray
 $color-gray-base:                               #000;
 $color-gray-darker:                             lighten($color-gray-base, 13%);   // #212
 $color-gray-dark:                               lighten($color-gray-base, 26%);   // #424
@@ -31,37 +33,37 @@ $color-gray-light:                              lighten($color-gray-base, 62%); 
 $color-gray-lighter:                            lighten($color-gray-base, 93.5%); // #eee
 $color-gray-lightest:                           lighten($color-gray-base, 96%);   // #f5f
 
-// Font colors
+// font colors
 $color-primary:                                 #0a5;
 $color-secondary:                               #007acc;
 
-// Gradient colors
+// gradient colors
 $color-gradient-start:                          #fc00ff;
 $color-gradient-end:                            #00dbde;
 
-// Background colors
+// background colors
 $body-background-color:                         #fff;
 $content-background-color:                      $body-background-color;
 $selection-background-color:                    $color-gray-light;
 $footer-background-color:                       $content-background-color;
 
-// Text colors
+// text colors
 $base-color-text:                               $color-gray-darker;
 $header-color-text:                             $base-color-text;
 $footer-color-text:                             $color-gray;
 $terminal-window-color-text:                    #fff;
 
-// Links
+// clickable links in HTML
 $link-color-text:                               $base-color-text;
 $link-color-visited:                            $color-gray-darker;
 $link-color-hover:                              $base-color-text;
 $link-color-active:                             $color-gray-darker;
 
-// Social links
+// social links
 $social-color-icon:                             $color-gray-light;
 $social-background-color:                       $color-gray-lightest;
 
-// Navigation
+// navigation
 $nav-color-text:                                #fff;
 $nav-color-icon:                                #fff;
 $nav-color-active:                              #fff;
@@ -69,48 +71,48 @@ $nav-color-inactive:                            $color-gray-light;
 $nav-color-hover:                               $nav-color-active;
 $nav-background-color:                          lighten($color-gray-base, 15%);
 
-// Buttons
+// buttons
 $btn-color-text:                                #fff;
 $btn-color-green:                               $color-primary;
 $btn-background-color:                          $color-secondary;
 
-// Tables
+// tables
 $table-color-border:                            #dfe2e5;
 $table-color-striped-order:                     #f6f8fa;
 $table-background-color:                        #fff;
 
-// Type
+// type
 $blockquote-color-text:                         $color-gray;
 $blockquote-color-border:                       $color-gray-light;
 
-// Syntax
+// syntax highlighter
 $code-inline-color-text:                        #c7254e;
 $code-inline-background-color:                  #f9f2f4;
 $code-blocks-background-color:                  #282c34;
 $terminal-toolbar-background-color:             lighten($code-blocks-background-color, 3%);
 $terminal-border-top-color:                     $color-secondary;
 
-//
-// Sizes
-//
+/**
+ * Sizes.
+ */
 
-// Navigation
+// navigation
 $nav-height-header:                             50px;
 $nav-height-toggle:                             $nav-height-header;
 $nav-height-active:                             3px;
 
-// Font sizes
+// font sizes
 $default-font-size:                             1.6rem;
 
-// Table sizes
+// table sizes
 $table-border-width:                            1px;
 
-// Syntax highlighter
+// syntax highlighter
 $terminal-window-height:                        3rem;
 
-//
-// Other
-//
+/**
+ * Other.
+ */
 
 $global-transition-speed:                       0.3s;
 $nav-transition-speed:                          0.4s;

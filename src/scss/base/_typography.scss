@@ -1,8 +1,10 @@
-// stylelint-disable selector-list-comma-newline-after
+/**
+ * Typography.
+ *
+ * basic type style.
+ */
 
-// Typography
-//
-// basic type style.
+// stylelint-disable selector-list-comma-newline-after
 
 body {
   background: $body-background-color;
@@ -14,7 +16,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-// Headings
+/**
+ * Headings.
+ */
+
 h1, h2, h3, h4, h5, h6 {
   color: $header-color-text;
   font-family: $header-font-family;
@@ -33,7 +38,10 @@ h2 { font-size: 2.4rem; a { text-decoration: none; } }    // 24px
 h3 { font-size: 2rem; }                                   // 20px
 h4 { font-size: 1.8rem; }                                 // 18px
 
-// Blockquotes
+/**
+ * Blockquotes.
+ */
+
 blockquote {
   border-left: 0.2rem solid $blockquote-color-border;
   color: $blockquote-color-text;

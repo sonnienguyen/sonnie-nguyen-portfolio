@@ -1,8 +1,10 @@
-// Syntax highlighter
-//
-// This file contains all styles related to the syntax highlighter component.
+/**
+ * Syntax highlighter.
+ *
+ * This file contains all styles related to the syntax highlighter component.
+ */
 
-// Inline code
+// inline code
 code {
   background: $code-inline-background-color;
   color: $code-inline-color-text;
@@ -11,7 +13,7 @@ code {
   padding: 0 0.4em;
 }
 
-// Code blocks
+// code blocks
 .highlighter-rouge {
   border-radius: 2px;
   font-family: inherit;

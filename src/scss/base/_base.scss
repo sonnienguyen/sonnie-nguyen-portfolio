@@ -1,6 +1,8 @@
-// Base
-//
-// This file contains very basic styles.
+/**
+ * Base.
+ *
+ * This file contains very basic styles.
+ */
 
 *,
 *::after,
@@ -14,19 +16,19 @@ html {
   // 1 rem = 10px; 10px/16px = 62.5%
   font-size: 62.5%;
 
-  // width < 900px?
+  // width < 900px
   @include breakpoint(tab-land) {
     // 1 rem = 9px, 9/16 = 56.25%
     font-size: 56.25%;
   }
 
-  // width < 600px?
+  // width < 600px
   @include breakpoint(tab-port) {
     // 1 rem = 8px, 8/16 = 50%
     font-size: 50%;
   }
 
-  // width > 1800px?
+  // width > 1800px
   @include breakpoint(desktop) {
     // 1 rem = 12px, 12/16 = 75%
     font-size: 75%;
@@ -102,13 +104,13 @@ img {
   max-width: 100%;
 }
 
-// Specify the color of the selection
+// specify the color of the selection
 ::selection {
   background: $selection-background-color;
   text-shadow: none;
 }
 
-// A better looking default horizontal rule
+// a better looking default horizontal rule
 hr {
   border: 0;
   border-top: 1px solid #ccc;
@@ -129,14 +131,14 @@ video {
   vertical-align: middle;
 }
 
-// Remove default fieldset styles.
+// remove default fieldset styles.
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
-// Allow only vertical resizing of textareas.
+// allow only vertical resizing of textareas.
 textarea {
   resize: vertical;
 }

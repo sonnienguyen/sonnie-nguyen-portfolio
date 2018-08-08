@@ -1,14 +1,16 @@
-/* stylelint-disable */
+/**
+ * Header.
+ *
+ * This file contains all styles related to the header of the site/application.
+ */
 
-// Header
-//
-// This file contains all styles related to the header of the site/application.
+// stylelint-disable
 
 @viewport { width: device-width; }
 
-//
-// RESPONSIVE NAV STYLES
-//
+/**
+ * Responsive navigation styles.
+ */
 
 .nav-collapse ul {
   margin: 0;
@@ -58,9 +60,9 @@
   }
 }
 
-//
-//  FIXED HEADER
-//
+/**
+ * Fixed header.
+ */
 
 .header {
   background-color: $nav-background-color;
@@ -141,9 +143,9 @@
   }
 }
 
-//
-// MASK
-//
+/**
+ * Mask.
+ */
 
 .mask {
   transition: opacity 300ms;
@@ -174,9 +176,9 @@
   }
 }
 
-//
-// NAVIGATION STYLES
-//
+/**
+ * Navigation styles.
+ */
 
 .fixed {
   position: fixed;
@@ -204,7 +206,7 @@
     width: auto;
     line-height: ($nav-height-header - $nav-height-active);
 
-    // high-light active link
+    // highlight active link
     .active {
       border-bottom: $nav-height-active solid;
       border-image: linear-gradient(to right, $color-gradient-start, $color-gradient-end) 100% 0;
@@ -227,7 +229,7 @@
 // width < 600px
 .nav-collapse li {
 
-  // high-light active link
+  // highlight active link
   .active {
     color: $nav-color-active;
   }
@@ -311,9 +313,9 @@
   }
 }
 
-//
-// NAV TOGGLE STYLES
-//
+/**
+ * Navigation toggle styles.
+ */
 
 .nav-toggle {
   cursor: pointer;

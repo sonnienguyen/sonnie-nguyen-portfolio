@@ -1,13 +1,15 @@
-// Functions
-//
-// This file contains all application-wide Sass functions.
+/**
+ * Functions.
+ *
+ * This file contains all application-wide Sass functions.
+ */
 
-// Slightly lighten a color
+// slightly lighten a color
 @function tint($color, $percentage) {
   @return mix(white, $color, $percentage);
 }
 
-// Slightly darken a color
+// slightly darken a color
 @function shade($color, $percentage) {
   @return mix(black, $color, $percentage);
 }

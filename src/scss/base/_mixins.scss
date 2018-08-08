@@ -1,24 +1,35 @@
-// Mixins
-//
-// This file contains all application-wide Sass mixins.
+/**
+ * Mixins.
+ *
+ * This file contains all application-wide Sass mixins.
+ */
 
-//
-// MEDIA QUERY MANAGER
-//
+// clearfix hack
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
 
-// Mobile                              : 0 - 600px
-// Tablet portrait                     : 600 - 900px
-// Tablet landscape                    : 900 - 1200px
-// Where our normal styles apply       : 1200 - 1800px
-// Desktop                             : 1800px+
-
-// $breakpoint argument choices:
-// - mobile
-// - tab-port
-// - tab-land
-// - desktop
-
-// So by default 1em = 16px
+/**
+ * Media Query Manager.
+ *
+ * Mobile:                               0 - 600px
+ * Tablet portrait:                      600 - 900px
+ * Tablet landscape:                     900 - 1200px
+ * Where our normal styles apply:        1200 - 1800px
+ * Desktop:                              1800px+
+ *
+ * $breakpoint argument choices:
+ * - mobile
+ * - tab-port
+ * - tab-land
+ * - desktop
+ *
+ * By default 1em = 16px
+ */
 
 @mixin breakpoint($class) {
   @if $class == mobile {
@@ -38,19 +49,19 @@
   }
 }
 
-// Divider border dotted
+// divider border style dotted
 @mixin divider-border-dotted {
   border-bottom: 1px dotted $color-gray-lighter;
   padding: 2.8rem 0;
 }
 
-// Divider border solid
+// divider border style solid
 @mixin divider-border-solid {
   border-bottom: 1px solid $color-gray-lighter;
   padding: 2.8rem 0;
 }
 
-// Links
+// clickable links in HTML
 @mixin link-colors ($link, $visited, $hover, $active) {
   color: $link;
 
@@ -67,16 +78,7 @@
   }
 }
 
-// Horizontal gradient, from left to right
+// horizontal gradient, from left to right
 @mixin gradient-horizontal($start-color, $end-color) {
   background: linear-gradient(to right, $start-color, $end-color);
-}
-
-// Clearfix
-@mixin clearfix {
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
 }

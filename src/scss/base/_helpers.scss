@@ -1,23 +1,25 @@
-// Helpers
-//
-// This file contains CSS helper classes.
+/**
+ * Helpers.
+ *
+ * This file contains CSS helper classes.
+ */
 
 #content {
   background-color: $content-background-color;
 }
 
-//
-// Styling component
-//
+/**
+ * Styling.
+ */
 
-// Removing default bullets
+// removing default bullets
 .list-style-none {
   list-style: none;
 }
 
-//
-// Divider component
-//
+/**
+ * Divider.
+ */
 
 .divider {
 
@@ -37,9 +39,9 @@
   }
 }
 
-//
-// Link component
-//
+/**
+ * Clickable links in HTML.
+ */
 
 .link {
   color: inherit;

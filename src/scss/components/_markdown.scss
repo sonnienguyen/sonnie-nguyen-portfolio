@@ -1,6 +1,8 @@
-// Markdown
-//
-// This file contains all styles related to the markdown component.
+/**
+ * Markdown.
+ *
+ * This file contains all styles related to the markdown component.
+ */
 
 .markdown-body {
   line-height: 1.5;
@@ -29,7 +31,7 @@
     }
   }
 
-  // Basic table
+  // basic table
   table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -53,7 +55,7 @@
       background-color: $table-background-color;
     }
 
-    // Zebra-striping
+    // zebra striping
     tr:nth-child(2n) {
       background-color: $table-color-striped-order;
     }
