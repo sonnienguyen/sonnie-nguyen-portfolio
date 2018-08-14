@@ -5,7 +5,7 @@ const sass = require('gulp-sass');
 const prefix = require('gulp-autoprefixer');
 const webpack = require('webpack');
 
-// Task for building blog when something changed
+// task for building blog when something changed
 gulp.task('jekyll-build', done => {
   child
     .spawn('bundle', ['exec', 'jekyll', 'build', '--incremental'], {
@@ -14,17 +14,17 @@ gulp.task('jekyll-build', done => {
     .on('close', done);
 });
 
-// Rebuild Jekyll and reload browserSync
+// rebuild Jekyll and reload Browsersync
 gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
   browserSync.reload();
 });
 
-// Compile sass into CSS & auto-inject into browsers
+// compile SASS files into CSS and auto-inject into browsers
 gulp.task('cssInject', ['sass'], () => {
   gulp.src('site/assets/css/main.css').pipe(browserSync.stream());
 });
 
-// Compile sass into CSS
+// compile SASS files into CSS
 gulp.task('sass', () => {
   gulp
     .src('src/scss/main.scss')
@@ -38,7 +38,7 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('site/assets/css'));
 });
 
-// Scripts
+// scripts
 gulp.task('scripts', callback => {
   webpack(require('./../webpack.config.js'), (err, stats) => {
     if (err) {
@@ -49,11 +49,12 @@ gulp.task('scripts', callback => {
   });
 });
 
-// Task for serving blog with browserSync + watching scss/html files
+// task for serving blog with Browsersync
 gulp.task('watch', () => {
-  // Serve files from the root of this project
+  // serve files from the root of this project
   browserSync.init({ notify: false, server: { baseDir: '_site/' } });
-  // Reloads page when some of the already built files changed
+  // keep watching for any changes in HTML, CSS and JS files
+  // reloads page when some of the already built files changed
   gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], () => {
     gulp.start('cssInject');
   });
@@ -72,5 +73,5 @@ gulp.task('watch', () => {
   );
 });
 
-// Default task
+// default task
 gulp.task('default', ['watch']);
