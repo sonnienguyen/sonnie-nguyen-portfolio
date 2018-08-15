@@ -1,9 +1,9 @@
 /**
  * Shortcut for `querySelector`.
  *
- * @param {string} selector
- * @param {element} [scope] (optional)
- * @returns {element}
+ * @param {String} selector
+ * @param {Element} [scope] (optional)
+ * @returns {Element}
  */
 
 export function qs(selector, scope) {
@@ -13,9 +13,9 @@ export function qs(selector, scope) {
 /**
  * Shortcut for `querySelectorAll`.
  *
- * @param {string} selector
- * @param {element} [scope] (optional)
- * @returns {element}
+ * @param {String} selector
+ * @param {Element} [scope] (optional)
+ * @returns {Element}
  */
 
 export function qsa(selector, scope) {
