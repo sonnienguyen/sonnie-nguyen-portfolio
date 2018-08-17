@@ -2,4 +2,5 @@ build/**
 site/assets/**
 src/js/vendor/**
 node_modules/**
+_gh_pages/**
 gulpfile.js
