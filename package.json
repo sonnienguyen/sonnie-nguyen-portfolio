@@ -6,10 +6,10 @@
   "author": "Sonnie @sonnienguyen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sonnienguyen/sonnienguyen.github.io.git"
+    "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/sonnienguyen/sonnienguyen.github.io/issues"
+    "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio/issues"
   },
   "scripts": {
     "gulp": "gulp",
