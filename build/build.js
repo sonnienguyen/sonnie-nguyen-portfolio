@@ -34,7 +34,7 @@ gulp.task('sass', () => {
       onError: browserSync.notify,
     }).on('error', sass.logError))
     .pipe(prefix())
-    .pipe(gulp.dest('_gh_pages/assets/css'))
+    .pipe(gulp.dest('docs/assets/css'))
     .pipe(gulp.dest('site/assets/css'));
 });
 
@@ -52,7 +52,7 @@ gulp.task('scripts', callback => {
 // task for serving blog with Browsersync
 gulp.task('watch', () => {
   // serve files from the root of this project
-  browserSync.init({ notify: false, server: { baseDir: '_gh_pages/' } });
+  browserSync.init({ notify: false, server: { baseDir: 'docs/' } });
   // keep watching for any changes in HTML, CSS and JS files
   // reloads page when some of the already built files changed
   gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], () => {

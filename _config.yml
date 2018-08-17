@@ -40,7 +40,7 @@ footer-links:
 
 # outputting
 source: site
-destination: ./_gh_pages
+destination: ./docs
 permalink: /:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/
