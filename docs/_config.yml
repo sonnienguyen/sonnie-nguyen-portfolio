@@ -39,8 +39,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon
 
 # outputting
-source: site
-destination: ./docs
+source: ./docs
 permalink: /:title/
 paginate: 10 # amount of posts to show
 paginate_path: /page:num/

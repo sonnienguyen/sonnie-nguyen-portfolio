@@ -8,7 +8,7 @@ const webpack = require('webpack');
 // task for building blog when something changed
 gulp.task('jekyll-build', done => {
   child
-    .spawn('bundle', ['exec', 'jekyll', 'build', '--incremental'], {
+    .spawn('bundle', ['exec', 'jekyll', 'build', '--config', './docs/_config.yml', '--incremental'], {
       stdio: 'inherit',
     })
     .on('close', done);
@@ -21,7 +21,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
 
 // compile SASS files into CSS and auto-inject into browsers
 gulp.task('cssInject', ['sass'], () => {
-  gulp.src('site/assets/css/main.css').pipe(browserSync.stream());
+  gulp.src('docs/assets/css/main.css').pipe(browserSync.stream());
 });
 
 // compile SASS files into CSS
@@ -34,8 +34,8 @@ gulp.task('sass', () => {
       onError: browserSync.notify,
     }).on('error', sass.logError))
     .pipe(prefix())
-    .pipe(gulp.dest('docs/assets/css'))
-    .pipe(gulp.dest('site/assets/css'));
+    .pipe(gulp.dest('_site/assets/css'))
+    .pipe(gulp.dest('docs/assets/css'));
 });
 
 // scripts
@@ -52,7 +52,7 @@ gulp.task('scripts', callback => {
 // task for serving blog with Browsersync
 gulp.task('watch', () => {
   // serve files from the root of this project
-  browserSync.init({ notify: false, server: { baseDir: 'docs/' } });
+  browserSync.init({ notify: false, server: { baseDir: '_site/' } });
   // keep watching for any changes in HTML, CSS and JS files
   // reloads page when some of the already built files changed
   gulp.watch(['src/scss/*.scss', 'src/scss/**/*.scss'], () => {
@@ -61,13 +61,13 @@ gulp.task('watch', () => {
   gulp.watch('src/js/**/*.js', ['scripts', 'jekyll-rebuild']);
   gulp.watch(
     [
-      'site/*.html',
-      'site/_categories/*',
-      'site/_includes/*.html',
-      'site/_layouts/*.html',
-      'site/_pages/*.html',
-      'site/_posts/*',
-      'site/_posts/**/*',
+      'docs/*.html',
+      'docs/_categories/*',
+      'docs/_includes/*.html',
+      'docs/_layouts/*.html',
+      'docs/_pages/*.html',
+      'docs/_posts/*',
+      'docs/_posts/**/*',
     ],
     ['jekyll-rebuild'],
   );

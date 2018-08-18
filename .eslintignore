@@ -1,6 +1,6 @@
+_site/**
 build/**
-site/assets/**
+docs/assets/**
 src/js/vendor/**
 node_modules/**
-docs/**
 gulpfile.js

@@ -17,8 +17,8 @@
     "dev": "webpack --mode development --colors",
     "build": "webpack --mode production",
     "jekyll": "run-s jekyll:*",
-    "jekyll:clean": "rm -rf docs",
-    "jekyll:build": "bundle exec jekyll build",
+    "jekyll:clean": "rm -rf _site",
+    "jekyll:build": "bundle exec jekyll build --config ./docs/_config.yml",
     "lint": "npm run lint:css",
     "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss"
   },
