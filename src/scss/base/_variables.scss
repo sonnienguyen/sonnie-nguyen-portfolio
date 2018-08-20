@@ -12,13 +12,17 @@ $georgia:                                       Georgia, serif;
 $helvetica:                                     Helvetica, Arial, sans-serif;
 $helveticaneue:                                 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 
-$consolas:                                      Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+$source-code-pro:                               'Source Code Pro', Consolas, Menlo, Courier, monospace;
 $roboto:                                        'Roboto', Helvetica, Arial, sans-serif;
+
+/**
+ * Font family.
+ */
 
 $global-font-family:                            $roboto;
 $header-font-family:                            $roboto;
 $post-meta-font-family:                         $roboto;
-$code-font-family:                              $consolas;
+$code-font-family:                              $source-code-pro;
 
 /**
  * Color system.
