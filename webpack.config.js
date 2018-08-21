@@ -1,5 +1,7 @@
 const path = require('path');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const WebpackShellPlugin = require('webpack-shell-plugin');
 
 module.exports = {
   entry: {
@@ -21,6 +23,13 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    // run shell commands after webpack builds
+    new WebpackShellPlugin({
+      onBuildEnd: ['bundle exec jekyll build --config ./docs/_config.yml'],
+    }),
+    new CleanWebpackPlugin(['_site']),
+  ],
   // Tell webpack to minimize the bundle.
   optimization: {
     minimizer: [

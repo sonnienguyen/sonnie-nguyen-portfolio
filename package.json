@@ -13,12 +13,9 @@
   },
   "scripts": {
     "gulp": "gulp",
-    "start": "run-s jekyll dev gulp",
+    "start": "run-s dev gulp",
     "dev": "webpack --mode development --colors",
     "build": "webpack --mode production",
-    "jekyll": "run-s jekyll:*",
-    "jekyll:clean": "rm -rf _site",
-    "jekyll:build": "bundle exec jekyll build --config ./docs/_config.yml",
     "lint": "npm run lint:css",
     "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss"
   },
@@ -33,6 +30,7 @@
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.24.4",
     "child_process": "^1.0.2",
+    "clean-webpack-plugin": "^0.1.19",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.13.0",
@@ -48,6 +46,7 @@
     "stylelint-scss": "^3.2.0",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.4"
+    "webpack-cli": "^3.0.4",
+    "webpack-shell-plugin": "^0.5.0"
   }
 }
