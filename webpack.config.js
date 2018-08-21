@@ -12,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'docs/assets/js'),
     filename: '[name].js',
   },
+  devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
       {
