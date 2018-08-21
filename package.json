@@ -3,7 +3,7 @@
   "description": "Sonnie Nguyen's Portfolio Website",
   "version": "0.0.0-development",
   "private": true,
-  "author": "Sonnie @sonnienguyen",
+  "author": "Sonnie <info@sonnienguyen>",
   "repository": {
     "type": "git",
     "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio.git"
