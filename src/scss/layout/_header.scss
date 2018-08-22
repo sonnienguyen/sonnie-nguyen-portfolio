@@ -67,6 +67,7 @@
 .header {
   background-color: $nav-background-color;
   font-family: $global-font-family;
+  font-weight: 600;
   position: fixed;
   z-index: 3;
   width: 100%;
@@ -120,7 +121,7 @@
   color: inherit;
   display: inline-block;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   padding: 0.2rem 0.5rem;
 
