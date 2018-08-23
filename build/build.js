@@ -14,7 +14,7 @@ gulp.task('jekyll-build', done => {
     .on('close', done);
 });
 
-// rebuild Jekyll and reload Browsersync
+// rebuild site and reload Browsersync
 gulp.task('jekyll-rebuild', ['jekyll-build'], () => {
   browserSync.reload();
 });

@@ -12,6 +12,7 @@ module.exports = {
     path: path.resolve(__dirname, 'docs/assets/js'),
     filename: '[name].js',
   },
+  // for more information, see https://webpack.js.org/configuration/devtool/#devtool
   devtool: 'cheap-module-eval-source-map',
   module: {
     rules: [
@@ -31,7 +32,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(['_site']),
   ],
-  // Tell webpack to minimize the bundle.
+  // tell webpack to minimize the bundle
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
