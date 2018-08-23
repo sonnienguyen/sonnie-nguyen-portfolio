@@ -17,7 +17,8 @@
     "dev": "webpack --mode development --colors",
     "build": "webpack --mode production",
     "lint": "npm run lint:css",
-    "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss"
+    "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss",
+    "lint:js": "eslint ."
   },
   "license": "MIT",
   "dependencies": {
