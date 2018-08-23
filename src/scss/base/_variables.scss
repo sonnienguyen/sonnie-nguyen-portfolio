@@ -39,8 +39,10 @@ $color-gray-lighter:                            lighten($color-gray-base, 93.5%)
 $color-gray-lightest:                           lighten($color-gray-base, 96%);   // #f5f
 
 // font colors
+$blue:                                          #007bff;
+
 $color-primary:                                 #0a5;
-$color-secondary:                               #007acc;
+$color-secondary:                               $blue;
 
 // gradient colors
 $color-gradient-start:                          #fc00ff;
@@ -53,8 +55,8 @@ $selection-background-color:                    $color-gray-light;
 $footer-background-color:                       $content-background-color;
 
 // text colors
-$base-color-text:                               $color-gray-darker;
-$header-color-text:                             $base-color-text;
+$base-color-text:                               mix($color-gray-light, $blue, 85%);
+$header-color-text:                             $color-gray-dark;
 $footer-color-text:                             $color-gray;
 $terminal-window-color-text:                    #fff;
 
@@ -69,12 +71,14 @@ $social-color-icon:                             $color-gray-light;
 $social-background-color:                       $color-gray-lightest;
 
 // navigation
-$nav-color-text:                                #fff;
-$nav-color-icon:                                #fff;
-$nav-color-active:                              #fff;
-$nav-color-inactive:                            $color-gray-light;
+$nav-color-text:                                $color-gray-dark;
+$nav-color-icon:                                $color-gray-dark;
+$nav-color-active:                              $color-gray-dark;
+$nav-color-inactive:                            $base-color-text;
 $nav-color-hover:                               $nav-color-active;
-$nav-background-color:                          lighten($color-gray-base, 15%);
+$nav-counter-color-text:                        #fff;
+$nav-background-color:                          #fff;
+$nav-counter-background-color:                  $base-color-text;
 
 // buttons
 $btn-color-text:                                #fff;
@@ -92,7 +96,6 @@ $blockquote-color-border:                       $color-gray-light;
 
 // syntax highlighter
 $code-inline-color-text:                        #c7254e;
-$code-inline-background-color:                  #f9f2f4;
 $code-blocks-background-color:                  #282c34;
 $terminal-toolbar-background-color:             lighten($code-blocks-background-color, 3%);
 $terminal-border-top-color:                     $color-secondary;

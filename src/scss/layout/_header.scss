@@ -66,6 +66,7 @@
 
 .header {
   background-color: $nav-background-color;
+  box-shadow: rgba(31,53,78,.11) 0 1px;
   font-family: $global-font-family;
   font-weight: 600;
   position: fixed;
@@ -116,9 +117,9 @@
 }
 
 .counter {
-  background: $color-gray-dark;
+  background-color: $nav-counter-background-color;
   border-radius: 20px;
-  color: inherit;
+  color: $nav-counter-color-text;
   display: inline-block;
   font-size: 1.2rem;
   font-weight: 600;
