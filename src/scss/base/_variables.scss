@@ -73,12 +73,12 @@ $social-background-color:                       $color-gray-lightest;
 // navigation
 $nav-color-text:                                $color-gray-dark;
 $nav-color-icon:                                $color-gray-dark;
-$nav-color-active:                              $color-gray-dark;
+$nav-color-active:                              $color-secondary;
 $nav-color-inactive:                            $base-color-text;
 $nav-color-hover:                               $nav-color-active;
 $nav-counter-color-text:                        #fff;
 $nav-background-color:                          #fff;
-$nav-counter-background-color:                  $base-color-text;
+$nav-counter-background-color:                  $color-secondary;
 
 // buttons
 $btn-color-text:                                #fff;
@@ -107,7 +107,7 @@ $terminal-border-top-color:                     $color-secondary;
 // navigation
 $nav-height-header:                             50px;
 $nav-height-toggle:                             $nav-height-header;
-$nav-height-active:                             3px;
+$nav-height-active:                             2px;
 
 // font sizes
 $default-font-size:                             1.6rem;

@@ -210,21 +210,13 @@
 
     // highlight active link
     .active {
-      border-bottom: $nav-height-active solid;
-      border-image: linear-gradient(to right, $color-gradient-start, $color-gradient-end) 100% 0;
-      color: $nav-color-active;
+      border-bottom: $nav-height-active solid $nav-color-active;
 
       &:hover {
         border-bottom: $nav-height-active solid;
         color: $nav-color-hover;
       }
     }
-  }
-
-  // width > 600px
-  .nav-collapse a:hover {
-    color: $nav-color-hover;
-    border-bottom: $nav-height-active solid $color-gray-dark;
   }
 }
 
