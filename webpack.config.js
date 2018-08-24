@@ -4,9 +4,10 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const WebpackShellPlugin = require('webpack-shell-plugin');
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
   entry: {
-    App: './src/js/App.js',
-    Vendor: './src/js/Vendor.js',
+    App: './js/App.js',
+    Vendor: './js/Vendor.js',
   },
   output: {
     path: path.resolve(__dirname, 'docs/assets/js'),
