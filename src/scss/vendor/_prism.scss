@@ -185,7 +185,7 @@ pre[rel] {
   &::before {
     background: $terminal-toolbar-background-color;
     border-radius: 2px 2px 0 0;
-    border-top: 3px solid $terminal-border-top-color;
+    border-top: 2px solid $terminal-border-top-color;
     color: $terminal-window-color-text;
     content: attr(rel);
     font-size: 0.9em;

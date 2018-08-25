@@ -94,8 +94,8 @@ $table-background-color:                        #fff;
 $blockquote-color-text:                         $color-gray;
 $blockquote-color-border:                       $color-gray-light;
 
-// syntax highlighter
-$code-inline-color-text:                        #c7254e;
+// syntax highlighting
+$code-inline-color-text:                        #ef233c;
 $code-blocks-background-color:                  #282c34;
 $terminal-toolbar-background-color:             lighten($code-blocks-background-color, 3%);
 $terminal-border-top-color:                     $color-secondary;
@@ -115,7 +115,7 @@ $default-font-size:                             1.6rem;
 // table sizes
 $table-border-width:                            1px;
 
-// syntax highlighter
+// syntax highlighting
 $terminal-window-height:                        3rem;
 
 /**
