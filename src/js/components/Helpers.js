@@ -29,9 +29,14 @@ export function qsa(selector, scope) {
  */
 
 export function humanizeDate() {
-  const dateTime = qsa('.js-posted-on');
+  const posts = qsa('.js-posted-on');
+  let formatDate;
 
-  for (let i = 0; i < dateTime.length; i++) {
-    qsa('.js-posted-ago')[i].textContent = ago(new Date(dateTime[i].getAttribute('datetime')));
+  if (!posts.length) return;
+
+  for (let i = 0; i < posts.length; i++) {
+    formatDate = posts[i].getAttribute('datetime');
+    formatDate = new Date(formatDate);
+    posts[i].textContent = ago(formatDate);
   }
 }
