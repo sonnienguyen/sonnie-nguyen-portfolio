@@ -5,7 +5,7 @@
  */
 
 import FixedResponsiveNav from './vendor/FixedResponsiveNav';
-import TimeAgo from './components/TimeAgo';
+import { humanizeDate } from './components/Helpers';
 
 const fixedResponsiveNav = FixedResponsiveNav();
-const timeAgo = TimeAgo();
+const postDate = humanizeDate();
