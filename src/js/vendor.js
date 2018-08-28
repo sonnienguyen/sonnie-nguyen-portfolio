@@ -4,8 +4,6 @@
  * Licensed under MIT (https://github.com/sonnienguyen/sonnienguyen.github.io/blob/master/LICENSE)
  */
 
-import FixedResponsiveNav from './vendor/FixedResponsiveNav';
-import { humanizeDate } from './components/Helpers';
+import responsiveNav from './vendor/responsiveNav';
 
-const fixedResponsiveNav = FixedResponsiveNav();
-const postDate = humanizeDate();
+const displayResponsiveNav = responsiveNav(document, window, 0);

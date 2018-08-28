@@ -6,8 +6,8 @@ const WebpackShellPlugin = require('webpack-shell-plugin');
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
-    App: './js/App.js',
-    Vendor: './js/Vendor.js',
+    app: './js/app.js',
+    vendor: './js/vendor.js',
   },
   output: {
     path: path.resolve(__dirname, 'docs/assets/js'),
