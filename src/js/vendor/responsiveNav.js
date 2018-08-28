@@ -7,7 +7,7 @@
  * Available under the MIT license
  */
 
-export default function ResponsiveNav(document, window, index) {
+export default function responsiveNav(document, window, index) {
   var responsiveNav = function (el, options) {
 
     var computed = !!window.getComputedStyle;

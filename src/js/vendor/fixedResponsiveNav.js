@@ -8,7 +8,7 @@
  * Free to use under the MIT License.
  */
 
-export default function FixedResponsiveNav() {
+export default function fixedResponsiveNav() {
   // Feature test to rule out some older browsers
   if ('querySelector' in document && 'addEventListener' in window) {
     // forEach method, that passes back the stuff we need
