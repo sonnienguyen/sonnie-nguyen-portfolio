@@ -7,7 +7,6 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: {
     app: './js/app.js',
-    vendor: './js/vendor.js',
   },
   output: {
     path: path.resolve(__dirname, 'docs/assets/js'),

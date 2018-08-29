@@ -8,6 +8,8 @@
  * Free to use under the MIT License.
  */
 
+import responsiveNav from '../../../node_modules/responsive-nav';
+
 export default function fixedResponsiveNav() {
   // Feature test to rule out some older browsers
   if ('querySelector' in document && 'addEventListener' in window) {
@@ -21,7 +23,9 @@ export default function fixedResponsiveNav() {
     // Init Responsive Nav
     var navigation = responsiveNav('.nav-collapse', {
       // Close the navigation when it's tapped
-      closeOnNavClick: true
+      closeOnNavClick: true,
+      // Label for the navigation toggle
+      label: `<div class="nav-toggle-icon"></div>`,
     });
 
     // Create a Mask
