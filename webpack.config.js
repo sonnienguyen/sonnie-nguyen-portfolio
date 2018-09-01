@@ -1,7 +1,7 @@
 const path = require('path');
+const child = require('child_process');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const WebpackShellPlugin = require('webpack-shell-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -26,10 +26,20 @@ module.exports = {
     ],
   },
   plugins: [
-    // run shell commands after webpack builds
-    new WebpackShellPlugin({
-      onBuildEnd: ['bundle exec jekyll build --config ./docs/_config.yml'],
-    }),
+    {
+      // run shell commands after webpack builds
+      apply: compiler => {
+        compiler.hooks.afterEmit.tap('AfterEmitPlugin', () => {
+          child.exec(
+            'bundle exec jekyll build --config ./docs/_config.yml',
+            (err, stdout, stderr) => {
+              if (stdout) process.stdout.write(stdout);
+              if (stderr) process.stderr.write(stderr);
+            },
+          );
+        });
+      },
+    },
     new CleanWebpackPlugin(['_site']),
   ],
   // tell webpack to minimize the bundle
