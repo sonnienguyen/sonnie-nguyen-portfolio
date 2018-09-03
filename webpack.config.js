@@ -12,7 +12,7 @@ module.exports = (env, options) => {
   // copies entire directories to the build directory
   const copyFiles = [
     { from: './fonts', to: '../css/fonts' },
-    { from: './images', to: '../images' },
+    { from: './public', to: '../' },
   ];
 
   // remove/clean build folder(s) before webpack builds
