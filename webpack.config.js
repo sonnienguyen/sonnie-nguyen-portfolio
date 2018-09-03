@@ -11,7 +11,7 @@ module.exports = (env, options) => {
 
   // copies entire directories to the build directory
   const copyFiles = [
-    { from: './public', to: '../' },
+    { from: './public', to: './' },
   ];
 
   // remove/clean build folder(s) before webpack builds
@@ -27,7 +27,7 @@ module.exports = (env, options) => {
       app: ['./js/app.js', './styles/main.scss'],
     },
     output: {
-      path: path.resolve(__dirname, 'docs/assets/js'),
+      path: path.resolve(__dirname, 'docs/assets'),
       filename: '[name].js',
     },
     // for more information, see https://webpack.js.org/configuration/devtool/#devtool
@@ -74,7 +74,7 @@ module.exports = (env, options) => {
         },
       },
       new MiniCssExtractPlugin({
-        filename: '../css/main.css',
+        filename: './main.css',
       }),
       new CopyWebpackPlugin(copyFiles),
       new CleanWebpackPlugin(cleanFolders.path),
