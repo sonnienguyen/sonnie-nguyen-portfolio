@@ -25,7 +25,7 @@ module.exports = (env, options) => {
   const webpackConfig = {
     context: path.resolve(__dirname, 'src'),
     entry: {
-      app: ['./js/app.js', './scss/main.scss'],
+      app: ['./js/app.js', './styles/main.scss'],
     },
     output: {
       path: path.resolve(__dirname, 'docs/assets/js'),
