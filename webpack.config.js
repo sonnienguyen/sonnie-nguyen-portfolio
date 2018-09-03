@@ -11,7 +11,6 @@ module.exports = (env, options) => {
 
   // copies entire directories to the build directory
   const copyFiles = [
-    { from: './fonts', to: '../css/fonts' },
     { from: './public', to: '../' },
   ];
 
