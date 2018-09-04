@@ -67,6 +67,11 @@ plugins:
   - jekyll-paginate
   - jemoji
 
+exclude:
+  # exclude these files from production _site directory
+  - ".gitignore"
+  - CNAME
+
 include:
   # include files inside _pages directory
   - _pages
