@@ -12,10 +12,10 @@
     "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio/issues"
   },
   "scripts": {
-    "start": "concurrently -s first -c bgBlue.white.bold,bgMagenta.white.bold -n \"webpack,jekyll\" --kill-others \"npm run dev -- --watch\" \"npm run server\"",
-    "server": "bundle exec jekyll serve --config docs/_config.yml --livereload",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
+    "server": "bundle exec jekyll serve --config docs/_config.yml --livereload",
+    "start": "run-p --race \"dev -- --watch\" server",
     "lint": "npm run lint:css",
     "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss",
     "lint:js": "eslint ."
@@ -35,7 +35,6 @@
     "babel-preset-env": "^1.7.0",
     "child_process": "^1.0.2",
     "clean-webpack-plugin": "^0.1.19",
-    "concurrently": "^4.0.1",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "eslint": "^4.19.1",
