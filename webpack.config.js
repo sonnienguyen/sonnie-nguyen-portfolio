@@ -28,6 +28,7 @@ module.exports = (env, options) => {
     },
     output: {
       path: path.resolve(__dirname, 'docs/assets'),
+      publicPath: '/assets/',
       filename: '[name].js',
     },
     // for more information, see https://webpack.js.org/configuration/devtool/#devtool
@@ -74,7 +75,7 @@ module.exports = (env, options) => {
         },
       },
       new MiniCssExtractPlugin({
-        filename: './main.css',
+        filename: 'main.css',
       }),
       new CopyWebpackPlugin(copyFiles),
       new CleanWebpackPlugin(cleanFolders.path),
@@ -99,6 +100,5 @@ module.exports = (env, options) => {
       ],
     },
   };
-
   return webpackConfig;
 };
