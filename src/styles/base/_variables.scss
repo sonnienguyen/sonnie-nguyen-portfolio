@@ -1,10 +1,10 @@
-/**
+/*
  * Variables.
  *
  * This file contains all application-wide Sass variables.
  */
 
-/**
+/*
  * Font stacks.
  */
 
@@ -16,7 +16,7 @@ $montserrat:                                    'Montserrat', sans-serif;
 $source-sans-pro:                               'Source Sans Pro', sans-serif;
 $source-code-pro:                               'Source Code Pro', Consolas, Menlo, Courier, monospace;
 
-/**
+/*
  * Font family.
  */
 
@@ -25,7 +25,7 @@ $header-font-family:                            $montserrat;
 $post-meta-font-family:                         $montserrat;
 $code-font-family:                              $source-code-pro;
 
-/**
+/*
  * Color system.
  */
 
@@ -100,7 +100,7 @@ $code-blocks-background-color:                  #282c34;
 $terminal-toolbar-background-color:             lighten($code-blocks-background-color, 3%);
 $terminal-border-top-color:                     $color-secondary;
 
-/**
+/*
  * Sizes.
  */
 
@@ -118,7 +118,7 @@ $table-border-width:                            1px;
 // syntax highlighting
 $terminal-window-height:                        3rem;
 
-/**
+/*
  * Other.
  */
 
