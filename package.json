@@ -17,7 +17,7 @@
     "server": "bundle exec jekyll serve --config docs/_config.yml --livereload",
     "start": "run-p --race \"dev -- --watch\" server",
     "lint": "npm run lint:css",
-    "lint:css": "stylelint \"src/scss/**/*.scss\" --syntax scss",
+    "lint:css": "stylelint \"src/styles/**/*.scss\" --syntax scss",
     "lint:js": "eslint ."
   },
   "license": "MIT",
