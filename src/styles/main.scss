@@ -7,7 +7,7 @@
 @charset 'UTF-8';
 
 // Helpers
-@import 'base/variables';
+@import 'base/vars';
 @import 'base/functions';
 @import 'base/mixins';
 
@@ -35,4 +35,3 @@
 // Page-specific styles
 @import 'pages/posts';
 @import 'pages/archives';
-
