@@ -64,13 +64,10 @@ module.exports = (env, options) => {
         // run shell commands after webpack builds
         apply: compiler => {
           compiler.hooks.afterEmit.tap('AfterEmitPlugin', () => {
-            child.exec(
-              'bundle exec jekyll build --config docs/_config.yml',
-              (err, stdout, stderr) => {
-                if (stdout) process.stdout.write(stdout);
-                if (stderr) process.stderr.write(stderr);
-              },
-            );
+            child.exec('bundle exec jekyll build --config docs/_config.yml', (err, stdout, stderr) => {
+              if (stdout) process.stdout.write(stdout);
+              if (stderr) process.stderr.write(stderr);
+            });
           });
         },
       },
