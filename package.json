@@ -4,13 +4,6 @@
   "version": "0.1.0-development",
   "private": true,
   "author": "Sonnie <info@sonnienguyen.com>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio/issues"
-  },
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
@@ -19,6 +12,13 @@
     "lint": "npm run lint:css",
     "lint:css": "stylelint \"src/styles/**/*.scss\" --syntax scss",
     "lint:js": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sonnienguyen/sonnie-nguyen-portfolio/issues"
   },
   "license": "MIT",
   "dependencies": {
