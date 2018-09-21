@@ -35,6 +35,14 @@ module.exports = (env, options) => {
     devtool: isProductionMode
       ? 'source-map'
       : 'cheap-module-eval-source-map',
+    // for more information, see https://webpack.js.org/configuration/stats/
+    stats: {
+      colors: true,
+      timings: true,
+      version: false,
+      warnings: true,
+      modules: false,
+    },
     module: {
       rules: [
         {
@@ -50,7 +58,7 @@ module.exports = (env, options) => {
           test: /\.s[ac]ss$/,
           use: [
             // `mini-css-extract-plugin` plugin should be used only on
-            // `production` builds without `style-loader` in the loaders chain
+            // production builds without `style-loader` in the loaders chain
             isProductionMode ? MiniCssExtractPlugin.loader : 'style-loader',
             'css-loader',
             'postcss-loader',
@@ -77,13 +85,6 @@ module.exports = (env, options) => {
       new CopyWebpackPlugin(copyFiles),
       new CleanWebpackPlugin(cleanFolders.path),
     ],
-    stats: {
-      colors: true,
-      timings: true,
-      version: false,
-      warnings: true,
-      modules: false,
-    },
     // tell webpack to minimize the bundle
     optimization: {
       minimize: isProductionMode,
