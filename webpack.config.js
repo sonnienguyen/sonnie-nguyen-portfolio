@@ -82,6 +82,7 @@ module.exports = (env, options) => {
       timings: true,
       version: false,
       warnings: true,
+      modules: false,
     },
     // tell webpack to minimize the bundle
     optimization: {
