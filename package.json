@@ -5,7 +5,7 @@
   "private": true,
   "author": "Sonnie <info@sonnienguyen.com>",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack --mode development --progress",
     "build": "webpack --mode production",
     "server": "bundle exec jekyll serve --config docs/_config.yml --livereload",
     "start": "run-p --race \"dev -- --watch\" server",
