@@ -9,5 +9,7 @@ import fixedResponsiveNav from './vendor/fixedResponsiveNav';
 import { humanizeDate } from './components/helpers';
 
 Prism.highlightAll();
+// eslint-disable-next-line no-unused-vars
 const displayFixedResponsiveNav = fixedResponsiveNav();
+// eslint-disable-next-line no-unused-vars
 const postDate = humanizeDate();

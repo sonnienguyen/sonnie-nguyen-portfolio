@@ -34,6 +34,7 @@ export function humanizeDate() {
 
   if (!posts.length) return;
 
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < posts.length; i++) {
     formatDate = posts[i].getAttribute('datetime');
     formatDate = new Date(formatDate);
