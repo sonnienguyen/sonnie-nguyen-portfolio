@@ -9,7 +9,7 @@
     "build": "webpack --mode production",
     "server": "bundle exec jekyll serve --config docs/_config.yml --livereload",
     "start": "run-p --race \"dev -- --watch\" server",
-    "lint": "npm run lint:css",
+    "lint": "run-s lint:*",
     "lint:css": "stylelint \"src/styles/**/*.scss\" --syntax scss",
     "lint:js": "eslint ."
   },
