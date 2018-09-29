@@ -1,7 +1,7 @@
 {
   "name": "sonnie-nguyen-portfolio",
   "description": "Sonnie Nguyen's Portfolio Website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "author": "Sonnie <info@sonnienguyen.com>",
   "scripts": {
