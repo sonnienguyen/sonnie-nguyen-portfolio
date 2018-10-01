@@ -22,6 +22,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@babel/polyfill": "^7.0.0",
     "normalize.css": "^8.0.0",
     "prismjs": "^1.15.0",
     "responsive-nav": "^1.0.39",
