@@ -2,7 +2,7 @@
   "presets": ["env"],
   "plugins": [
     ["prismjs", {
-        "languages": ["javascript", "css", "markup", "sass", "scss", "bash", "diff"]
+        "languages": ["javascript", "css", "markup", "sass", "scss", "bash", "diff", "haskell", "typescript"]
     }]
   ]
 }
