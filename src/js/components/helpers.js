@@ -25,19 +25,28 @@ export function qsa(selector, scope) {
 }
 
 /**
- * Displaying the time elapsed since posted.
+ * Returns `datetime` into human readable.
+ *
+ * @param {Array} dates
  */
 
-export function humanizeDate() {
-  const posts = qsa('.js-posted-on');
-  let formatDate;
+export function humanizeDate(dates) {
+  return dates
+    .map(date => new Date(date.getAttribute('datetime')))
+    .map(date => ago(date));
+}
 
-  if (!posts.length) return;
+/**
+ * Display the time elapsed since posted.
+ *
+ * @param {Array} arr
+ * @param {String} selector
+ */
 
-  // eslint-disable-next-line no-plusplus
-  for (let i = 0; i < posts.length; i++) {
-    formatDate = posts[i].getAttribute('datetime');
-    formatDate = new Date(formatDate);
-    posts[i].textContent = ago(formatDate);
-  }
+export function showDates(arr, selector) {
+  if (arr.length === 0) return;
+  const dates = humanizeDate(arr);
+  dates.forEach((date, position) => {
+    document.querySelectorAll(selector)[position].textContent = date;
+  });
 }

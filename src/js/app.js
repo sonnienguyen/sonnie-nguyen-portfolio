@@ -6,10 +6,9 @@
 
 import Prism from 'prismjs';
 import fixedResponsiveNav from './vendor/fixedResponsiveNav';
-import { humanizeDate } from './components/helpers';
+import { showDates } from './components/helpers';
 
 Prism.highlightAll();
 // eslint-disable-next-line no-unused-vars
 const displayFixedResponsiveNav = fixedResponsiveNav();
-// eslint-disable-next-line no-unused-vars
-const postDate = humanizeDate();
+showDates([...document.querySelectorAll('.js-posted-on')], '.js-posted-on');
