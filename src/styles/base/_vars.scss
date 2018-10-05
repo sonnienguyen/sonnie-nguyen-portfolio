@@ -12,17 +12,16 @@ $georgia:                                       Georgia, serif;
 $helvetica:                                     Helvetica, Arial, sans-serif;
 $helveticaneue:                                 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 
-$montserrat:                                    'Montserrat', sans-serif;
-$source-sans-pro:                               'Source Sans Pro', sans-serif;
 $source-code-pro:                               'Source Code Pro', Consolas, Menlo, Courier, monospace;
+$roboto:                                        'Roboto', Helvetica, Arial, sans-serif;
 
 /*
  * Font family.
  */
 
-$global-font-family:                            $source-sans-pro;
-$header-font-family:                            $montserrat;
-$post-meta-font-family:                         $montserrat;
+$global-font-family:                            $roboto;
+$header-font-family:                            $roboto;
+$post-meta-font-family:                         $roboto;
 $code-font-family:                              $source-code-pro;
 
 /*
