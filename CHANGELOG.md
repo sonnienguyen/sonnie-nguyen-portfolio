@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.0] / 2018-10-08
+
+* add "Roboto" fonts ([912e54c](https://github.com/sonnienguyen/sonnie-nguyen-portfolio/commit/912e54c994ae57fba541a00d57ba7c17b9a665c0))
+
 ## [1.1.0] / 2018-10-05
 
 * add `babel-polyfill` as a dependency ([a2dab8c](https://github.com/sonnienguyen/sonnie-nguyen-portfolio/commit/3775feb42f49c5fefd57730a16eb745a9bdaa4ce))
@@ -18,5 +22,6 @@
 
 * Initial release
 
+[1.2.0]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.0.0...1.0.1
