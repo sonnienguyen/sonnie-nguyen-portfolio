@@ -6,13 +6,23 @@
 
 This is the source code for my website [sonnienguyen.com]
 
-## Requirements
+## Code Overview
+
+### Dependencies
+
+- [responsive-nav](https://github.com/viljamis/responsive-nav.js) - For responsive navigation with fast touch screen support
+- [prism](https://github.com/PrismJS/prism) - For syntax highlighting
+- [s-ago](https://github.com/sebastiansandqvist/s-ago) - Human readable relative times (eg. 4 minutes ago)
+
+## Getting started
+
+### Requirements
 
 - [Jekyll][jekyll-url]: Read up on how to install
 - [Git][git-url]: For downloading the source code
 - [Node.js][nodejs-url] 8.x and [npm][npm-url] 6.x: For installing the dependencies and running the application
 
-## First time setup
+### First time setup
 
 ```shell
 # Clone the repository to your system
@@ -25,7 +35,7 @@ bundle install
 npm install
 ```
 
-## Running locally
+### Running locally
 
 1. To start the web server, run:
 
