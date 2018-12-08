@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1] / 2018-12-08
+
+* update dependencies and gems
+
+* minor lint fixes ([dbcb28d](https://github.com/sonnienguyen/sonnie-nguyen-portfolio/commit/dbcb28dda83b7182f3471aed60eb7eecafc28408))
+
 ## [1.2.0] / 2018-10-08
 
 * add "Roboto" fonts ([912e54c](https://github.com/sonnienguyen/sonnie-nguyen-portfolio/commit/912e54c994ae57fba541a00d57ba7c17b9a665c0))
@@ -22,6 +28,7 @@
 
 * Initial release
 
+[1.2.1]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.0.1...1.1.0
 [1.0.1]: https://github.com/sonnienguyen/sonnie-nguyen-portfolio/compare/1.0.0...1.0.1
