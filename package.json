@@ -55,6 +55,6 @@
     "stylelint-scss": "^3.2.0",
     "uglifyjs-webpack-plugin": "^2.0.1",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.0.4"
+    "webpack-cli": "^3.3.12"
   }
 }
