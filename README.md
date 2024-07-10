@@ -1,6 +1,8 @@
-## Sonnie Nguyen's Portfolio Website
+## Sonnie Nguyen's  Website
 
-This is the source code for my website [sonnienguyen.com]
+This repository contains the source code for my Jekyll site.
+
+Previously, this repository was used for the source code of my website [sonnienguyen.com]
 
 ## Code Overview
 
